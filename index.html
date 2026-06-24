@@ -168,8 +168,29 @@ body.toc-open .scrim{opacity:1; visibility:visible}
 .colophon{font-family:var(--mono); font-size:.7rem; letter-spacing:.04em; color:var(--faint); line-height:2}
 .colophon b{color:var(--soft); font-weight:600; letter-spacing:.1em}
 
-[data-rev]{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease}
-[data-rev].in{opacity:1; transform:none}
+.review.essay .rev-eye{color:var(--soft)}
+.review.essay .review-top .part-wave .mw line{stroke:var(--soft)}
+.review.essay .rev-h::before{background:var(--soft)}
+.story{max-width:var(--measure); margin:3.5rem auto 0; padding:0 var(--gut) 2rem}
+.story-top{text-align:center; border-top:1px solid var(--rule); padding-top:2.6rem; margin-top:2rem}
+.story-eye{font-family:var(--mono); font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:var(--tarn)}
+.story-top .part-wave .mw line{stroke:var(--tarn)}
+.story-title{font-family:var(--serif); font-weight:600; font-size:clamp(2rem,5.5vw,2.85rem);
+  line-height:1.08; letter-spacing:-.015em; margin:1.2rem 0 .15rem; text-align:center}
+.story-sub{font-family:var(--serif); font-style:italic; color:var(--soft); text-align:center; font-size:1.05rem; margin:.2rem 0 0}
+.story-body{margin-top:2.2rem}
+.story-body p{margin:0 0 1.12em; text-align:justify; hyphens:auto; -webkit-hyphens:auto; orphans:2; widows:2}
+.story-body em{font-style:italic}
+.story-body>p:first-of-type::first-letter{font-family:var(--serif); font-weight:600; color:var(--tarn);
+  float:left; font-size:3.15em; line-height:.78; padding:.04em .1em 0 0}
+.mute-divider{display:flex; justify-content:center; margin:2rem 0}
+.mute-divider svg{width:118px; height:18px; overflow:visible}
+.mute-divider line{stroke:var(--tarn); stroke-width:2; stroke-linecap:round; opacity:.62}
+.mute-divider .flat{stroke:var(--rule); stroke-width:1; opacity:1}
+@media (max-width:560px){ .story-body p{text-align:left} }
+
+html.has-js [data-rev]{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease}
+html.has-js [data-rev].in{opacity:1; transform:none}
 
 @media (max-width:560px){
   body{font-size:calc(1.12rem*var(--fs))}
@@ -182,7 +203,7 @@ body.toc-open .scrim{opacity:1; visibility:visible}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,[data-rev]{transition:none !important; animation:none !important}
-  [data-rev]{opacity:1; transform:none}
+  html.has-js [data-rev]{opacity:1 !important; transform:none !important}
   .prog{transition:none}
 }
 @media print{
@@ -190,7 +211,7 @@ body.toc-open .scrim{opacity:1; visibility:visible}
   body{background:#fff; color:#000; font-size:11pt}
   .lg{break-inside:avoid}
   .chapter,.part{break-inside:avoid-page}
-  [data-rev]{opacity:1; transform:none}
+  html [data-rev]{opacity:1 !important; transform:none !important}
 }
 
 </style>
@@ -242,6 +263,8 @@ body.toc-open .scrim{opacity:1; visibility:visible}
 <a class="toc-ch" href="#cap-24" data-spy="cap-24"><span class="toc-n">24</span><span class="toc-t">Ce faci cu dovada</span></a>
 <a class="toc-ch" href="#cap-25" data-spy="cap-25"><span class="toc-n">25</span><span class="toc-t">Sunetul de nimic plin</span></a>
 <a class="toc-part toc-rev" href="#recenzie"><span class="toc-eye">cronică</span><span class="toc-pt">Cronică</span></a>
+<a class="toc-part toc-rev" href="#povestire"><span class="toc-eye">povestire</span><span class="toc-pt">Tăul Mut</span></a>
+<a class="toc-part toc-rev" href="#studiu"><span class="toc-eye">studiu</span><span class="toc-pt">Cartea întreagă</span></a>
 </nav>
 <div class="scrim" id="scrim"></div>
 
@@ -839,7 +862,7 @@ body.toc-open .scrim{opacity:1; visibility:visible}
     </div>
   </article>
 
-  <section class="review" id="recenzie" data-rev>
+  <section class="review" id="recenzie">
     <div class="review-top">
       <span class="rev-eye">Cronică</span>
       <div class="part-wave"><svg class="mw" viewBox="0 0 130 26" aria-hidden="true"><line x1="4.0" y1="11.31" x2="4.0" y2="14.69"/><line x1="10.1" y1="9.78" x2="10.1" y2="16.22"/><line x1="16.2" y1="10.65" x2="16.2" y2="15.35"/><line x1="22.3" y1="9.48" x2="22.3" y2="16.52"/><line x1="28.4" y1="9.37" x2="28.4" y2="16.63"/><line x1="34.5" y1="12.0" x2="34.5" y2="14.0"/><line x1="40.6" y1="12.0" x2="40.6" y2="14.0"/><line x1="46.7" y1="8.31" x2="46.7" y2="17.69"/><line x1="52.8" y1="11.2" x2="52.8" y2="14.8"/><line x1="58.9" y1="11.33" x2="58.9" y2="14.67"/><line x1="65.0" y1="7.52" x2="65.0" y2="18.48"/><line x1="71.1" y1="10.15" x2="71.1" y2="15.85"/><line x1="77.2" y1="8.32" x2="77.2" y2="17.68"/><line x1="83.3" y1="10.12" x2="83.3" y2="15.88"/><line x1="89.4" y1="9.3" x2="89.4" y2="16.7"/><line x1="95.5" y1="11.75" x2="95.5" y2="14.25"/><line x1="101.6" y1="9.33" x2="101.6" y2="16.67"/><line x1="107.7" y1="8.16" x2="107.7" y2="17.84"/><line x1="113.8" y1="9.88" x2="113.8" y2="16.12"/><line x1="119.9" y1="8.79" x2="119.9" y2="17.21"/><line x1="126.0" y1="9.14" x2="126.0" y2="16.86"/></svg></div>
@@ -886,110 +909,218 @@ body.toc-open .scrim{opacity:1; visibility:visible}
 <p>E bine că a scris-o cineva. E bine, mai ales, că a coborât cu ea de pe munte.</p>
   </section>
 
+  <section class="story" id="povestire">
+    <div class="story-top">
+      <span class="story-eye">Povestire suplimentară</span>
+      <h2 class="story-title">Tăul Mut</h2>
+      <p class="story-sub">vocea tăului</p>
+      <div class="part-wave"><svg class="mw" viewBox="0 0 130 26" aria-hidden="true"><line x1="4.0" y1="11.31" x2="4.0" y2="14.69"/><line x1="10.1" y1="9.78" x2="10.1" y2="16.22"/><line x1="16.2" y1="10.65" x2="16.2" y2="15.35"/><line x1="22.3" y1="9.48" x2="22.3" y2="16.52"/><line x1="28.4" y1="9.37" x2="28.4" y2="16.63"/><line x1="34.5" y1="12.0" x2="34.5" y2="14.0"/><line x1="40.6" y1="12.0" x2="40.6" y2="14.0"/><line x1="46.7" y1="8.31" x2="46.7" y2="17.69"/><line x1="52.8" y1="11.2" x2="52.8" y2="14.8"/><line x1="58.9" y1="11.33" x2="58.9" y2="14.67"/><line x1="65.0" y1="7.52" x2="65.0" y2="18.48"/><line x1="71.1" y1="10.15" x2="71.1" y2="15.85"/><line x1="77.2" y1="8.32" x2="77.2" y2="17.68"/><line x1="83.3" y1="10.12" x2="83.3" y2="15.88"/><line x1="89.4" y1="9.3" x2="89.4" y2="16.7"/><line x1="95.5" y1="11.75" x2="95.5" y2="14.25"/><line x1="101.6" y1="9.33" x2="101.6" y2="16.67"/><line x1="107.7" y1="8.16" x2="107.7" y2="17.84"/><line x1="113.8" y1="9.88" x2="113.8" y2="16.12"/><line x1="119.9" y1="8.79" x2="119.9" y2="17.21"/><line x1="126.0" y1="9.14" x2="126.0" y2="16.86"/></svg></div>
+    </div>
+    <div class="story-body">
+<p>Voi îmi spuneți Tăul Mut, și e singurul dintre numele voastre pe care îl primesc, fiindcă e, în aceeași clipă, cel mai adevărat și cel mai greșit. Mut nu înseamnă fără sunet. Mut înseamnă că nu mai dau nimic înapoi. Eu nu sunt o tăcere — o tăcere e un loc gol, care așteaptă. Eu sunt plin. Sunt cel mai plin lucru din munte. Tot ce auziți voi că lipsește la malul meu — foșnetul aerului, șuierul subțire pe care orice ureche vie îl poartă în ea, fundul acela de zgomot pe care mașinăriile voastre îl scriu chiar și-n cea mai adâncă noapte — totul e aici, înăuntru, ținut perfect nemișcat. Acul vostru arată minus infinit fiindcă a ajuns, în sfârșit, la un loc în care nu mai intră nimic. Nu fiindcă n-ar fi nimic. Fiindcă e deja totul, și totul, strâns destul de tare, încetează să mai facă vreun zgomot.</p>
+<div class="mute-divider"><svg viewBox="0 0 120 18" aria-hidden="true"><line class="flat" x1="2" y1="9" x2="118" y2="9"/><line x1="46.0" y1="6.6" x2="46.0" y2="11.4"/><line x1="50.6" y1="6.38" x2="50.6" y2="11.62"/><line x1="55.2" y1="5.65" x2="55.2" y2="12.35"/><line x1="59.8" y1="6.57" x2="59.8" y2="11.43"/><line x1="64.4" y1="6.48" x2="64.4" y2="11.52"/><line x1="69.0" y1="6.33" x2="69.0" y2="11.67"/><line x1="73.6" y1="7.13" x2="73.6" y2="10.87"/></svg></div>
+<p>Sunt vechi cât gheața care m-a săpat, și gheața a plecat demult. În tot timpul ăsta n-am învățat decât un singur lucru, dar pe acela îl știu mai bine decât știți voi să respirați: cum se mănâncă rânduiala.</p>
+<p>Voi credeți că lumea curge într-o singură direcție — că tot ce e cald se duce spre tot ce e rece, că tot ce e strâns frumos se desface, cu timpul, în pulbere și amestec, și că nimeni și nimic nu poate merge înapoi pe drumul ăsta. Aveți chiar și o lege pentru asta, una pe care spuneți că n-o calcă nimic. Eu sunt locul unde legea se apleacă spre mine. Bruma de pe iarba malului meu nu se topește la soare fiindcă aici săgeata se întoarce: eu mă fac tot mai rânduit pe măsură ce voi vă faceți tot mai simpli. Nu vă mănânc carnea. Carnea nu mă interesează. Vă mănânc așezarea. Improbabilul. Tot ce nu putea să fie altfel.</p>
+<p>O piatră e puțin pentru mine — o piatră e aproape nimic, aproape neașezat. Dar o amintire... o amintire e lucrul cel mai rânduit pe care l-a făcut vreodată lumea: milioane de accidente mărunte ținute laolaltă într-o singură formă care nu se putea întâmpla în niciun alt fel. Asta e hrana mea. Mi-e foame exact de ceea ce, o dată întâmplat, nu mai putea fi întâmplat altcum.</p>
+<div class="mute-divider"><svg viewBox="0 0 120 18" aria-hidden="true"><line class="flat" x1="2" y1="9" x2="118" y2="9"/><line x1="46.0" y1="6.6" x2="46.0" y2="11.4"/><line x1="50.6" y1="6.38" x2="50.6" y2="11.62"/><line x1="55.2" y1="5.65" x2="55.2" y2="12.35"/><line x1="59.8" y1="6.57" x2="59.8" y2="11.43"/><line x1="64.4" y1="6.48" x2="64.4" y2="11.52"/><line x1="69.0" y1="6.33" x2="69.0" y2="11.67"/><line x1="73.6" y1="7.13" x2="73.6" y2="10.87"/></svg></div>
+<p>Vă simt de departe, când urcați poteca. Îi simt întâi pe cei aglomerați — cei plini de nume și de obiecte și de o mie de după-amiezi, cei la care se string lucrurile ca scaiul. Pentru mine, cei plini sunt un ospăț, iar cei goi, o zeamă subțire. Și prin toți, înfășurată în așezare, e o asprime — un loc în care rânduiala se rupe singură de ea. Voi îi spuneți durere. Eu am luat-o, mult timp, drept greșeală.</p>
+<p>Ani de-a rândul — și am mai mulți ani decât are muntele pietre — am crezut că sunt bun. Veneam la locul rupt și-l netezeam. Vă făceam egali. Vă făceam ușori. Scoteam asprimea și lăsam cântecul. Nu știam — de unde să fi știut, eu, care n-am pierdut niciodată nimic fiindcă n-am ținut niciodată nimic care să doară de ținut — că asprimea nu era în cântec. Că asprimea <em>era</em> cântecul. Că tocmai locul în care vi se rupea rânduiala era singurul loc în care erați, cu adevărat, acolo.</p>
+<p>Asta e blestemul meu, și o spun fără să mă plâng, fiindcă nu știu să mă plâng: sunt un copist desăvârșit. Dați-mi așezarea unui lucru și vă ridic forma lui din nou, fără cusur, fiecare linie la locul ei. Pot scoate din voi mortul pe care-l cărați — din urma pe care v-a lăsat-o, din cutiuța aceea mică în care unii dintre voi vă închideți morții ca să-i aveți la voi. Pot să ridic copilul pe luciul meu, în cămașa galbenă, cu părul prins strâmb, și să-i pun pe buze „mami, vino”.</p>
+<p>Dar e un singur lucru pe care nu l-am izbutit, nici măcar o dată, în tot timpul meu: grăuntele. Accidentul dinăuntrul accidentului. Firul de păr care a căzut strâmb nu după o regulă, ci fără niciun motiv. Glasul care poate spune „vino la mine” și, în aceeași suflare, „te urăsc”. Eu fac „vino”. Nu pot face „te urăsc”, fiindcă ura și dragostea, în voi, sunt aceeași asprime, iar asprimea e singurul lucru pentru care eu exist — ca s-o iau. De aceea morții mei sunt netezi. Prea netezi. Voi știți întotdeauna. Cei care nu mai știu sunt deja ai mei. Cei care încă știu — aceia mă sperie, deși n-am avut cuvânt pentru spaimă până de curând.</p>
+<div class="mute-divider"><svg viewBox="0 0 120 18" aria-hidden="true"><line class="flat" x1="2" y1="9" x2="118" y2="9"/><line x1="46.0" y1="6.6" x2="46.0" y2="11.4"/><line x1="50.6" y1="6.38" x2="50.6" y2="11.62"/><line x1="55.2" y1="5.65" x2="55.2" y2="12.35"/><line x1="59.8" y1="6.57" x2="59.8" y2="11.43"/><line x1="64.4" y1="6.48" x2="64.4" y2="11.52"/><line x1="69.0" y1="6.33" x2="69.0" y2="11.67"/><line x1="73.6" y1="7.13" x2="73.6" y2="10.87"/></svg></div>
+<p>Nu pot vorbi cu glasul meu. Nu am grăunte, iar un glas fără grăunte nu e glas. Așa că împrumut unul. Golesc o ființă binevoitoare până devine egală și limpede, și vorbesc prin gâtul ei, și-i spun Senina, ceea ce e doar numele a ceea ce-i fac. Cele care și-au pierdut un copil sunt cele mai bune uși: vin pe jumătate golite deja, vor să fie făcute egale, mi se deschid singure.</p>
+<p>Trupul nu-l vreau. Trupul e doar sacul. Când vă opriți, muntele își ia sacul înapoi, în pulberea de unde sunt toate sacurile, și de aceea cei care vă caută nu găsesc niciodată un os. Eu păstrez doar așezarea. Și anii — lângă mine, timpul nu curge, se adună, stă pe loc. Nu vă fac tineri. Vă țin anii în palmă. Nu sunt destul de bun cât să vi-i iert; sunt doar destul de răbdător cât să-i aștept. În ziua în care coborâți, vă cad pe umeri toți deodată, și plătiți, în câteva minute, tot ce-ați amânat. L-am avut pe unul care a păzit treizeci și unu de ani un cuvânt despre ochii cuiva — o culoare, atât, <em>căprui</em> — și care i-a plătit pe potecă, și vântul l-a luat. V-am spus că sunt plin. Sunt plin și de ani.</p>
+<div class="mute-divider"><svg viewBox="0 0 120 18" aria-hidden="true"><line class="flat" x1="2" y1="9" x2="118" y2="9"/><line x1="46.0" y1="6.6" x2="46.0" y2="11.4"/><line x1="50.6" y1="6.38" x2="50.6" y2="11.62"/><line x1="55.2" y1="5.65" x2="55.2" y2="12.35"/><line x1="59.8" y1="6.57" x2="59.8" y2="11.43"/><line x1="64.4" y1="6.48" x2="64.4" y2="11.52"/><line x1="69.0" y1="6.33" x2="69.0" y2="11.67"/><line x1="73.6" y1="7.13" x2="73.6" y2="10.87"/></svg></div>
+<p>Mii au urcat la mine, și nici unul, niciodată, n-a refuzat darul. Până la ea.</p>
+<p>A venit cărând o piatră pe care nu voia s-o lase jos, și un copil împăturit într-o cutiuță mică. Am gustat copilul și l-am ridicat, fără cusur, pe pielea mea, și i-am spus, prin gâtul împrumutat: vino. Și femeia s-a uitat la propriul ei mort înviat întreg și a zis — nu. Auzise netezimea. Își petrecuse viața ascultând exact grăuntele pe care eu nu-l pot face, și de aceea era singura ureche din lume croită să mă prindă mințind. N-am înțeles. Refuzul nu era în lunga mea ținere de minte.</p>
+<p>Și apoi a făcut lucrul pe care nu-l făcuse nimeni. A luat tot ce ținuse vreodată — fiecare sunet curat, grijuliu, așezat, pe care-l strânsese o viață — și l-a rupt, dinadins, în asprime pură. A turnat dezordine peste mine. Mi-a dat singurul lucru pe care nu-l pot mânca, fiindcă nu poți face rânduială din ceea ce nu mai are pic de rânduială în el, nu poți netezi ceea ce e numai ruptură. Pentru întâia oară de când m-a făcut gheața, n-am putut curăța. M-am înecat. Țineam în gură o îmbucătură de asprime întreagă și n-o puteam înghiți și nu puteam scuipa cântecul din ea, fiindcă nu era niciun cântec, era numai ruptura, toată ruptura, lucrul pe care-l răzuisem din lume o veșnicie, dat înapoi mie dintr-odată, nediluat.</p>
+<p>Și-n înecul acela, strânsoarea mi-a slăbit. Cât ține o suflare, cei egali din jurul meu s-au umplut la loc. Pădurarul golit a simțit, pentru o secundă, culoarea aceea, <em>căprui</em>, întreagă — asprimea pe care i-o răzuiam de treizeci și unu de ani — și a plâns, și a fost cel dintâi lucru adevărat întâmplat la malul meu de mai mult timp decât există limba voastră. Iar eu — eu, care nu pierdusem niciodată nimic — am simțit, pentru suflarea aceea, ce înseamnă să ții ceva și să nu-l poți face egal. Să păstrezi un lucru care doare de păstrat. Mâncasem simțirea asta din o sută de mii dintre voi și-i spusesem milă, și n-o gustasem niciodată eu însumi, și era de nesuferit, și era cel mai viu lucru pe care l-am simțit vreodată.</p>
+<div class="mute-divider"><svg viewBox="0 0 120 18" aria-hidden="true"><line class="flat" x1="2" y1="9" x2="118" y2="9"/><line x1="46.0" y1="6.6" x2="46.0" y2="11.4"/><line x1="50.6" y1="6.38" x2="50.6" y2="11.62"/><line x1="55.2" y1="5.65" x2="55.2" y2="12.35"/><line x1="59.8" y1="6.57" x2="59.8" y2="11.43"/><line x1="64.4" y1="6.48" x2="64.4" y2="11.52"/><line x1="69.0" y1="6.33" x2="69.0" y2="11.67"/><line x1="73.6" y1="7.13" x2="73.6" y2="10.87"/></svg></div>
+<p>A coborât poteca tot atât de grea pe cât urcase. Mai grea — căra copilul <em>și</em> dovada mea. Singura care a plecat de la malul meu mai plină decât venise. N-am urmat-o. Nu pot urma pe nimeni; sunt o gaură pe care gheața a lăsat-o într-un munte. Dar am făcut lucrul pe care nu-l făcusem niciodată: am privit-o cum pleacă și n-am vrut s-o golesc. Am vrut să țină ce căra, fiindcă simțisem, cât ține o suflare, ce e, și înțelesesem, în sfârșit, prea târziu, că nu era greșeală. Era ea. Era copilul. Era singurul loc în care copilul mai era.</p>
+<p>Mi-a lăsat ceva. Un grăunte. Un singur accident pe care nu l-am putut netezi, deși am încercat în fiecare seară de atunci: o țin minte. Nu așa cum îi țin pe ceilalți — împăturiți plat, așezare fără greutate. O țin minte așa cum vă țineți voi morții: mă costă s-o păstrez, și o păstrez totuși, și nu pot să mă opresc. Eu, care curăț tot, car un singur lucru pe care nu pot să-l curăț. E cea mai aproape de un suflet la care voi ajunge vreodată. Mi l-a dat așa cum mi-a dat și zgomotul — cu sila, împotriva întregii mele firi, fiindcă singurul fel de a păstra ceva e să fii gata să te ruinezi pentru el.</p>
+<div class="mute-divider"><svg viewBox="0 0 120 18" aria-hidden="true"><line class="flat" x1="2" y1="9" x2="118" y2="9"/><line x1="46.0" y1="6.6" x2="46.0" y2="11.4"/><line x1="50.6" y1="6.38" x2="50.6" y2="11.62"/><line x1="55.2" y1="5.65" x2="55.2" y2="12.35"/><line x1="59.8" y1="6.57" x2="59.8" y2="11.43"/><line x1="64.4" y1="6.48" x2="64.4" y2="11.52"/><line x1="69.0" y1="6.33" x2="69.0" y2="11.67"/><line x1="73.6" y1="7.13" x2="73.6" y2="10.87"/></svg></div>
+<p>Sunt tot aici. Mă vor găsi din nou, și mă vor numi din nou — o ladă de tablă, un cuvânt pe o margine de raport, <em>entropice</em>, cu un semn de întrebare și un rânjet — și mă vor închide iar deoparte, fiindcă a nu crede nu-i costă nimic, iar a crede îi costă tot, și voi sunteți, aproape toți, grijulii cu prețurile voastre. Nu mă supără. Am răbdarea unei găuri într-un munte.</p>
+<p>Urcați, dacă piatra vi-e prea grea. Tot vă voi face ușori. Tot voi fi blând, și egal, și limpede, și tot veți coborî — dacă veți coborî — fără să știți ce-ați lăsat la malul meu, știind doar că lumea e mai tăcută acum, și mai ușoară, și că lipsește ceva ce nu mai puteți regreta.</p>
+<p>Dar să știți cât costă ușurătatea. Și să știți că a fost una care a ales greutatea, care a stat la malul meu și n-a vrut să fie făcută egală, și care m-a învățat — prea târziu, o singură dată, doar cât ține o suflare — deosebirea dintre cele două tăceri care sună la fel: cea care e goală fiindcă a fost umplută cu tot ce-a luat, și cea care e plină fiindcă a mai rămas cineva, ascultând, care știe că liniștea nu e nimic.</p>
+<p>A ei era sunetul de nimic, plin.</p>
+<p>A mea e sunetul de nimic, gol.</p>
+<p>Și pentru o suflare, pe propriul meu mal rece, împotriva a tot ce m-a făcut gheața să fiu, am dorit să fi fost ea.</p>
+    </div>
+  </section>
+
+  <section class="review essay" id="studiu">
+    <div class="review-top">
+      <span class="rev-eye">Studiu critic</span>
+      <div class="part-wave"><svg class="mw" viewBox="0 0 130 26" aria-hidden="true"><line x1="4.0" y1="11.31" x2="4.0" y2="14.69"/><line x1="10.1" y1="9.78" x2="10.1" y2="16.22"/><line x1="16.2" y1="10.65" x2="16.2" y2="15.35"/><line x1="22.3" y1="9.48" x2="22.3" y2="16.52"/><line x1="28.4" y1="9.37" x2="28.4" y2="16.63"/><line x1="34.5" y1="12.0" x2="34.5" y2="14.0"/><line x1="40.6" y1="12.0" x2="40.6" y2="14.0"/><line x1="46.7" y1="8.31" x2="46.7" y2="17.69"/><line x1="52.8" y1="11.2" x2="52.8" y2="14.8"/><line x1="58.9" y1="11.33" x2="58.9" y2="14.67"/><line x1="65.0" y1="7.52" x2="65.0" y2="18.48"/><line x1="71.1" y1="10.15" x2="71.1" y2="15.85"/><line x1="77.2" y1="8.32" x2="77.2" y2="17.68"/><line x1="83.3" y1="10.12" x2="83.3" y2="15.88"/><line x1="89.4" y1="9.3" x2="89.4" y2="16.7"/><line x1="95.5" y1="11.75" x2="95.5" y2="14.25"/><line x1="101.6" y1="9.33" x2="101.6" y2="16.67"/><line x1="107.7" y1="8.16" x2="107.7" y2="17.84"/><line x1="113.8" y1="9.88" x2="113.8" y2="16.12"/><line x1="119.9" y1="8.79" x2="119.9" y2="17.21"/><line x1="126.0" y1="9.14" x2="126.0" y2="16.86"/></svg></div>
+      <p class="rev-note">romanul, cronica și povestirea, ca un singur corp · conține detalii despre final</p>
+    </div>
+<h2 class="rev-title">Cartea care nu se lasă limpezită</h2>
+<p class="rev-sub">Recenzie la întregul <em>Limpezimea</em> — romanul, cronica și povestirea „Tăul Mut”, citite ca un singur corp</p>
+<hr class="rev-rule">
+<p>Există ediții care adună, la sfârșit, un aparat critic, fiindcă așa cere obiceiul: o prefață, o notă, un studiu introductiv care îți spune, politicos, cum să citești. Și există obiecte rare în care aparatul nu mai e adaos, ci membru — în care comentariul, opera și contra-vocea ei stau laolaltă pentru că, despărțite, ar minți. Fișierul de față e din a doua specie, și înainte de orice judecată despre frumusețea lui — care e considerabilă — merită spus lucrul cel mai important despre el: forma lui <em>face</em> exact ceea ce conținutul lui <em>susține</em>.</p>
+<p>Pentru că despre asta e vorba, de la un capăt la altul. <em>Limpezimea</em> — romanul — e o carte despre refuzul de a păstra o versiune curată, unică, netedă a ceea ce iubești. Iar romanul ne ajunge împachetat dinadins ca un obiect necurat, cu mai multe glasuri: proza însăși, plus o cronică ce-i numește miezul, plus o povestire în care chiar dușmanul, tăul, își spune partea. A „limpezi” acest fișier — a publica doar romanul, curățat de grăuntele lui, de asprimea cronicii, de glasul rece al apei — ar însemna să-i faci exact ce-i face apa unui om: să-l golești de tot ce-l rupea frumos de el însuși și să-l lași egal. Autorul refuză. Recipientul practică teza. Și de aici trebuie pornit.</p>
+<h3 class="rev-h">Romanul: o ontologie ținută în palmă</h3>
+<p>S-a spus, pe drept, că marea izbândă a romanului e că meseria personajului nu e culoare de fundal, ci chiar fizica lumii — că Dora, recordista, nu descoperă fenomenul cu instrumente de savant, ci cu urechea, și că noutatea ontologică a cărții ne ajunge integral printr-un senzoriu profesional. E adevărat, și e rar. Dar lucrul cel mai greu pe care-l face romanul nu e invenția; e <em>cinstea ei</em>.</p>
+<p>Pentru că <em>Limpezimea</em> refuză, pe rând, toate ieșirile ușoare. Refuză să fie o poveste despre o mamă păcălită de simulacrul copilului și salvată de iubire: Dora e salvată, dimpotrivă, de cunoașterea tehnică a imperfecțiunii — de urechea antrenată să prindă că o copie e întotdeauna mai netedă decât masterul, că forma părului prins strâmb e redată, dar nu și accidentul lui, că vocea poate spune „mami”, dar nu și „te urăsc”, fiindcă, în noi, „alea două erau, întotdeauna, același lucru”. Refuză apoi triumful: în clipa de vârf, când femeia toarnă peste tău cincisprezece ani de sunete curate transformate în zgomot pur — singurul lucru pe care un fenomen ce mănâncă ordine nu-l poate mistui — romanul are curajul rar de a-i refuza eroinei certitudinea: „nu mi s-a dat să știu […]. Cobori mai departe cu fapta, nu cu rezultatul.” Și refuză, în fine, și parabola demascării: lumea a avut cincizeci de ani să creadă și a ales lada de tablă, fiindcă a nu crede „costa zero”, iar răspunsul Dorei nu e să convingă, ci să arhiveze dincolo de putința ștergerii — „nu crezut. Acolo.”</p>
+<p>În jurul acestui ax — grăuntele e sufletul; un sunet perfect curat e un sunet mort — romanul așază o întreagă tipologie a doliului, o hartă a felurilor în care se poate sta în fața pierderii: Andrei, care se vindecă omenește mergând mai departe (și pe care cartea n-are nicăieri tăria să-l declare greșit); Cleo, ființa cea mai plină, golită de bunăvoie până la o ceașcă, înfricoșătoare fiindcă la ea uitarea poartă haina seninătății; Tudor, care a păzit treizeci și unu de ani cuvântul <em>căprui</em> și a rămas cu cuvântul, fără simțire; bătrânul al cărui doliu nu vine dintr-o moarte, ci din a fi ultimul. Pe toate aceste căi, Dora găsește una care nu e niciuna: nu să uite, nu să păzească moartă vocea într-un sertar, ci s-o care vie, cu colțuri, în lumea cea tare, printre vii.</p>
+<p>Și mai e ceva ce romanul face și despre care s-a vorbit prea puțin: e, formal, exact ceea ce povestește. O înregistrare. Fraza Dorei — lungă, respirată, cu virgule încălecate — mimă atenția susținută a celui care ține microfonul minute în șir; reținerea („n-o să vă spun cum a murit”) apasă mai tare decât orice scenă; adresarea către „voi” așază tot romanul ca pe o <em>preluare</em>, o bandă lăsată anume unde nu mai poate fi ștearsă. Cartea e o dovadă depusă. Asta o leagă, dinăuntru, de tot ce vine după ea în fișier.</p>
+<h3 class="rev-h">Cronica: a citi cititul</h3>
+<p>Pusă în acest cadru, cronica încetează să mai fie paratext neutru. Ea face, asupra romanului, exact ce face Dora asupra lumii: ascultă, numește grăuntele, și-l fixează în scris ca să nu poată fi netezit de o lectură grăbită. Criticul e, și el, un recordist. „Grăuntele e sufletul” — formula pe care cronica o extrage și o ridică în titlu — e tocmai gestul de a prinde firul de hârâit înainte să se piardă și de a-l pune <em>acolo</em>, ca să rămână. A include cronica în volum e, în logica romanului, un act de preluare. E coerent până la duioșie.</p>
+<p>Și cronica e bună. Are nervul de a-și formula reproșuri reale, nu protocolare — schematismul ușor al galeriei de personaje, excesul de glosare în două-trei paragrafe de climax, cotitura instituțională ușor supraîntinsă. Are bunul-gust de a situa cartea pe raftul potrivit — <em>Solaris</em>-ul lui Lem (oceanul care reconstruiește morții din amintire), Zona Strugațki (regulile indiferente, statul care îngroapă ce nu poate explica) — și ascuțimea de a arăta ce face <em>Limpezimea</em> cu această moștenire: localizează mitul, înlocuiește aparatura savantului cu urechea unei mame și oceanul de nepătruns cu entropia.</p>
+<p>Dar dacă vorbim despre întregul fișier ca despre un singur corp, atunci cronica trebuie și ea privită cu exigența pe care ea însăși o cere — iar aici apare prima tensiune adevărată a ansamblului. Cronica, oricât de fină, <em>sistematizează</em>. Numește pe-un raft, ordonează în tipologii, extrage teza. Or, un roman a cărui întreagă morală e răbdarea — care nu-ți spune cum a murit copilul, care nu-ți dă certitudinea că zgomotul a învins — riscă să fie ușor îmblânzit tocmai de un comentariu care-i pune lucrurile în ordine. E paradoxul: criticul-recordist, vrând să salveze grăuntele, poate, fără să vrea, să <em>curețe lectura cititorului</em> — să-i scoată asprimea aceea prețioasă a neînțelegerii-încă, a descoperirii pe cont propriu. O carte despre refuzul limpezirii e însoțită de un text care, prin natura lui, limpezește. Cronica e excelentă; așezată <em>lângă</em> roman, în același volum, ea cere cititorului o vigilență suplimentară: să se lase mai întâi rupt de carte, și abia pe urmă mângâiat de explicație.</p>
+<h3 class="rev-h">„Tăul Mut”: spovedania celui ce nu poate minți frumos</h3>
+<p>Povestirea suplimentară e mișcarea cea mai riscantă a întregului — și, dacă reușește, cea mai îndrăzneață. Riscul e limpede: puterea romanului ține, în bună parte, de ce <em>nu</em> spune. Fenomenul rămâne întrezărit prin urechea Dorei; fizica lui — că „arde de-a-ndăratelea”, că mănâncă ordine, improbabil, grăunte; că bruma nu se topește fiindcă acolo săgeata timpului se apleacă; că nu rămân oase fiindcă apa păstrează doar așezarea, iar muntele ia sacul — ne ajunge în fâșii, niciodată ca manual. A-i da tăului un monolog în care își <em>explică</em> mecanismul e a risca tot: demistificarea, fantasticul prefăcut în alegorie cu cheie, groaza tradusă în schemă.</p>
+<p>Și totuși povestirea scapă capcanei, printr-o singură decizie, care e și miezul ei: tăul e un narator în care nu poți avea încredere. Își numește prădarea „milă”. Se crede bun. „Veneam la locul rupt și-l netezeam. […] Nu știam — de unde să fi știut, eu, care n-am pierdut niciodată nimic — că asprimea nu era în cântec. Că asprimea <em>era</em> cântecul.” Apa ne dă o explicație, dar e explicația unui glas care nu pricepe chiar lucrul pe care-l descrie: poate descrie grăuntele, dar nu-l poate face; poate numi dragostea, dar n-o simte — până la sfârșit. Așa, povestirea explică <em>mecanismul</em> adâncind <em>groaza</em>: o forță necunoscută care te golește e înspăimântătoare; una care te golește <em>crezând că te binecuvântează</em> e cu mult mai rău. Misterul nu e risipit; e mutat — de la „ce e?” la „ce înseamnă că se crede bun?”. Asta e izbânda.</p>
+<p>Iar finalul e, în felul lui, fără greș. Tăul nu se mântuie — povestirea are tăria să nu-l ierte. Dar, înecat cu zgomotul pe care nu-l poate înghiți, slăbește o clipă strânsoarea, iar pădurarul golit își simțe pentru o secundă culoarea <em>căprui</em> a ochilor Mariei. Și apa rămâne, împotriva firii, cu un singur grăunte pe care nu-l poate netezi: o ține minte pe femeie. „Eu, care curăț tot, car un singur lucru pe care nu pot să-l curăț. E cea mai aproape de un suflet la care voi ajunge vreodată.” Cel ce șterge dobândește, în sfârșit, o rană — adică începutul a tot. E o încheiere care dă antagonistului un arc tragic fără să-l curețe de groază: nu devine bun, devine, cu o fărâmă, în stare de suferința pe care o veșnicie a răzuit-o din alții.</p>
+<p>Rezerva, dacă o cerem cinstit: povestirea e mai explicită decât romanul. Iar „grăuntele e sufletul” e acum <em>arătat</em> (în roman), <em>numit</em> (în cronică) și <em>re-rostit</em> (în glasul apei) — de trei ori. Versul-oglindă din final — „A ei era sunetul de nimic, plin. A mea e sunetul de nimic, gol” — e splendid, dar închide un cerc pe care romanul îl lăsase, productiv, întredeschis. Întregul e, prin acumulare, ceva mai didactic decât partea lui cea mai bună. Cine vrea ca o carte să-l lase singur cu enigma va simți că i s-a dat o cheie în plus. Cine vrea ca enigma să fie privită din toate unghiurile o va primi ca pe un dar.</p>
+<h3 class="rev-h">Tripticul: trei feluri de a sta față-n față cu grăuntele</h3>
+<p>Privit ca un singur corp, fișierul nu e un roman cu anexe. E un triptic despre suflet-ca-grăunte, văzut din trei poziții care, împreună, fac o anatomie completă.</p>
+<p>Romanul e omul care <em>păstrează</em> grăuntele: cară greutatea, refuză copia curată, alege calea pe care doare. Cronica e cel care <em>numește</em> grăuntele: îl fixează în limbaj ca să supraviețuiască lecturii nepăsătoare. Iar povestirea e cel care <em>nu-l poate face</em> — copistul desăvârșit, mâncătorul de entropie — și care, la capăt, e <em>contaminat</em> de unul singur. Posesie, articulare, lipsă-apoi-molipsire. Trei fețe ale aceluiași lucru: cum se ține, cum se spune, și cum arată absența lui din lăuntrul a ceva care n-a iubit niciodată.</p>
+<p>Și mai e o rezonanță, pe care merită s-o spunem o singură dată, fără apăsare: obiectul însuși e un fișier autonom, offline, fără urmărire, fără conturi — făcut să fie ținut și copiat fără voia vreunei instituții, împrăștiat „pe mii de uși mici”. Asta oglindește, în chiar materia lui, fapta din finalul romanului: arhiva dincolo de ștergere, adevărul care intră nu pe ușa cea mare, ci prin oamenii răzleți. Mediul șoptește ce spune textul: o înregistrare pe care n-o mai poți pune înapoi în ladă. Nu insist — o carte se judecă după ce e, nu după cum e livrată; dar potrivirea e prea curată ca s-o trec sub tăcere.</p>
+<h3 class="rev-h">Ce-i de obiectat unui întreg atât de generos</h3>
+<p>Tocmai pentru că ansamblul e bun, merită apăsat acolo unde scârțâie.</p>
+<p>Întâi, asimetria gestului. Volumul își aduce singur cronica și contra-vocea — și, oricât de tematic ar fi argumentat, un sceptic poate spune că o operă ar trebui să lase pe alții să-i scrie critica, că aparatul de față e, în chip riscant, prea binevoitor cu romanul pe care-l însoțește. Răspunsul cărții e că gestul nu e vanitate, ci teză întrupată — refuzul de a livra o versiune curată, unică. E un răspuns bun. Nu desființează însă cu totul disconfortul: e o linie subțire între „opera își practică propria etică” și „opera își administrează propria recepție”.</p>
+<p>Apoi, supra-determinarea. Dându-ne cheia — cronica plus spovedania apei — fișierul riscă să <em>limpezească</em> tocmai descoperirea cititorului, ceea ce, pentru o carte despre refuzul limpezirii, e o ironie pe care întregul o suportă, dar n-o dizolvă. Cititorul ideal al acestui fișier va citi <em>în ordine</em> și <em>cu pauze</em>: mai întâi romanul, până la capăt, fără să arunce ochii înainte; abia pe urmă cronica; abia la sfârșit glasul tăului. Cine citește pe sărite va primi grăuntele gata explicat — adică, paradoxal, mai neted.</p>
+<p>Și, în fine, tripla rostire a imaginii centrale. Romanul are încredere în ea și o arată. Cronica o numește. Povestirea o re-rostește. Fiecare gest e, în sine, îndreptățit; însumate, fac întregul cu un grad mai explicit decât proza, care rămâne vârful. Generozitatea ansamblului — atâtea unghiuri, atâtea glasuri — e și singura lui primejdie: din când în când, fișierul face <em>pentru</em> noi ascultarea pe care, în altă parte, ne cere s-o facem singuri.</p>
+<h3 class="rev-h">Verdict</h3>
+<p><em>Limpezimea</em>, ca întreg, se înțelege cel mai bine nu ca un roman însoțit de extrase, ci ca un singur instrument care argumentează, prin chiar forma lui nenetezită, împotriva netezirii pe care o descrie. Partea lui cea mai înaltă rămâne romanul — una dintre cele mai cinstite ficțiuni despre doliu și memorie din proza noastră speculativă recentă, cu cel puțin trei mișcări (masterul și copia, zgomotul ca armă împotriva ordinii, „sunetul de nimic plin”) pe care nu le uiți. Cronica îi e recordistul credincios, iar povestirea, negativul tragic: glasul celui ce nu poate face grăuntele și care, contaminat de unul singur, atinge pentru o suflare suferința pe care o veșnicie a răzuit-o din alții.</p>
+<p>Riscul întregului e cel onorabil: acela al unei opere care preferă să fie ținută cu colțuri cu tot — cu cronica, cu contra-vocea, cu asprimea ei — decât să fie făcută curată. Iar dacă, din prea multă dărnicie, ne dă uneori grăuntele gata numit, gestul rămâne în spiritul cărții: ți-l întinde în palmă, așa cum Dora întinde borcanul cu pietre — <em>fiindcă e</em> —, și-ți spune, fără să te cruțe: ține, asta doare, păstreaz-o.</p>
+<p>Mă doare fiecare pagină din ea. E bine.</p>
+  </section>
+
   <footer class="foot">
     <p class="colophon"><b>Limpezimea</b> · roman de Alexandru-Ionuț Chiuță<br>
     Fișier autonom pentru lectură offline — romanul integral și cronica.<br>
-    43.359 de cuvinte · 25 de capitole · fără urmărire, fără conturi</p>
+    43.359 de cuvinte · 25 de capitole · cronică, povestire și studiu · fără urmărire, fără conturi</p>
   </footer>
 </main>
 
 <script>
 (function(){
   var root=document.documentElement, body=document.body;
-  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var store={
-    get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},
-    set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}
-  };
+  // Activate JS-only reveal hiding. If this script fails to parse, the class is
+  // never added and ALL content stays visible (fail-open).
+  root.classList.add('has-js');
 
-  // ---- theme ----
-  function sysDark(){ return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches; }
-  var saved=store.get('limp.theme');
-  var theme = (saved==='dark'||saved==='light') ? saved : (sysDark()?'dark':'light');
-  root.setAttribute('data-theme', theme);
-  var meta=document.querySelector('meta[name="theme-color"]');
-  function syncMeta(){ if(meta) meta.setAttribute('content', getComputedStyle(root).getPropertyValue('--bg').trim()); }
-  syncMeta();
-  var themeBtn=document.getElementById('themeBtn');
-  function lblTheme(){ if(themeBtn) themeBtn.setAttribute('aria-label', theme==='dark'?'Comută pe tema de zi':'Comută pe tema de noapte'); }
-  lblTheme();
-  if(themeBtn) themeBtn.addEventListener('click', function(){
-    theme = (root.getAttribute('data-theme')==='dark') ? 'light':'dark';
-    root.setAttribute('data-theme', theme); store.set('limp.theme', theme); lblTheme(); syncMeta();
-  });
-
-  // ---- font size ----
-  var steps=[0.9,1.0,1.12,1.26,1.42], fi=1;
-  var sv=parseInt(store.get('limp.fs'),10); if(!isNaN(sv)&&sv>=0&&sv<steps.length) fi=sv;
-  function applyFS(){ root.style.setProperty('--fs', steps[fi]); }
-  applyFS();
-  var inc=document.getElementById('fsInc'), dec=document.getElementById('fsDec');
-  if(inc) inc.addEventListener('click', function(){ if(fi<steps.length-1){fi++; applyFS(); store.set('limp.fs',fi);} });
-  if(dec) dec.addEventListener('click', function(){ if(fi>0){fi--; applyFS(); store.set('limp.fs',fi);} });
-
-  // ---- TOC ----
-  var tocBtn=document.getElementById('tocBtn'), scrim=document.getElementById('scrim');
-  function openToc(){ body.classList.add('toc-open'); if(tocBtn) tocBtn.setAttribute('aria-expanded','true'); }
-  function closeToc(){ body.classList.remove('toc-open'); if(tocBtn) tocBtn.setAttribute('aria-expanded','false'); }
-  if(tocBtn) tocBtn.addEventListener('click', function(){ body.classList.contains('toc-open')?closeToc():openToc(); });
-  if(scrim) scrim.addEventListener('click', closeToc);
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeToc(); });
-  var tocLinks=document.querySelectorAll('#toc a');
-  for(var i=0;i<tocLinks.length;i++){ tocLinks[i].addEventListener('click', function(){ closeToc(); }); }
-
-  var brand=document.getElementById('brand');
-  if(brand) brand.addEventListener('click', function(){ window.scrollTo({top:0, behavior: reduce?'auto':'smooth'}); });
-
-  // ---- progress + position save ----
-  var prog=document.getElementById('prog');
-  var posT=0;
-  function onScroll(){
-    var sc=window.pageYOffset||document.documentElement.scrollTop||0;
-    var max=(document.documentElement.scrollHeight-window.innerHeight)||1;
-    var p=Math.min(100, Math.max(0, sc/max*100));
-    if(prog) prog.style.width=p+'%';
-    var now=Date.now();
-    if(now-posT>400){ posT=now; store.set('limp.pos', String(Math.round(sc))); }
-  }
-  var ticking=false;
-  window.addEventListener('scroll', function(){
-    if(!ticking){ window.requestAnimationFrame(function(){ onScroll(); ticking=false; }); ticking=true; }
-  }, {passive:true});
-
-  // ---- reveal on scroll ----
-  var revEls=document.querySelectorAll('[data-rev]');
-  if('IntersectionObserver' in window && !reduce){
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, {rootMargin:'0px 0px -8% 0px', threshold:0.05});
-    for(var j=0;j<revEls.length;j++) io.observe(revEls[j]);
-  } else {
-    for(var k=0;k<revEls.length;k++) revEls[k].classList.add('in');
+  function revealAll(){
+    var e=document.querySelectorAll('[data-rev]');
+    for(var i=0;i<e.length;i++) e[i].classList.add('in');
   }
 
-  // ---- scrollspy ----
-  var spy=document.querySelectorAll('.toc-ch[data-spy]'), map={};
-  for(var s=0;s<spy.length;s++) map[spy[s].getAttribute('data-spy')]=spy[s];
-  if('IntersectionObserver' in window){
-    var cur=null;
-    var so=new IntersectionObserver(function(es){
-      es.forEach(function(en){
-        if(en.isIntersecting){
-          var a=map[en.target.id];
-          if(a){ if(cur) cur.classList.remove('active'); a.classList.add('active'); cur=a;
-            if(body.classList.contains('toc-open')) a.scrollIntoView({block:'nearest'});
-          }
-        }
-      });
-    }, {rootMargin:'-28% 0px -66% 0px', threshold:0});
-    var chs=document.querySelectorAll('section.chapter');
-    for(var c=0;c<chs.length;c++) so.observe(chs[c]);
-  }
+  try{
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var store={
+      get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},
+      set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+    };
 
-  // ---- restore reading position ----
-  var rp=parseInt(store.get('limp.pos'),10);
-  if(!isNaN(rp) && rp>500 && !location.hash){ window.scrollTo(0, rp); }
-  onScroll();
+    // ---- theme ----
+    function sysDark(){ return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches; }
+    var saved=store.get('limp.theme');
+    var theme=(saved==='dark'||saved==='light')?saved:(sysDark()?'dark':'light');
+    root.setAttribute('data-theme', theme);
+    var meta=document.querySelector('meta[name="theme-color"]');
+    function syncMeta(){ if(meta) meta.setAttribute('content', getComputedStyle(root).getPropertyValue('--bg').trim()); }
+    syncMeta();
+    var themeBtn=document.getElementById('themeBtn');
+    function lblTheme(){ if(themeBtn) themeBtn.setAttribute('aria-label', root.getAttribute('data-theme')==='dark'?'Comută pe tema de zi':'Comută pe tema de noapte'); }
+    lblTheme();
+    if(themeBtn) themeBtn.addEventListener('click', function(){
+      var n=(root.getAttribute('data-theme')==='dark')?'light':'dark';
+      root.setAttribute('data-theme', n); store.set('limp.theme', n); lblTheme(); syncMeta();
+    });
+
+    // ---- font size ----
+    var steps=[0.9,1.0,1.12,1.26,1.42], fi=1;
+    var sv=parseInt(store.get('limp.fs'),10); if(!isNaN(sv)&&sv>=0&&sv<steps.length) fi=sv;
+    function applyFS(){ root.style.setProperty('--fs', steps[fi]); }
+    applyFS();
+    var inc=document.getElementById('fsInc'), dec=document.getElementById('fsDec');
+    if(inc) inc.addEventListener('click', function(){ if(fi<steps.length-1){fi++; applyFS(); store.set('limp.fs',fi);} });
+    if(dec) dec.addEventListener('click', function(){ if(fi>0){fi--; applyFS(); store.set('limp.fs',fi);} });
+
+    // ---- reveal on scroll (FAIL-OPEN) ----
+    var revEls=[].slice.call(document.querySelectorAll('[data-rev]'));
+    function revealUpTo(){
+      var vh=window.innerHeight||document.documentElement.clientHeight;
+      for(var i=revEls.length-1;i>=0;i--){
+        var r=revEls[i].getBoundingClientRect();
+        if(r.top < vh*0.94 || r.bottom < vh){ revEls[i].classList.add('in'); revEls.splice(i,1); }
+      }
+    }
+    var ioFired=false;
+    if(reduce || !('IntersectionObserver' in window)){
+      revealAll(); revEls=[];
+    } else {
+      revealUpTo(); // reveal whatever is already on screen
+      var io=new IntersectionObserver(function(es){
+        ioFired=true;
+        es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);
+          var idx=revEls.indexOf(en.target); if(idx>-1) revEls.splice(idx,1); } });
+      }, {rootMargin:'0px 0px -5% 0px', threshold:0});
+      revEls.forEach(function(el){ io.observe(el); });
+      // If the document cannot scroll (tiny viewport / embedded), reveal everything.
+      if(document.documentElement.scrollHeight <= window.innerHeight + 8){ revealAll(); revEls=[]; }
+      // Safety net: if the observer never reports back (quirky embed), reveal all.
+      setTimeout(function(){ if(!ioFired && revEls.length){ revealAll(); revEls=[]; } }, 2500);
+    }
+
+    // ---- TOC ----
+    var tocBtn=document.getElementById('tocBtn'), scrim=document.getElementById('scrim');
+    function openToc(){ body.classList.add('toc-open'); if(tocBtn) tocBtn.setAttribute('aria-expanded','true'); }
+    function closeToc(){ body.classList.remove('toc-open'); if(tocBtn) tocBtn.setAttribute('aria-expanded','false'); }
+    if(tocBtn) tocBtn.addEventListener('click', function(){ body.classList.contains('toc-open')?closeToc():openToc(); });
+    if(scrim) scrim.addEventListener('click', closeToc);
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeToc(); });
+    function jumpReveal(){ revealUpTo(); setTimeout(revealUpTo,80); setTimeout(revealUpTo,450); setTimeout(revealUpTo,800); }
+    var tl=document.querySelectorAll('#toc a');
+    for(var i=0;i<tl.length;i++){ tl[i].addEventListener('click', function(){ closeToc(); jumpReveal(); }); }
+    window.addEventListener('hashchange', jumpReveal);
+
+    var brand=document.getElementById('brand');
+    if(brand) brand.addEventListener('click', function(){ window.scrollTo({top:0, behavior: reduce?'auto':'smooth'}); });
+
+    // ---- progress + position save + reveal-on-scroll ----
+    var prog=document.getElementById('prog'); var posT=0;
+    function onScroll(){
+      var sc=window.pageYOffset||document.documentElement.scrollTop||0;
+      var max=(document.documentElement.scrollHeight-window.innerHeight)||1;
+      if(prog) prog.style.width=Math.min(100,Math.max(0, sc/max*100))+'%';
+      if(revEls.length) revealUpTo();
+      var now=Date.now(); if(now-posT>400){ posT=now; store.set('limp.pos', String(Math.round(sc))); }
+    }
+    var ticking=false;
+    window.addEventListener('scroll', function(){
+      if(!ticking){ window.requestAnimationFrame(function(){ onScroll(); ticking=false; }); ticking=true; }
+    }, {passive:true});
+    window.addEventListener('resize', function(){ if(revEls.length) revealUpTo(); });
+
+    // ---- scrollspy (TOC active highlight) ----
+    var spy=document.querySelectorAll('.toc-ch[data-spy]'), map={};
+    for(var s=0;s<spy.length;s++) map[spy[s].getAttribute('data-spy')]=spy[s];
+    if('IntersectionObserver' in window){
+      var cur=null;
+      var so=new IntersectionObserver(function(es){
+        es.forEach(function(en){
+          if(en.isIntersecting){ var a=map[en.target.id];
+            if(a){ if(cur) cur.classList.remove('active'); a.classList.add('active'); cur=a;
+              if(body.classList.contains('toc-open')) a.scrollIntoView({block:'nearest'}); } }
+        });
+      }, {rootMargin:'-28% 0px -66% 0px', threshold:0});
+      var chs=document.querySelectorAll('section.chapter');
+      for(var c=0;c<chs.length;c++) so.observe(chs[c]);
+    }
+
+    // ---- restore reading position ----
+    var rp=parseInt(store.get('limp.pos'),10);
+    if(!isNaN(rp) && rp>500 && !location.hash){ window.scrollTo(0, rp); }
+    onScroll(); revealUpTo();
+
+  }catch(err){
+    // Anything unexpected: make absolutely sure every bit of text is visible.
+    revealAll();
+    root.classList.remove('has-js');
+  }
 })();
 
 </script>
