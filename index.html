@@ -4,25 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Limpezimea — roman · Alexandru-Ionuț Chiuță</title>
-<meta name="description" content="Roman SF cvadrilingv (RO·EN·FR·IT) despre o recordistă, un tău care mănâncă sunetul și amintirea, și grăuntele care e sufletul.">
+<meta name="description" content="Roman SF în șapte limbi (RO·EN·FR·IT·ES·PT·DE) despre o recordistă, un tău care mănâncă sunetul și amintirea, și grăuntele care e sufletul.">
 <meta name="author" content="Alexandru-Ionuț Chiuță">
 <meta property="og:type" content="book">
 <meta property="og:title" content="Limpezimea — roman">
-<meta property="og:description" content="Un tău din Retezat mănâncă sunetul, ordinea și amintirea. Ediție cvadrilingvă RO·EN·FR·IT.">
+<meta property="og:description" content="Un tău din Retezat mănâncă sunetul, ordinea și amintirea. Ediție în șapte limbi RO·EN·FR·IT·ES·PT·DE.">
 <meta property="og:locale" content="ro_RO">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="fr_FR">
 <meta property="og:locale:alternate" content="it_IT">
 <meta property="og:locale:alternate" content="es_ES">
 <meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="de_DE">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Limpezimea — roman">
-<meta name="twitter:description" content="Un tău care mănâncă sunetul și amintirea. Ediție cvadrilingvă RO·EN·FR·IT.">
+<meta name="twitter:description" content="Un tău care mănâncă sunetul și amintirea. Ediție în șapte limbi RO·EN·FR·IT·ES·PT·DE.">
 <meta name="theme-color" content="#e8e6df" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0c1011" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" id="tc">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c1011'/%3E%3Cg stroke='%23dc8c4c' stroke-width='2' stroke-linecap='round'%3E%3Cline x1='9' y1='10' x2='9' y2='22'/%3E%3Cline x1='13' y1='13' x2='13' y2='19'/%3E%3Cline x1='17' y1='7' x2='17' y2='25'/%3E%3C/g%3E%3Cline x1='21' y1='16' x2='27' y2='16' stroke='%2386a39c' stroke-width='1.5'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Book", "name": "Limpezimea", "author": {"@type": "Person", "name": "Alexandru-Ionuț Chiuță"}, "inLanguage": ["ro", "en", "fr", "it", "es", "pt"], "genre": "Science fiction", "bookFormat": "https://schema.org/EBook", "wordCount": 43359, "abstract": "O recordistă pierde un copil și urcă la un tău din Retezat care mănâncă sunetul, ordinea și amintirea."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Book", "name": "Limpezimea", "author": {"@type": "Person", "name": "Alexandru-Ionuț Chiuță"}, "inLanguage": ["ro", "en", "fr", "it", "es", "pt", "de"], "genre": "Science fiction", "bookFormat": "https://schema.org/EBook", "wordCount": 43359, "abstract": "O recordistă pierde un copil și urcă la un tău din Retezat care mănâncă sunetul, ordinea și amintirea."}</script>
 <style>:root{
   --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,"Sitka Text",Cambria,Georgia,"Times New Roman",serif;
   --mono:ui-monospace,"Cascadia Code","Cascadia Mono","JetBrains Mono","Roboto Mono","DejaVu Sans Mono",Menlo,Consolas,monospace;
@@ -344,6 +345,7 @@ html.par-on #parBtn, .tb-btn.on{color:var(--bg); background:var(--tarn); border-
 /* ---- tap-to-peek: reveal the other languages inline (single view only) ---- */
 @media (hover:hover){ html.has-js:not(.par-on) .par[data-k]:hover, html.has-js:not(.par-on) .review p[data-k]:hover, html.has-js:not(.par-on) .story-body p[data-k]:hover{box-shadow:-2px 0 0 var(--rule); cursor:pointer} }
 [data-k].peek-open{box-shadow:-2px 0 0 var(--tarn)}
+[data-k].para-sel{background:var(--sel); border-radius:3px; box-shadow:inset 3px 0 0 var(--ember)}
 .peek{margin:.15em 0 1.25em; border-left:2px solid var(--tarn); padding:.15em 0 .15em 1rem}
 .peek-row{margin:.55em 0; display:flex; gap:.7rem; align-items:flex-start}
 .peek-row+.peek-row{padding-top:.55em; border-top:1px dotted var(--rule)}
@@ -651,6 +653,7 @@ body.focus-on .dof{opacity:1}
 .tts-lang{font-family:var(--mono); font-size:.6rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); padding:0 .5rem 0 .2rem}
 .tts-now{background:var(--sel); border-radius:3px; box-shadow:0 0 0 5px var(--sel)}
 .tts-now.tts-echoing{box-shadow:0 0 0 5px var(--sel), inset 3px 0 var(--ember2)}
+.par.tts-now{padding-left:.7rem; margin-left:-.7rem}   /* gap between the accent line and the read text; text position unchanged */
 @media (prefers-reduced-motion: no-preference){ .tts-now{transition:background .25s, box-shadow .25s} }
 
 /* ============ NOVEL-END · GATE · COLOPHON as three columns in comparative ============ */
@@ -744,7 +747,7 @@ html.par-on.cols-7 .plain-cols>.pane.col{min-width:5.2em}
 #lex .lex-note .t-pt{margin-top:.55em}
 #lex .lex-note .t-pt::before{content:"PT"; font-family:var(--mono); font-size:.58em; letter-spacing:.14em; color:var(--faint); margin-right:.5em; vertical-align:.12em; font-weight:400}
 
-.ttw-on{ background:var(--ember); color:var(--bg); border-radius:3px; box-shadow:0 0 0 2px var(--ember); }
+.ttw-on{ background:#ffd633; color:#1a1400; border-radius:3px; box-shadow:0 0 0 2px #ffd633; }
 html:not(.par-on) #book .pane [data-k]:hover, html:not(.par-on) .apparatus .pane [data-k]:hover, html:not(.par-on) #book .ch-title:hover, html:not(.par-on) #book .part-title:hover, html:not(.par-on) #book .part-eyebrow:hover{ cursor:pointer; }
 
 .pane-de{display:none}
@@ -759,7 +762,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
 #lex .lex-note .t-de{margin-top:.55em}
 #lex .lex-note .t-de::before{content:"DE"; font-family:var(--mono); font-size:.58em; letter-spacing:.14em; color:var(--faint); margin-right:.5em; vertical-align:.12em; font-weight:400}
 </style>
-<script>(function(){try{var r=document.documentElement,s=localStorage;r.classList.add('has-js');if(s.getItem('limp.unlocked')==='1')r.classList.add('unlocked');if(s.getItem('limp.lang')==='en'){r.classList.add('lang-en');r.setAttribute('lang','en');}else if(s.getItem('limp.lang')==='fr'){r.classList.add('lang-fr');r.setAttribute('lang','fr');}else if(s.getItem('limp.lang')==='it'){r.classList.add('lang-it');r.setAttribute('lang','it');}else if(s.getItem('limp.lang')==='es'){r.classList.add('lang-es');r.setAttribute('lang','es');}else if(s.getItem('limp.lang')==='pt'){r.classList.add('lang-pt');r.setAttribute('lang','pt');}var t=s.getItem('limp.theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme:dark)').matches)?'dark':'light';}r.setAttribute('data-theme',t);var f=parseInt(s.getItem('limp.fs'),10),st=[0.9,1,1.12,1.26,1.42];if(!isNaN(f)&&f>=0&&f<st.length)r.style.setProperty('--fs',st[f]);}catch(e){document.documentElement.classList.add('has-js');}})();</script>
+<script>(function(){try{var r=document.documentElement,s=localStorage;r.classList.add('has-js');if(s.getItem('limp.unlocked')==='1')r.classList.add('unlocked');var lg=s.getItem('limp.lang');if(lg==='en'||lg==='fr'||lg==='it'||lg==='es'||lg==='pt'||lg==='de'){r.classList.add('lang-'+lg);r.setAttribute('lang',lg);}var t=s.getItem('limp.theme');if(t!=='dark'&&t!=='light'&&t!=='sepia'&&t!=='tau'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme:dark)').matches)?'dark':'light';}r.setAttribute('data-theme',t);var f=parseInt(s.getItem('limp.fs'),10),st=[0.9,1,1.12,1.26,1.42];if(!isNaN(f)&&f>=0&&f<st.length)r.style.setProperty('--fs',st[f]);}catch(e){document.documentElement.classList.add('has-js');}})();</script>
 </head>
 <body>
 <a class="skip" href="#cap-1"><span class="t-ro">Sari la text</span><span class="t-en">Skip to text</span><span class="t-fr">Aller au texte</span><span class="t-it">Vai al testo</span><span class="t-es">Saltar al texto</span><span class="t-pt">Saltar para o texto</span><span class="t-de">Zum Text springen</span></a>
@@ -772,7 +775,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
 <div class="ttsbar" id="ttsbar" hidden role="region" aria-label="Ascultă">
   <button class="tts-b" id="ttsPlay" aria-label="Pauză" title="Pauză / reia">❚❚</button>
   <button class="tts-b" id="ttsStop" aria-label="Oprește" title="Oprește">■</button>
-  <button class="tts-b tts-echo" id="ttsEcho" aria-pressed="false" aria-label="Ecou — a doua limbă" title="Ecou — a doua limbă">≋</button>
+  <button class="tts-b tts-echo" id="ttsEcho" aria-pressed="false" aria-label="Toate limbile" title="Citește fiecare pasaj în toate limbile">≋</button>
   <span class="tts-lang" id="ttsLang" aria-live="polite"></span>
 </div>
 <button class="qbtn" id="qbtn" hidden aria-label="Decupează un citat / Make a quote card">✦ <span class="t-ro">Citat</span><span class="t-en">Quote</span><span class="t-fr">Citation</span><span class="t-it">Citazione</span><span class="t-es">Cita</span><span class="t-pt">Citação</span><span class="t-de">Zitat</span></button>
@@ -799,7 +802,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
       <button class="lang-btn" data-lang="pt" aria-pressed="false">PT</button><button class="lang-btn" data-lang="de" aria-pressed="false">DE</button>
     </div>
-    <button class="tb-btn" id="parBtn" aria-label="Număr de limbi / Number of languages" aria-pressed="false" title="Limbi afișate: 1 · 2 · 3 · 4 · 5">
+    <button class="tb-btn" id="parBtn" aria-label="Număr de limbi / Number of languages" aria-pressed="false" title="Limbi afișate: 1 · 2 · 3 · 4 · 5 · 6 · 7">
       <svg viewBox="0 0 24 24"><rect x="4" y="5" width="6" height="14" rx="1"/><rect x="11" y="5" width="6" height="14" rx="1"/><rect x="18" y="5" width="2.4" height="14" rx="1" opacity=".45"/></svg><b class="par-n" aria-hidden="true"></b>
     </button>
     <div class="fs-group" role="group" aria-label="Text size">
@@ -3067,7 +3070,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     <div class="pane pane-ro"><p class="ne-cap">sunetul de nimic, plin</p></div>
     <div class="pane pane-en"><p class="ne-cap">the sound of nothing, full</p></div>
     <div class="pane pane-fr"><p class="ne-cap">le son de rien, plein</p></div>
-    <div class="pane pane-it"><p class="ne-cap">il suono del nulla, pieno</p></div><div class="pane pane-es"><p class="ne-cap">el sonido de nada, lleno</p></div><div class="pane pane-pt"><p class="ne-cap">o som de nada, cheio</p></div>
+    <div class="pane pane-it"><p class="ne-cap">il suono del nulla, pieno</p></div><div class="pane pane-es"><p class="ne-cap">el sonido de nada, lleno</p></div><div class="pane pane-pt"><p class="ne-cap">o som de nada, cheio</p></div><div class="pane pane-de"><p class="ne-cap">der Klang von nichts, voll</p></div>
   </div>
 </div>
 
@@ -3728,6 +3731,14 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     applyLang(store.get('limp.lang'));
     function curLang(){ return root.classList.contains('lang-en')?'en':root.classList.contains('lang-fr')?'fr':root.classList.contains('lang-it')?'it':root.classList.contains('lang-es')?'es':root.classList.contains('lang-pt')?'pt':root.classList.contains('lang-de')?'de':'ro'; }
     function paneSel(l){ l=l||curLang(); return l==='en'?'.pane-en':l==='fr'?'.pane-fr':l==='it'?'.pane-it':l==='es'?'.pane-es':l==='pt'?'.pane-pt':l==='de'?'.pane-de':'.pane-ro'; }
+    /* a11y: stamp every language pane + inline title/label variant with its own lang attribute,
+       so screen readers pronounce comparative columns, peek rows and the glossary correctly
+       (the root lang attribute can only ever name one language at a time) */
+    (function tagPaneLangs(){
+      try{ ['ro','en','fr','it','es','pt','de'].forEach(function(L){
+        $all('.pane-'+L+', .t-'+L).forEach(function(el){ if(!el.getAttribute('lang')) el.setAttribute('lang', L); });
+      }); }catch(e){}
+    })();
     /* language buttons: tap = read that single language · long-press / modifier-click = add (or remove) it to the comparison */
     $all('.lang-btn').forEach(function(b){
       var timer=null, longed=false;
@@ -3793,7 +3804,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     var order=[], blocks=[];
     function buildOrder(){ order=$all('#cover,.part,.chapter'+(isUnlocked()?',#recenzie,#povestire,#studiu':'')); }
     function buildBlocks(){
-      var lp=root.classList.contains('lang-en')?'.pane-en':root.classList.contains('lang-fr')?'.pane-fr':root.classList.contains('lang-it')?'.pane-it':'.pane-ro';
+      var lp=paneSel();
       blocks=$all('#book .ch-head, #book '+lp+' .par, #book '+lp+' .dlg, #book '+lp+' .lg, .part-title, .novel-end'
         +(isUnlocked()?', .apparatus '+lp+' .rev-h, .apparatus '+lp+' p, .apparatus '+lp+' .rev-title, .apparatus '+lp+' .story-title, .apparatus '+lp+' .story-body p':'')); }
     buildOrder(); buildBlocks();
@@ -3805,11 +3816,46 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     function ttsReadList(){ var sel=paneSel(); var q='#book .part-eyebrow, #book .part-title, #book .ch-title, #book '+sel+' [data-k]:not(.pane-title)'; if(isUnlocked()) q+=', .apparatus '+sel+' [data-k]:not(.pane-title)'; return $all(q); }
     function ttsUnwrap(){ try{ if(ttsWrapEl&&ttsWrapHTML!=null) ttsWrapEl.innerHTML=ttsWrapHTML; }catch(e){} ttsWrapEl=null; ttsWrapHTML=null; ttsWordGroups=[]; ttsCurGroup=null; }
     function ttsWrapWords(el){ ttsUnwrap(); ttsWrapEl=el; ttsWrapHTML=el.innerHTML; var groups=[], cur=null, gap=true; var tw=D.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false); var nodes=[], n; while(n=tw.nextNode()) nodes.push(n); nodes.forEach(function(tn){ var val=tn.nodeValue; if(val==='') return; if(!/\S/.test(val)){ gap=true; return; } var parts=val.split(/(\s+)/), frag=D.createDocumentFragment(), i; for(i=0;i<parts.length;i++){ var part=parts[i]; if(part==='') continue; if(/^\s+$/.test(part)){ frag.appendChild(D.createTextNode(part)); gap=true; } else { var s=D.createElement('span'); s.className='ttw'; s.textContent=part; frag.appendChild(s); if(gap||!cur){ cur=[s]; groups.push(cur); gap=false; } else { cur.push(s); } } } if(tn.parentNode) tn.parentNode.replaceChild(frag, tn); }); ttsWordGroups=groups; }
-    function ttsSetupWords(el, txt, lang){ ttsWords=[]; ttsWordGroups=[]; ttsCurGroup=null; if(el.querySelector && el.querySelector('.t-'+lang)) return; ttsWrapWords(el); var rw=/\S+/g, mw; while(mw=rw.exec(txt)){ ttsWords.push(mw.index+mw[0].length); } }
+    function ttsSetupWords(el, txt, lang){ ttsWords=[]; ttsWordStarts=[]; ttsWordGroups=[]; ttsCurGroup=null; if(el.querySelector && el.querySelector('.t-'+lang)) return; ttsWrapWords(el); var rw=/\S+/g, mw; while(mw=rw.exec(txt)){ ttsWordStarts.push(mw.index); ttsWords.push(mw.index+mw[0].length); } }
     function ttsWordAt(ci){ for(var i=0;i<ttsWords.length;i++){ if(ci<ttsWords[i]) return i; } return ttsWords.length-1; }
     function ttsHiWord(idx){ if(ttsCurGroup){ ttsCurGroup.forEach(function(s){ s.classList.remove('ttw-on'); }); ttsCurGroup=null; } if(idx<0) return; var g=ttsWordGroups[idx]; if(g){ g.forEach(function(s){ s.classList.add('ttw-on'); }); ttsCurGroup=g; } }
-    function ttsElFromClick(t){ if(!t||!t.closest) return null; var ti=t.closest('#book .ch-title, #book .part-title, #book .part-eyebrow'); if(ti) return ti; var p=t.closest('[data-k]'); if(p && p.closest(paneSel()) && (p.closest('#book')||p.closest('.apparatus'))) return p; return null; }
-    function ttsClickRead(el){ if(!SS){ announce(L3('Sinteza vocală nu e disponibilă pe acest dispozitiv','Speech synthesis isn\u2019t available on this device','La synthèse vocale n\u2019est pas disponible sur cet appareil','La sintesi vocale non è disponibile su questo dispositivo','La síntesis de voz no está disponible en este dispositivo','A síntese de voz não está disponível neste dispositivo','Sprachsynthese ist auf diesem Gerät nicht verfügbar')); return; } ttsList=ttsReadList(); var ix=ttsList.indexOf(el); if(ix<0) return; if(typeof stopAuto==='function') stopAuto(); ttsIdx=ix; loadVoices(); ttsState='playing'; if(ttsbar) ttsbar.hidden=false; ttsReflect(); try{ if(SS) SS.cancel(); }catch(e){} announce(L3('Citesc de aici','Reading from here','Lecture à partir d\u2019ici','Lettura da qui','Leyendo desde aquí','A ler a partir daqui','Lese ab hier')); ttsAlignTop=true; ttsSpeak(); }
+    /* ---- timed word-karaoke fallback: drives the yellow highlight when the speech engine
+       emits no onboundary events (common on Android / Chrome mobile and some cloud voices).
+       Bounded to one sentence's word range [wStart,wEnd); the sentence's onend re-syncs.
+       Real boundary events always win and cancel this immediately. ---- */
+    function ttsKClear(){ if(ttsKTimer){ clearTimeout(ttsKTimer); ttsKTimer=null; } }
+    function ttsWLen(grp){ var n=0,i; for(i=0;i<grp.length;i++) n+=((grp[i].textContent||'').length); return n||1; }
+    function ttsTimedKaraoke(g, rate, wStart, wEnd){
+      if(!ttsWordGroups||!ttsWordGroups.length) return;
+      var perChar=60/(rate||1), floor=120/(rate||1), i=(wStart||0);
+      if(wEnd==null||wEnd>ttsWordGroups.length) wEnd=ttsWordGroups.length;
+      (function step(){
+        if(g!==ttsGen||ttsState!=='playing'||ttsBoundaryFired){ return; }
+        if(i>=wEnd){ return; }
+        ttsHiWord(i);
+        var dur=floor+perChar*ttsWLen(ttsWordGroups[i]); i++;
+        ttsKTimer=setTimeout(step, dur);
+      })();
+    }
+    /* split a paragraph's text into chunks at EVERY pausing punctuation mark
+       — comma, semicolon, colon, period, !, ?, ellipsis, en/em dash — but NOT the
+       ASCII hyphen, so compound words like "Și-acolo" stay intact. A split point is a
+       punctuation run FOLLOWED BY whitespace/end, so decimals like "3,14"/"2.5" stay
+       whole. Pure-punctuation fragments (e.g. a leading dialogue "—") are dropped.
+       Each chunk keeps its char offset within the paragraph so word indices and boundary
+       charIndex stay aligned; the highlight re-syncs at every chunk boundary. */
+    function ttsSplitSentences(txt){
+      var out=[], re=/[,.;:!?\u2026\u2013\u2014]+(?=\s|$)/g, m, start=0;
+      function push(end){
+        var seg=txt.slice(start, end), lead=(seg.match(/^\s*/)||[''])[0].length, t=seg.trim();
+        if(t && /[^\s,.;:!?\u2026\u2013\u2014]/.test(t)) out.push({ text:t, cStart:start+lead });
+        start=end;
+      }
+      while((m=re.exec(txt))){ push(m.index+m[0].length); if(re.lastIndex<=m.index) re.lastIndex=m.index+1; }
+      if(start<txt.length) push(txt.length);
+      if(!out.length){ var l0=(txt.match(/^\s*/)||[''])[0].length, t0=txt.trim(); if(t0) out.push({text:t0, cStart:l0}); }
+      return out;
+    }
     function keyedInPane(sel){ return $all('#book '+sel+' [data-k]'+(isUnlocked()?', .apparatus '+sel+' [data-k]':'')); }
     function findKeyed(sel,k){ var e=kesc(k); return $('#book '+sel+' [data-k="'+e+'"]') || (isUnlocked()?$('.apparatus '+sel+' [data-k="'+e+'"]'):null); }
     function anchorBlock(){
@@ -3826,11 +3872,11 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     }
 
     /* tap-to-peek: reveal the other two languages inline (single view only) */
-    function clearPeeks(){ $all('.peek').forEach(function(p){ if(p.parentNode) p.parentNode.removeChild(p); }); $all('.peek-open').forEach(function(e){ e.classList.remove('peek-open'); }); }
+    function clearPeeks(){ $all('.peek').forEach(function(p){ if(p.parentNode) p.parentNode.removeChild(p); }); $all('.peek-open').forEach(function(e){ e.classList.remove('peek-open'); }); $all('[data-k].para-sel').forEach(function(e){ e.classList.remove('para-sel'); }); }
     function buildPeek(el){
       var k=el.getAttribute('data-k'); if(!k) return null;
       var cur=paneSel(), wrap=D.createElement('div'); wrap.className='peek';
-      [['.pane-ro','RO'],['.pane-en','EN'],['.pane-fr','FR'],['.pane-it','IT'],['.pane-es','ES'],['.pane-pt','PT']].forEach(function(pr){
+      [['.pane-ro','RO'],['.pane-en','EN'],['.pane-fr','FR'],['.pane-it','IT'],['.pane-es','ES'],['.pane-pt','PT'],['.pane-de','DE']].forEach(function(pr){
         if(pr[0]===cur) return;
         var m=findKeyed(pr[0],k); if(!m) return;
         var row=D.createElement('div'); row.className='peek-row';
@@ -3844,20 +3890,20 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       if(root.classList.contains('par-on')) return;
       if(e.target.closest&&e.target.closest('a,button,.peek,input,textarea,select,label,.bm-pin,.note-pin')) return;
       var s=window.getSelection&&window.getSelection(); if(s&&String(s).length>0) return;
-      if(e.altKey||e.ctrlKey||e.metaKey){
-        var el=e.target.closest&&e.target.closest('[data-k]');
-        if(!el||!el.closest(paneSel())) return;
-        var nx=el.nextElementSibling;
-        if(nx&&nx.classList&&nx.classList.contains('peek')){ nx.parentNode.removeChild(nx); el.classList.remove('peek-open'); return; }
-        var pk=buildPeek(el); if(!pk) return;
-        el.parentNode.insertBefore(pk, el.nextElementSibling); el.classList.add('peek-open'); return;
-      }
-      var rel=ttsElFromClick(e.target); if(rel) ttsClickRead(rel);
       var pel=e.target.closest&&e.target.closest('[data-k]');
       if(pel&&pel.closest(paneSel())){
         var pnx=pel.nextElementSibling;
-        if(pnx&&pnx.classList&&pnx.classList.contains('peek')){ pnx.parentNode.removeChild(pnx); pel.classList.remove('peek-open'); }
-        else { var pk2=buildPeek(pel); if(pk2){ pel.parentNode.insertBefore(pk2, pel.nextElementSibling); pel.classList.add('peek-open'); } }
+        if(pnx&&pnx.classList&&pnx.classList.contains('peek')){
+          /* tapping the already-active passage again: close it and stop the reading */
+          clearPeeks();
+          if(typeof ttsStopIfOn==='function') ttsStopIfOn();
+        } else {
+          /* tap a passage: read it aloud from here (interrupting any previous reading) and reveal its translations */
+          clearPeeks();
+          if(typeof ttsStartFrom==='function') ttsStartFrom(pel);
+          var pk2=buildPeek(pel); if(pk2){ pel.parentNode.insertBefore(pk2, pel.nextElementSibling); pel.classList.add('peek-open'); }
+          pel.classList.add('para-sel');
+        }
       }
     });
 
@@ -3886,7 +3932,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       ttsbar:{a:['Ascultă','Listen','Écouter','Ascolta','Escuchar','Ouvir','Hören']},
       ttsPlay:{t:['Pauză / reia','Pause / resume','Pause / reprendre','Pausa / riprendi','Pausa / reanudar','Pausa / retomar','Pause / fortsetzen']},
       ttsStop:{a:['Oprește','Stop','Arrêter','Ferma','Detener','Parar','Stopp'],t:['Oprește','Stop','Arrêter','Ferma','Detener','Parar','Stopp']},
-      ttsEcho:{a:['Ecou — a doua limbă','Echo — second language','Écho — seconde langue','Eco — seconda lingua','Eco — segunda lengua','Eco — segunda língua','Echo — zweite Sprache'],t:['Ecou — a doua limbă','Echo — second language','Écho — seconde langue','Eco — seconda lingua','Eco — segunda lengua','Eco — segunda língua','Echo — zweite Sprache']},
+      ttsEcho:{a:['Toate limbile','All languages','Toutes les langues','Tutte le lingue','Todas las lenguas','Todas as línguas','Alle Sprachen'],t:['Citește fiecare pasaj în toate limbile','Read each passage in all languages','Lire chaque passage dans toutes les langues','Leggi ogni passaggio in tutte le lingue','Leer cada pasaje en todas las lenguas','Ler cada passagem em todas as línguas','Jede Passage in allen Sprachen lesen']},
       qbtn:{a:['Decupează un citat','Make a quote card','Découper une citation','Ritaglia una citazione','Recortar una cita','Recortar uma citação','Ein Zitat ausschneiden']},
       cmdk:{a:['Comenzi','Commands','Commandes','Comandi','Comandos','Comandos','Befehle']},
       cmdkInput:{a:['Comenzi','Commands','Commandes','Comandi','Comandos','Comandos','Befehle'],p:['Comenzi, capitole, teme…','Commands, chapters, themes…','Commandes, chapitres, thèmes…','Comandi, capitoli, temi…','Comandos, capítulos, temas…','Comandos, capítulos, temas…','Befehle, Kapitel, Themen…']},
@@ -4323,7 +4369,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       mk('☷',KT,['Concordanță (rețeaua unui cuvânt)','Concordance (a word\u2019s web)','Concordance (le réseau d\u2019un mot)','Concordanza (la rete di una parola)','Concordancia (la red de una palabra)','Concordância (a rede de uma palavra)','Konkordanz (das Netz eines Wortes)'],'word web',function(){ openConc(); }),
       mk('⟂',KC,['Cusăturile traducerii (în comparativ)','Translation seams (in comparative)','Les coutures de la traduction (en comparatif)','Le cuciture della traduzione (in comparativo)','Las costuras de la traducción (en comparativo)','As costuras da tradução (em comparativo)','Übersetzungsnähte (im Vergleich)'],'seam diverge',function(){ toggleSeams(); }),
       mk('▶',KV,['Ascultă cartea (pornește / oprește)','Listen to the book (start / stop)','Écouter le livre (démarrer / arrêter)','Ascolta il libro (avvia / ferma)','Escuchar el libro (iniciar / detener)','Ouvir o livro (iniciar / parar)','Das Buch hören (starten / stoppen)'],'tts speak read aloud voce',function(){ toggleTTS(); }),
-      mk('≋',KV,['Ecou — fiecare pasaj în a doua limbă','Echo — each passage in a second language','Écho — chaque passage dans une seconde langue','Eco — ogni passaggio in una seconda lingua','Eco — cada pasaje en una segunda lengua','Eco — cada passagem numa segunda língua','Echo — jede Passage in einer zweiten Sprache'],'echo',function(){ toggleEcho(); }),
+      mk('≋',KV,['Citește în toate limbile (pe pasaj)','Read in all languages (per passage)','Lire dans toutes les langues (par passage)','Leggi in tutte le lingue (per passaggio)','Leer en todas las lenguas (por pasaje)','Ler em todas as línguas (por passagem)','In allen Sprachen lesen (pro Passage)'],'echo',function(){ toggleEcho(); }),
       mk('◐',KH,['Temă: întunecată','Theme: dark','Thème : sombre','Tema: scuro','Tema: oscuro','Tema: escuro','Thema: dunkel'],'dark night',function(){ setTheme('dark'); }),
       mk('◑',KH,['Temă: luminoasă','Theme: light','Thème : clair','Tema: chiaro','Tema: claro','Tema: claro','Thema: hell'],'light day',function(){ setTheme('light'); }),
       mk('❂',KH,['Temă: sepia','Theme: sepia','Thème : sépia','Tema: seppia','Tema: sepia','Tema: sépia','Thema: Sepia'],'sepia',function(){ setTheme('sepia'); }),
@@ -4503,14 +4549,14 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       var seen={};
       $all('.pane-ro [data-k]').forEach(function(rb){
         var k=rb.getAttribute('data-k'); if(!k||seen[k]) return; seen[k]=1;
-        var ro=rb.textContent||'', eb=null, fb=null, ib=null, sb=null, en='', fr='', it='', es='';
-        try{ eb=$('.pane-en [data-k="'+kesc(k)+'"]'); }catch(e){} try{ fb=$('.pane-fr [data-k="'+kesc(k)+'"]'); }catch(e){} try{ ib=$('.pane-it [data-k="'+kesc(k)+'"]'); }catch(e){} try{ sb=$('.pane-es [data-k="'+kesc(k)+'"]'); }catch(e){}
-        if(eb) en=eb.textContent||''; if(fb) fr=fb.textContent||''; if(ib) it=ib.textContent||''; if(sb) es=sb.textContent||'';
-        var term=SEAM_RX.test(fold(ro+' '+en+' '+fr+' '+it+' '+es));
-        var lens=[ro.length,en.length,fr.length,it.length,es.length].filter(function(x){return x>0;}), diverge=false;
+        var ro=rb.textContent||'', eb=null, fb=null, ib=null, sb=null, pb=null, db=null, en='', fr='', it='', es='', pt='', de='';
+        try{ eb=$('.pane-en [data-k="'+kesc(k)+'"]'); }catch(e){} try{ fb=$('.pane-fr [data-k="'+kesc(k)+'"]'); }catch(e){} try{ ib=$('.pane-it [data-k="'+kesc(k)+'"]'); }catch(e){} try{ sb=$('.pane-es [data-k="'+kesc(k)+'"]'); }catch(e){} try{ pb=$('.pane-pt [data-k="'+kesc(k)+'"]'); }catch(e){} try{ db=$('.pane-de [data-k="'+kesc(k)+'"]'); }catch(e){}
+        if(eb) en=eb.textContent||''; if(fb) fr=fb.textContent||''; if(ib) it=ib.textContent||''; if(sb) es=sb.textContent||''; if(pb) pt=pb.textContent||''; if(db) de=db.textContent||'';
+        var term=SEAM_RX.test(fold(ro+' '+en+' '+fr+' '+it+' '+es+' '+pt+' '+de));
+        var lens=[ro.length,en.length,fr.length,it.length,es.length,pt.length,de.length].filter(function(x){return x>0;}), diverge=false;
         if(lens.length>=2){ var mn=Math.min.apply(null,lens), mx=Math.max.apply(null,lens); if(mn>30 && mx/mn>1.4) diverge=true; }
         var seam=term||diverge;
-        [rb,eb,fb,ib,sb].forEach(function(b){ if(b){ if(seam) b.classList.add('seam'); else b.classList.remove('seam'); } });
+        [rb,eb,fb,ib,sb,pb,db].forEach(function(b){ if(b){ if(seam) b.classList.add('seam'); else b.classList.remove('seam'); } });
       });
     }
     function applySeams(on){ seamsOn=!!on; body.classList.toggle('seams-on',seamsOn); if(seamsOn) detectSeams(); }
@@ -4520,15 +4566,15 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     /* ===================== STAGE 3 — LISTEN (TTS) · ECHO ===================== */
     var SS = ('speechSynthesis' in window) ? window.speechSynthesis : null;
     var ttsbar=$('#ttsbar'), ttsPlayBtn=$('#ttsPlay'), ttsStopBtn=$('#ttsStop'), ttsEchoBtn=$('#ttsEcho'), ttsLangEl=$('#ttsLang');
-    var ttsState='off', ttsIdx=0, ttsList=[], ttsEcho=false, ttsVoices=[], ttsAssign={}, ttsWrapEl=null, ttsWrapHTML=null, ttsWords=[], ttsWordGroups=[], ttsCurGroup=null, ttsAlignTop=false;
-    function loadVoices(){ if(!SS) return; try{ ttsVoices=SS.getVoices()||[]; }catch(e){ ttsVoices=[]; } assignVoices(); }
+    var ttsState='off', ttsIdx=0, ttsList=[], ttsEcho=false, ttsLangQ=[], ttsCurEl=null, ttsGen=0, ttsVoices=[], ttsAssign={}, ttsBest={}, ttsWrapEl=null, ttsWrapHTML=null, ttsWords=[], ttsWordStarts=[], ttsWordGroups=[], ttsCurGroup=null, ttsAlignTop=false, ttsKTimer=null, ttsBoundaryFired=false;
+    function loadVoices(){ if(!SS) return; try{ ttsVoices=SS.getVoices()||[]; }catch(e){ ttsVoices=[]; } ttsBest={}; assignVoices(); }
     if(SS){ loadVoices(); if(typeof SS.addEventListener==='function') SS.addEventListener('voiceschanged',loadVoices); else SS.onvoiceschanged=loadVoices; }
     function bcp(l){ return l==='en'?'en-US':l==='fr'?'fr-FR':l==='it'?'it-IT':l==='es'?'es-ES':l==='pt'?'pt-PT':l==='de'?'de-DE':'ro-RO'; }
     function voiceGender(v){
       var n=((v&&v.name)||'').toLowerCase(); if(!n) return '?';
       if(/female|femme|f[ée]minin|feminine|woman|girl/.test(n)) return 'f';
       if(/\bmale\b|homme|masculin|masculine|\bman\b|\bboy\b/.test(n)) return 'm';
-      if(/\b(ioana|zira|hazel|heather|susan|catherine|linda|eva|hortense|julie|caroline|hedda|katja|helena|laura|sabina|maria|paulina|monica|marisol|samantha|victoria|karen|moira|tessa|fiona|allison|ava|kate|serena|nicky|joelle|jo[eë]lle|sara|sarah|veena|carmit|amelie|am[ée]lie|audrey|aurelie|aur[ée]lie|marie|virginie|chantal|celine|c[ée]line|lea|l[ée]a|alice|elsa|isabella|emma|paola|federica|carla|giulia|francesca|chiara|fabiola|fiamma|imelda|irma|palmira|pierina|clara|amber|nora|anna|ellen|lesya|milena|zuzana|alva|astrid|ting-ting|sin-ji|kyoko|mei-jia|lekha|damayanti|m[\u00f3o]nica|elvira|abril|triana|estrella|irene|nuria|carlota|larissa|xiomara|dalia|beatriz|candela|marina|renata|yesenia|paloma|ang[\u00e9e]lica|soledad|esperanza|ximena|salom[\u00e9e]|valentina|gabriela|mariana|alondra|catalina|camila|sof[\u00edi]a|pen[\u00e9e]lope|conchita|dolores|pilar|luc[\u00edi]a|lupe|lola|vera|petra|marlene|vicki|conni|elke|gisela|klara|louisa|maja|tanja|christel|amala|sabine|claudia|hanna|greta|ingrid|heidi|johanna|bettina|katrin|steffi)\b/.test(n)) return 'f';
+      if(/\b(ioana|zira|hazel|heather|susan|catherine|linda|eva|hortense|julie|caroline|hedda|katja|helena|laura|sabina|maria|paulina|monica|marisol|samantha|victoria|karen|moira|tessa|fiona|allison|ava|kate|serena|nicky|joelle|jo[eë]lle|sara|sarah|veena|carmit|amelie|am[ée]lie|audrey|aurelie|aur[ée]lie|marie|virginie|chantal|celine|c[ée]line|lea|l[ée]a|alice|elsa|isabella|emma|paola|federica|carla|giulia|francesca|chiara|fabiola|fiamma|imelda|irma|palmira|pierina|clara|amber|nora|anna|ellen|lesya|milena|zuzana|alva|astrid|ting-ting|sin-ji|kyoko|mei-jia|lekha|damayanti|m[\u00f3o]nica|elvira|abril|triana|estrella|irene|nuria|carlota|larissa|xiomara|dalia|beatriz|candela|marina|renata|yesenia|paloma|ang[\u00e9e]lica|soledad|esperanza|ximena|salom[\u00e9e]|valentina|gabriela|mariana|alondra|catalina|camila|sof[\u00edi]a|pen[\u00e9e]lope|conchita|dolores|pilar|luc[\u00edi]a|lupe|lola|vera|petra|marlene|vicki|conni|elke|gisela|klara|louisa|maja|tanja|christel|amala|sabine|claudia|hanna|greta|ingrid|heidi|johanna|bettina|katrin|steffi|luciana|joana|catarina|in[\u00eae]s|fernanda|raquel|helia|vit[\u00f3o]ria|leonor|matilde|benedita|c[\u00e1a]tia|joaninha|zoe|heera|huihui|yaoyao|nanami|haruka|sayaka|tracy|laila|kanya|yuna)\b/.test(n)) return 'f';
       if(/\b(daniel|thomas|alex|fred|aaron|nicolas|paul|mark|david|george|oliver|diego|jorge|juan|guy|lee|ralph|reed|rocko|gordon|arthur|martin|bruce|james|john|liam|ryan|maged|yannick|henri|mathieu|matthieu|xander|luca|cosimo|rishi|ravi|hemant|sean|felipe|pablo|carlos|fabio|jacques|andrei|emil|eric|christopher|roger|steffan|stefan|hans|klaus|conrad|claude|raul|alvaro|giuseppe|marco|lorenzo|antonio|roberto|arnaud|pierre|louis|sebastien|simon|kevin|brian|bernard|giorgio|radu|enrique|miguel|alonso|gonzalo|gerardo|salvador|rodrigo|ricardo|fernando|eduardo|sergio|javier|manuel|ram[\u00f3o]n|andr[\u00e9e]s|dar[\u00edi]o|el[\u00edi]as|sa[\u00fau]l|teo|arnau|cecilio|liberto|luciano|pelayo|yannick|conrad|bernd|stefan|markus|klaus|christoph|killian|ralf|kasper|hans|boris|jonas|lukas|florian|matthias)\b/.test(n)) return 'm';
       return '?';
     }
@@ -4577,9 +4623,12 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       }
       ttsAssign=asg;
     }
-    function voiceFor(l){ if(!ttsAssign||!ttsAssign[l]) assignVoices(); return (ttsAssign&&ttsAssign[l])||null; }
-    function echoLangOf(p){ return p==='ro'?'en':p==='en'?'ro':p==='it'?'ro':p==='es'?'en':p==='pt'?'en':'en'; }
-    function ttsClearHi(){ ttsUnwrap(); $all('.tts-now').forEach(function(n){ n.classList.remove('tts-now'); n.classList.remove('tts-echoing'); }); }
+    /* best available female voice for THIS language on its own merits (native female first,
+       then Romance-bridge female, then any female), independent of the other languages —
+       so the selected language is never given a weaker voice just to stay distinct in echo */
+    function bestFemaleFor(l){ if(ttsBest[l]!==undefined) return ttsBest[l]; var c=femaleCandidates(l); ttsBest[l]=(c&&c.length)?c[0].v:null; return ttsBest[l]; }
+    function voiceFor(l){ var v=bestFemaleFor(l); if(v) return v; if(!ttsAssign||!ttsAssign[l]) assignVoices(); return (ttsAssign&&ttsAssign[l])||null; }
+    function ttsClearHi(){ ttsKClear(); ttsUnwrap(); $all('.tts-now').forEach(function(n){ n.classList.remove('tts-now'); n.classList.remove('tts-echoing'); }); }
     function ttsLabel(l,echoing){ if(ttsLangEl) ttsLangEl.textContent=(l?l.toUpperCase():'')+(echoing?' ≋':''); }
     function ttsReflect(){ if(ttsPlayBtn&&ttsPlayBtn.firstChild&&ttsPlayBtn.firstChild.nodeType===3){ ttsPlayBtn.firstChild.nodeValue=(ttsState==='paused'?'▶':'❚❚'); ttsPlayBtn.setAttribute('aria-label',ttsState==='paused'?L3('Reia','Resume','Reprendre','Riprendi','Reanudar','Retomar','Fortsetzen'):L3('Pauză','Pause','Pause','Pausa','Pausa','Pausa','Pause')); } if(ttsEchoBtn) ttsEchoBtn.setAttribute('aria-pressed',ttsEcho?'true':'false'); }
     function textForLang(k,l){ var el=null; try{ el=$('#book '+paneSel(l)+' [data-k="'+kesc(k)+'"]'); }catch(e){} if(!el){ try{ el=$('.apparatus '+paneSel(l)+' [data-k="'+kesc(k)+'"]'); }catch(e){} } return el?(el.textContent||'').replace(/\s+/g,' ').trim():''; }
@@ -4588,51 +4637,98 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       if(ttsState!=='playing'||!SS) return;
       if(ttsIdx>=ttsList.length){ stopTTS(); return; }
       var el=ttsList[ttsIdx]; if(!el){ ttsAdvance(); return; }
-      var txt=ttsTextOf(el);
+      ttsCurEl=el;
       ttsClearHi(); el.classList.add('tts-now');
       try{ if(ttsAlignTop){ ttsAlignTop=false; window.scrollTo({top:Math.max(0, absTop(el)-HDR-6), behavior:'smooth'}); } else { el.scrollIntoView({block:'center', behavior:'smooth'}); } }catch(e){ try{ el.scrollIntoView(); }catch(_e){} }
-      if(!txt){ ttsAdvance(); return; }
-      var p=curLang(), u;
-      ttsSetupWords(el, txt, p);
-      try{ u=new SpeechSynthesisUtterance(txt); }catch(e){ stopTTS(); return; }
-      var v=voiceFor(p); if(v){ u.voice=v; u.lang=v.lang||bcp(p); } else { u.lang=bcp(p); } u.rate=0.96;
-      ttsLabel(p,false);
-      u.onboundary=function(ev){ if(ttsState!=='playing') return; if(ev&&ev.name&&ev.name!=='word') return; ttsHiWord(ttsWordAt((ev&&ev.charIndex)||0)); };
-      u.onend=function(){ if(ttsState!=='playing') return; ttsHiWord(-1); if(ttsEcho){ ttsSpeakEcho(el); } else { ttsAdvance(); } };
-      u.onerror=function(){ if(ttsState!=='playing') return; ttsAdvance(); };
-      try{ SS.speak(u); }catch(e){ ttsAdvance(); }
+      var prim=curLang();
+      if(ttsEcho){ ttsLangQ=[prim].concat(orderLangs(ALL).filter(function(L){ return L!==prim; })); }
+      else { ttsLangQ=[prim]; }
+      ttsSpeakLangFor(el);
     }
-    function ttsSpeakEcho(el){
+    function ttsSpeakLangFor(el){
       if(ttsState!=='playing'||!SS) return;
-      var k=el.getAttribute('data-k'), el2=echoLangOf(curLang()), et; if(k){ et=textForLang(k,el2); } else { var _es=el.querySelector?el.querySelector('.t-'+el2):null; et=_es?(_es.textContent||'').replace(/\s+/g,' ').trim():''; }
-      if(!et){ ttsAdvance(); return; }
-      el.classList.add('tts-echoing');
-      var u; try{ u=new SpeechSynthesisUtterance(et); }catch(e){ el.classList.remove('tts-echoing'); ttsAdvance(); return; }
-      var v=voiceFor(el2); if(v){ u.voice=v; u.lang=v.lang||bcp(el2); } else { u.lang=bcp(el2); } u.rate=0.96;
-      ttsLabel(el2,true);
-      u.onend=function(){ el.classList.remove('tts-echoing'); if(ttsState!=='playing') return; ttsAdvance(); };
-      u.onerror=function(){ el.classList.remove('tts-echoing'); if(ttsState!=='playing') return; ttsAdvance(); };
-      try{ SS.speak(u); }catch(e){ el.classList.remove('tts-echoing'); ttsAdvance(); }
+      if(!ttsLangQ.length){ ttsAdvance(); return; }
+      var lang=ttsLangQ[0], prim=curLang(), isPrim=(lang===prim);
+      ttsCurEl=el;
+      var k=el.getAttribute('data-k'), txt;
+      if(isPrim){ txt=ttsTextOf(el); }
+      else if(k){ txt=textForLang(k,lang); }
+      else { var sp=el.querySelector?el.querySelector('.t-'+lang):null; txt=sp?(sp.textContent||'').replace(/\s+/g,' ').trim():''; }
+      if(!txt){ ttsLangQ.shift(); ttsSpeakLangFor(el); return; }
+      if(!isPrim){
+        /* echo language: read the whole paragraph as one utterance (no word highlighting) */
+        el.classList.add('tts-echoing');
+        var ue; try{ ue=new SpeechSynthesisUtterance(txt); }catch(e){ stopTTS(); return; }
+        var ve=voiceFor(lang); if(ve){ ue.voice=ve; ue.lang=ve.lang||bcp(lang); } else { ue.lang=bcp(lang); } ue.rate=0.96;
+        ttsLabel(lang, true);
+        var ge=(++ttsGen);
+        ue.onend=function(){ if(ge!==ttsGen||ttsState!=='playing') return; el.classList.remove('tts-echoing'); ttsLangQ.shift(); ttsSpeakLangFor(el); };
+        ue.onerror=function(){ if(ge!==ttsGen||ttsState!=='playing') return; el.classList.remove('tts-echoing'); ttsLangQ.shift(); ttsSpeakLangFor(el); };
+        try{ SS.speak(ue); }catch(e){ ttsLangQ.shift(); ttsSpeakLangFor(el); }
+        return;
+      }
+      /* primary language: wrap words, then read SENTENCE BY SENTENCE so the highlight
+         re-syncs at every sentence boundary (bounds timed-fallback drift to one sentence) */
+      ttsUnwrap(); ttsSetupWords(el, txt, lang); el.classList.remove('tts-echoing');
+      var sents=ttsSplitSentences(txt); if(!sents.length) sents=[{text:txt, cStart:0}];
+      var si; for(si=0;si<sents.length;si++){ sents[si].w=ttsWordAt(sents[si].cStart); }
+      ttsSpeakSentences(el, lang, sents, 0);
     }
+    function ttsSpeakSentences(el, lang, sents, si){
+      if(ttsState!=='playing'||!SS) return;
+      if(si>=sents.length){ ttsKClear(); ttsHiWord(-1); el.classList.remove('tts-echoing'); ttsLangQ.shift(); ttsSpeakLangFor(el); return; }
+      var s=sents[si], wStart=s.w, wEnd=(si+1<sents.length)?sents[si+1].w:ttsWordGroups.length;
+      ttsBoundaryFired=false; ttsKClear();
+      ttsHiWord(wStart);                                   /* re-sync: light this sentence's first word */
+      var u; try{ u=new SpeechSynthesisUtterance(s.text); }catch(e){ stopTTS(); return; }
+      var v=voiceFor(lang); if(v){ u.voice=v; u.lang=v.lang||bcp(lang); } else { u.lang=bcp(lang); } u.rate=0.96;
+      ttsLabel(lang, false);
+      var g=(++ttsGen), base=s.cStart;
+      u.onboundary=function(ev){ if(g!==ttsGen||ttsState!=='playing') return; if(ev&&ev.name&&ev.name!=='word') return; ttsBoundaryFired=true; ttsKClear(); ttsHiWord(ttsWordAt(base+((ev&&ev.charIndex)||0))); };
+      u.onend=function(){ if(g!==ttsGen||ttsState!=='playing') return; ttsSpeakSentences(el, lang, sents, si+1); };
+      u.onerror=function(){ if(g!==ttsGen||ttsState!=='playing') return; ttsSpeakSentences(el, lang, sents, si+1); };
+      try{ SS.speak(u); ttsKClear(); ttsKTimer=setTimeout(function(){ if(g===ttsGen&&ttsState==='playing'&&!ttsBoundaryFired) ttsTimedKaraoke(g, u.rate, wStart, wEnd); }, 250); }catch(e){ ttsSpeakSentences(el, lang, sents, si+1); }
+    }
+    
     function startTTS(){
       if(!SS){ announce(L3('Sinteza vocală nu e disponibilă pe acest dispozitiv','Speech synthesis isn’t available on this device','La synthèse vocale n’est pas disponible sur cet appareil','La sintesi vocale non è disponibile su questo dispositivo','La síntesis de voz no está disponible en este dispositivo','A síntese de voz não está disponível neste dispositivo','Sprachsynthese ist auf diesem Gerät nicht verfügbar')); return; }
-      if(ttsState==='paused'){ ttsState='playing'; ttsReflect(); ttsSpeak(); return; }
+      if(ttsState==='paused'){ ttsState='playing'; ttsReflect(); if(ttsCurEl){ ttsSpeakLangFor(ttsCurEl); } else { ttsSpeak(); } return; }
       if(ttsState==='playing') return;
       if(typeof stopAuto==='function') stopAuto();
+      clearPeeks();
       ttsList=ttsReadList();
       if(!ttsList.length){ announce(L3('Nimic de citit','Nothing to read','Rien à lire','Niente da leggere','Nada que leer','Nada para ler','Nichts zu lesen')); return; }
-      var a=null; try{ a=anchorBlock(); }catch(e){}
-      ttsIdx=0; if(a&&a.k){ var ael=findKeyed(paneSel(),a.k); if(ael){ var ix=ttsList.indexOf(ael); if(ix>=0) ttsIdx=ix; } }
+      ttsIdx=0;
       loadVoices();
       ttsState='playing'; if(ttsbar) ttsbar.hidden=false; ttsReflect();
       try{ SS.cancel(); }catch(e){}
       announce(L3('Ascultă pornit','Listening on','Écoute activée','Ascolto avviato','Escucha activada','Escuta ativada','Hören an')); ttsSpeak();
     }
-    function stopTTS(){ ttsState='off'; try{ if(SS) SS.cancel(); }catch(e){} ttsClearHi(); if(ttsbar) ttsbar.hidden=true; ttsLabel('',false); announce(L3('Ascultă oprit','Listening off','Écoute arrêtée','Ascolto fermato','Escucha detenida','Escuta parada','Hören aus')); }
-    function pauseTTS(){ if(ttsState!=='playing') return; ttsState='paused'; try{ if(SS) SS.cancel(); }catch(e){} ttsReflect(); announce(L3('Pauză','Paused','En pause','In pausa','Pausa','Em pausa','Pausiert')); }
+    /* start (or jump) reading from a specific passage, cancelling any reading already in progress */
+    function ttsStartFrom(el){
+      if(!SS || !el) return false;
+      if(typeof stopAuto==='function') stopAuto();
+      ttsGen++;                                   /* invalidate in-flight utterance callbacks */
+      ttsLangQ=[]; ttsCurEl=null;
+      try{ SS.cancel(); }catch(e){}               /* interrupt the previous reading */
+      ttsClearHi();
+      ttsList=ttsReadList();
+      if(!ttsList.length){ ttsState='off'; if(ttsbar) ttsbar.hidden=true; return false; }
+      var idx=ttsList.indexOf(el);
+      if(idx<0){ var k=el.getAttribute&&el.getAttribute('data-k'); if(k){ for(var i=0;i<ttsList.length;i++){ var li=ttsList[i]; if(li.getAttribute&&li.getAttribute('data-k')===k){ idx=i; break; } } } }
+      if(idx<0) idx=0;
+      ttsIdx=idx;
+      loadVoices();
+      ttsState='playing'; if(ttsbar) ttsbar.hidden=false; ttsReflect();
+      announce(L3('Citesc de aici','Reading from here','Je lis à partir d’ici','Leggo da qui','Leo desde aquí','Leio a partir daqui','Lese ab hier'));
+      ttsSpeak();
+      return true;
+    }
+    function stopTTS(){ ttsState='off'; ttsGen++; ttsKClear(); ttsLangQ=[]; ttsCurEl=null; try{ if(SS) SS.cancel(); }catch(e){} ttsClearHi(); if(ttsbar) ttsbar.hidden=true; ttsLabel('',false); announce(L3('Ascultă oprit','Listening off','Écoute arrêtée','Ascolto fermato','Escucha detenida','Escuta parada','Hören aus')); }
+    function pauseTTS(){ if(ttsState!=='playing') return; ttsState='paused'; ttsGen++; ttsKClear(); try{ if(SS) SS.cancel(); }catch(e){} ttsReflect(); announce(L3('Pauză','Paused','En pause','In pausa','Pausa','Em pausa','Pausiert')); }
     function ttsTogglePlay(){ if(ttsState==='playing') pauseTTS(); else startTTS(); }
     function toggleTTS(){ if(ttsState==='off') startTTS(); else stopTTS(); }
-    function toggleEcho(){ ttsEcho=!ttsEcho; ttsReflect(); announce(ttsEcho?L3('Ecou pornit (a doua limbă)','Echo on (second language)','Écho activé (seconde langue)','Eco attivo (seconda lingua)','Eco activado (segunda lengua)','Eco ativado (segunda língua)','Echo an (zweite Sprache)'):L3('Ecou oprit','Echo off','Écho désactivé','Eco disattivo','Eco desactivado','Eco desativado','Echo aus')); }
+    function toggleEcho(){ ttsEcho=!ttsEcho; ttsReflect(); announce(ttsEcho?L3('Toate limbile, pe pasaj','All languages, per passage','Toutes les langues, par passage','Tutte le lingue, per passaggio','Todas las lenguas, por pasaje','Todas as línguas, por passagem','Alle Sprachen, pro Passage'):L3('O singură limbă','A single language','Une seule langue','Una sola lingua','Una sola lengua','Uma só língua','Eine einzige Sprache')); }
     function ttsStopIfOn(){ if(ttsState==='playing'||ttsState==='paused') stopTTS(); }
     if(ttsPlayBtn) ttsPlayBtn.addEventListener('click',ttsTogglePlay);
     if(ttsStopBtn) ttsStopBtn.addEventListener('click',stopTTS);
@@ -4742,8 +4838,8 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       if(body.classList.contains('lex-open')) return;
       if(e.key==='/'){ e.preventDefault(); openFind(); return; }
       if(e.key==='b'||e.key==='B'){ e.preventDefault(); toggleMarkHere(); return; }
-      var _code=e.code||'', _digit=({Digit1:'ro',Digit2:'en',Digit3:'fr',Digit4:'it',Digit5:'es',Digit6:'pt'})[_code]
-        || (!e.shiftKey?({'1':'ro','2':'en','3':'fr','4':'it','5':'es','6':'pt'})[e.key]:'');
+      var _code=e.code||'', _digit=({Digit1:'ro',Digit2:'en',Digit3:'fr',Digit4:'it',Digit5:'es',Digit6:'pt',Digit7:'de'})[_code]
+        || (!e.shiftKey?({'1':'ro','2':'en','3':'fr','4':'it','5':'es','6':'pt','7':'de'})[e.key]:'');
       if(_digit){
         e.preventDefault();
         if(e.shiftKey) toggleLang(_digit); else setLang(_digit);
