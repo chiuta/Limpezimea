@@ -141,7 +141,7 @@ body.toc-open .scrim{opacity:1; visibility:visible}
 .toc-divider span{font-family:var(--mono); font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--tarn)}
 .toc-divider small{font-family:var(--mono); font-size:.6rem; letter-spacing:.08em; color:var(--faint); margin-top:.15rem}
 .toc-appx .toc-eye,.toc-appx .toc-pt{color:var(--tarn)}
-html:not(.unlocked) .toc-appx{opacity:.6}
+html:not(.unlocked) .toc-appx{opacity:.9}
 html:not(.unlocked) .toc-appx .toc-pt::after{content:" 🔒"; font-size:.7em; opacity:.7}
 
 /* cover */
@@ -414,6 +414,8 @@ body.find-open .find{transform:none}
 mark.hit{background:var(--sel); color:inherit; border-radius:2px; padding:0 .04em;
   box-decoration-break:clone; -webkit-box-decoration-break:clone}
 mark.hit.cur{background:var(--ember); color:var(--bg)}
+:root[data-theme="light"] mark.hit.cur,:root[data-theme="sepia"] mark.hit.cur{color:#fff}
+@media (prefers-color-scheme:light){:root:not([data-theme]) mark.hit.cur{color:#fff}}
 
 /* ---- glossary (Intraductibile / Untranslatables) ---- */
 .lex[hidden]{display:none}

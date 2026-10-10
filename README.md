@@ -45,6 +45,10 @@ Descărcați `index.html` (circa 2,6 MB) și deschideți-l în browser; nu neces
 
 CC0 1.0 Universal (domeniu public) — vezi fișierul LICENSE
 
+## Audit
+
+2026-10-10: verificat în browser (0 erori JS, 0 cereri de rețea; stocare doar `limp.*` în localStorage). Corectat contrastul intrărilor blocate din cuprins. Textul literar și traducerile (inclusiv cele asistate de AI) nu au fost revizuite editorial în acest audit. Pagina nu are politică CSP (meta); nu face apeluri de rețea.
+
 ## Autor
 
 Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
