@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-gFWcj/jgzbO2sq03KjfOMysCfxtwWy2bnlOiz2P7+hs=' 'sha256-cbk2tc9SLU+/gVoYK4nztwed1GJLrJLixINiLJ7WEi4='; style-src 'unsafe-inline'; img-src data: blob:; media-src data: blob:; font-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'; worker-src 'none'">
 <title>Limpezimea — roman · Alexandru-Ionuț Chiuță</title>
 <meta name="description" content="Roman SF în șapte limbi (RO·EN·FR·IT·ES·PT·DE) despre o recordistă, un tău care mănâncă sunetul și amintirea, și grăuntele care e sufletul.">
 <meta name="author" content="Alexandru-Ionuț Chiuță">
@@ -769,7 +770,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
 <body>
 <a class="skip" href="#cap-1"><span class="t-ro">Sari la text</span><span class="t-en">Skip to text</span><span class="t-fr">Aller au texte</span><span class="t-it">Vai al testo</span><span class="t-es">Saltar al texto</span><span class="t-pt">Saltar para o texto</span><span class="t-de">Zum Text springen</span></a>
 <div class="sr" id="status" role="status" aria-live="polite"></div>
-<div class="prog" id="prog" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progress"></div>
+<div role="region" aria-label="Progres lectură / Reading progress"><div class="prog" id="prog" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progress"></div></div>
 <div class="grain" id="grain" aria-hidden="true"></div>
 <div class="dof dof-top" aria-hidden="true"></div>
 <div class="dof dof-bot" aria-hidden="true"></div>
@@ -938,7 +939,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
   </div>
 </div>
 
-<section class="cover" id="cover">
+<section class="cover" id="cover" aria-label="Coperta / Cover">
   <span class="cover-eye"><b><span class="t-ro">roman</span><span class="t-en">a novel</span><span class="t-fr">un roman</span><span class="t-it">un romanzo</span><span class="t-es">una novela</span><span class="t-pt">um romance</span><span class="t-de">ein Roman</span></b> · Alexandru-Ionuț Chiuță</span>
   <h1 class="cover-title"><span class="t-ro">Limpezimea</span><span class="t-en">Limpidity</span><span class="t-fr">La Limpidité</span><span class="t-it">La Limpidità</span><span class="t-es">La Limpidez</span><span class="t-pt">A Limpidez</span><span class="t-de">Die Klarheit</span></h1>
   <p class="cover-by"><span class="t-ro">o culegere de sunete pe cale de dispariție</span><span class="t-en">a gathering of sounds on the verge of extinction</span><span class="t-fr">un recueil de sons en voie de disparition</span><span class="t-it">una raccolta di suoni in via d'estinzione</span><span class="t-es">una colección de sonidos en vías de extinción</span><span class="t-pt">uma coleção de sons em vias de extinção</span><span class="t-de">eine Sammlung aussterbender Klänge</span></p>
@@ -3642,6 +3643,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
   </div>
 </footer>
 
+<div role="region" aria-label="Unelte / Tools">
 <div class="toast" id="toast" aria-live="off">
   <span><span class="t-ro">Reluat de unde ai rămas</span><span class="t-en">Resumed where you left off</span><span class="t-fr">Repris là où vous vous étiez arrêté</span><span class="t-it">Ripreso da dove eri rimasto</span><span class="t-es">Retomado donde lo dejaste</span><span class="t-pt">Retomado onde o deixaste</span><span class="t-de">Wo du aufgehört hast, fortgesetzt</span></span>
   <button id="toastTop"><span class="t-ro">De la capăt</span><span class="t-en">From the start</span><span class="t-fr">Depuis le début</span><span class="t-it">Dall'inizio</span><span class="t-es">Desde el principio</span><span class="t-pt">Desde o início</span><span class="t-de">Von vorn</span></button>
@@ -3660,6 +3662,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     <button class="tb-btn bb-btn" id="bbAuto" aria-label="Redare / Auto-scroll" aria-pressed="false" title="Redare · derulare automată">▷</button>
     <button class="tb-btn bb-btn" id="bbTts" aria-label="Ascultă / Listen" aria-pressed="false" title="Ascultă cartea · voce">▶</button>
   </div>
+</div>
 </div>
 <script>(function(){
   "use strict";
@@ -4058,6 +4061,14 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       for(li=0; li<L.length; li++){ pls=keyedInPane(paneSel(L[li])); for(j=0;j<pls.length;j++) out.push(pls[j]); }
       return out;
     }
+    // when the active language has no hit, tell the reader which other languages do (counts only, DOM untouched)
+    function otherLangHits(fq){
+      var cur=curLang(), all=['ro','en','fr','it','es','pt','de'], out=[], k, j, pls, c, f, i;
+      for(k=0;k<all.length;k++){ if(all[k]===cur) continue; c=0; pls=keyedInPane(paneSel(all[k]));
+        for(j=0;j<pls.length;j++){ f=fold(pls[j].textContent||''); i=0; while((i=f.indexOf(fq,i))>=0){ c++; i+=fq.length; } }
+        if(c>0) out.push(all[k].toUpperCase()+': '+c); }
+      return out.join(', ');
+    }
     function runFind(){
       clearFind();
       var q=findInput?findInput.value.trim():''; if(q.length<2) return;
@@ -4066,7 +4077,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
         var before=el.innerHTML, add=wrapMatches(el,fq,qn);
         if(add>0){ fSaved.push({el:el,html:before}); total+=add; } }
       fHits=$all('mark.hit');
-      if(total>0){ setFCur(0); } else { if(findCount) findCount.textContent='0'; announce(L3('Niciun rezultat','No results','Aucun résultat','Nessun risultato','Ningún resultado','Nenhum resultado','Keine Ergebnisse')); }
+      if(total>0){ setFCur(0); } else { var oth=otherLangHits(fq); if(findCount) findCount.textContent='0'+(oth?' · '+oth:''); if(oth) announce(L3('Niciun rezultat în limba curentă; apare în: ','No results in the current language; found in: ','Aucun résultat dans la langue actuelle ; trouvé en : ','Nessun risultato nella lingua corrente; trovato in: ','Sin resultados en el idioma actual; encontrado en: ','Sem resultados no idioma atual; encontrado em: ','Keine Treffer in der aktuellen Sprache; gefunden in: ')+oth); else announce(L3('Niciun rezultat','No results','Aucun résultat','Nessun risultato','Ningún resultado','Nenhum resultado','Keine Ergebnisse')); }
     }
     function setFCur(i){
       if(!fHits.length) return;

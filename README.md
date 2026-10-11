@@ -47,7 +47,15 @@ CC0 1.0 Universal (domeniu public) — vezi fișierul LICENSE
 
 ## Audit
 
-2026-10-10: verificat în browser (0 erori JS, 0 cereri de rețea; stocare doar `limp.*` în localStorage). Corectat contrastul intrărilor blocate din cuprins. Textul literar și traducerile (inclusiv cele asistate de AI) nu au fost revizuite editorial în acest audit. Pagina nu are politică CSP (meta); nu face apeluri de rețea.
+2026-10-10: verificat în browser (0 erori JS, 0 cereri de rețea; stocare doar `limp.*` în localStorage). Corectat contrastul intrărilor blocate din cuprins. Textul literar și traducerile (inclusiv cele asistate de AI) nu au fost revizuite editorial în acest audit. (Politica CSP a fost adăugată la 2026-10-11, vezi Istoric.)
+
+## Istoric / Changelog
+
+Ultima actualizare: 11 octombrie 2026 (aplicația nu are număr de versiune).
+- Căutarea în text: când nu există rezultate în limba activă, bara arată acum în ce alte limbi apare termenul (de ex. „0 · RO: 70, DE: 30” pentru „tău” în franceză), în loc de un simplu „0”.
+- Accesibilitate: coperta, bara de progres și bara de unelte sunt acum în repere ARIA; axe-core = 0 violări (inclusiv `region`) la 1280 și 360 px.
+- Adăugată politică CSP (`<meta>`: scripturi doar pe bază de hash, `connect-src 'none'`).
+- Textul literar și traducerile nu au fost modificate.
 
 ## Autor
 
