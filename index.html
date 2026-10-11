@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-gFWcj/jgzbO2sq03KjfOMysCfxtwWy2bnlOiz2P7+hs=' 'sha256-cbk2tc9SLU+/gVoYK4nztwed1GJLrJLixINiLJ7WEi4='; style-src 'unsafe-inline'; img-src data: blob:; media-src data: blob:; font-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'; worker-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-gFWcj/jgzbO2sq03KjfOMysCfxtwWy2bnlOiz2P7+hs=' 'sha256-IAJKoBmazJFrgtu8retqsydSBwElXB8WAAznPpYHUTs='; style-src 'unsafe-inline'; img-src data: blob:; media-src data: blob:; font-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'; worker-src 'none'">
 <title>Limpezimea — roman · Alexandru-Ionuț Chiuță</title>
 <meta name="description" content="Roman SF în șapte limbi (RO·EN·FR·IT·ES·PT·DE) despre o recordistă, un tău care mănâncă sunetul și amintirea, și grăuntele care e sufletul.">
 <meta name="author" content="Alexandru-Ionuț Chiuță">
@@ -412,6 +412,19 @@ body.find-open .find{transform:none}
 .find input::placeholder{color:var(--faint); font-style:italic}
 .find-count{font-family:var(--mono); font-size:.7rem; color:var(--soft); white-space:nowrap; min-width:3em; text-align:right}
 .find-nav{padding:.3rem .5rem; font-size:.95rem; line-height:1}
+.find-res{max-width:1140px; margin:auto; padding:0 var(--gut) .55rem; max-height:30vh; overflow:auto}
+.find-res[hidden]{display:none}
+.find-res ul{list-style:none; margin:0; padding:0}
+.fr-it{display:block; width:100%; text-align:left; background:none; border:0; border-top:1px solid var(--rule); color:var(--soft);
+  font-family:var(--serif); font-size:.92rem; line-height:1.45; padding:.4rem .2rem; cursor:pointer}
+.fr-it:hover,.fr-it[aria-current="true"]{color:var(--ink); background:var(--sel)}
+.fr-it b{font-weight:600; color:var(--ink); background:var(--sel); border-radius:2px}
+.fr-n{font-family:var(--mono); font-size:.64rem; color:var(--faint); margin-right:.5em}
+.fr-more{font-family:var(--mono); font-size:.66rem; color:var(--faint); padding:.35rem .2rem 0}
+.fr-oth{display:flex; flex-wrap:wrap; gap:.4rem; align-items:center; font-size:.9rem; color:var(--soft); padding-top:.1rem}
+.fr-oth button{font-family:var(--mono); font-size:.72rem; letter-spacing:.06em; color:var(--ember-ink); background:none;
+  border:1px solid var(--rule); border-radius:5px; padding:.4rem .65rem; cursor:pointer}
+.fr-oth button:hover{border-color:var(--ember); color:var(--ink)}
 mark.hit{background:var(--sel); color:inherit; border-radius:2px; padding:0 .04em;
   box-decoration-break:clone; -webkit-box-decoration-break:clone}
 mark.hit.cur{background:var(--ember); color:var(--bg)}
@@ -498,6 +511,7 @@ body.grain-on .grain{opacity:.55}
   .find input{ font-size:.98rem }
   .find-count{ min-width:2.4em; font-size:.66rem }
   .find-in{ gap:.3rem }
+  .find-res{ max-height:22vh }
 }
 @media (max-width:420px){
   .tb-in{ gap:.24rem; padding:.45rem .8rem }
@@ -836,6 +850,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     <button class="tb-btn find-nav" id="findNext" aria-label="Următor / Next" title="Enter">›</button>
     <button class="tb-btn" id="findClose" aria-label="Close" title="Esc">✕</button>
   </div>
+  <div class="find-res" id="findRes" hidden></div>
 </div>
 
 <nav class="toc" id="toc" aria-label="Contents" inert>
@@ -4038,7 +4053,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     var findBar=$('#find'), findInput=$('#findInput'), findCount=$('#findCount'), findBtn=$('#findBtn');
     var fHits=[], fCur=-1, fSaved=[], fTimer=null;
     function fold(s){ return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
-    function clearFind(){ for(var i=0;i<fSaved.length;i++){ try{ fSaved[i].el.innerHTML=fSaved[i].html; }catch(e){} } fSaved=[]; fHits=[]; fCur=-1; if(findCount) findCount.textContent=''; }
+    function clearFind(){ for(var i=0;i<fSaved.length;i++){ try{ fSaved[i].el.innerHTML=fSaved[i].html; }catch(e){} } fSaved=[]; fHits=[]; fCur=-1; if(findCount) findCount.textContent=''; if(typeof findRes!=='undefined'&&findRes){ findRes.textContent=''; findRes.hidden=true; } }
     function wrapMatches(el, fq, qn){
       var added=0, tw=D.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), arr=[], n;
       while(n=tw.nextNode()){ arr.push(n); }
@@ -4062,13 +4077,44 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       return out;
     }
     // when the active language has no hit, tell the reader which other languages do (counts only, DOM untouched)
-    function otherLangHits(fq){
+    function otherLangList(fq){
       var cur=curLang(), all=['ro','en','fr','it','es','pt','de'], out=[], k, j, pls, c, f, i;
       for(k=0;k<all.length;k++){ if(all[k]===cur) continue; c=0; pls=keyedInPane(paneSel(all[k]));
         for(j=0;j<pls.length;j++){ f=fold(pls[j].textContent||''); i=0; while((i=f.indexOf(fq,i))>=0){ c++; i+=fq.length; } }
-        if(c>0) out.push(all[k].toUpperCase()+': '+c); }
-      return out.join(', ');
+        if(c>0) out.push({l:all[k],c:c}); }
+      return out;
     }
+    function otherLangHits(fq){ return otherLangList(fq).map(function(o){ return o.l.toUpperCase()+': '+o.c; }).join(', '); }
+    /* result list: context snippets (click = jump) and, when the active language has no hit, one-click language buttons */
+    var findRes=$('#findRes');
+    function renderFindRes(oth){
+      if(!findRes) return;
+      findRes.textContent='';
+      if(oth&&oth.length){
+        var box=D.createElement('div'); box.className='fr-oth';
+        box.appendChild(D.createTextNode(L3('Apare în: ','Found in: ','Trouvé en : ','Trovato in: ','Encontrado en: ','Encontrado em: ','Gefunden in: ')));
+        oth.forEach(function(o){ var b=D.createElement('button'); b.type='button'; b.textContent=o.l.toUpperCase()+' · '+o.c;
+          b.setAttribute('aria-label',L3('Treci la ','Switch to ','Passer à ','Passa a ','Cambiar a ','Mudar para ','Wechseln zu ')+o.l.toUpperCase()+' ('+o.c+')');
+          b.addEventListener('click',function(){ setLang(o.l); }); box.appendChild(b); });
+        findRes.appendChild(box); findRes.hidden=false; return;
+      }
+      if(!fHits.length){ findRes.hidden=true; return; }
+      var ul=D.createElement('ul'), max=Math.min(fHits.length,100), i;
+      for(i=0;i<max;i++){ (function(i){
+        var h=fHits[i], pv=h.previousSibling, nx=h.nextSibling, li=D.createElement('li'), b=D.createElement('button');
+        b.type='button'; b.className='fr-it'; b.setAttribute('data-n',i);
+        var n=D.createElement('span'); n.className='fr-n'; n.textContent=(i+1); b.appendChild(n);
+        b.appendChild(D.createTextNode('\u2026'+((pv&&pv.nodeType===3)?pv.nodeValue.slice(-42):'')));
+        var m=D.createElement('b'); m.textContent=h.textContent; b.appendChild(m);
+        b.appendChild(D.createTextNode(((nx&&nx.nodeType===3)?nx.nodeValue.slice(0,42):'')+'\u2026'));
+        b.addEventListener('click',function(){ setFCur(i); });
+        li.appendChild(b); ul.appendChild(li); })(i); }
+      findRes.appendChild(ul);
+      if(fHits.length>max){ var mo=D.createElement('div'); mo.className='fr-more'; mo.textContent='+ '+(fHits.length-max)+' \u2026'; findRes.appendChild(mo); }
+      findRes.hidden=false;
+    }
+    function markFindRes(i){ if(!findRes) return; var a=findRes.querySelector('.fr-it[aria-current]'); if(a) a.removeAttribute('aria-current');
+      var b=findRes.querySelector('.fr-it[data-n="'+i+'"]'); if(b){ b.setAttribute('aria-current','true'); try{ b.scrollIntoView({block:'nearest'}); }catch(e){} } }
     function runFind(){
       clearFind();
       var q=findInput?findInput.value.trim():''; if(q.length<2) return;
@@ -4077,7 +4123,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
         var before=el.innerHTML, add=wrapMatches(el,fq,qn);
         if(add>0){ fSaved.push({el:el,html:before}); total+=add; } }
       fHits=$all('mark.hit');
-      if(total>0){ setFCur(0); } else { var oth=otherLangHits(fq); if(findCount) findCount.textContent='0'+(oth?' · '+oth:''); if(oth) announce(L3('Niciun rezultat în limba curentă; apare în: ','No results in the current language; found in: ','Aucun résultat dans la langue actuelle ; trouvé en : ','Nessun risultato nella lingua corrente; trovato in: ','Sin resultados en el idioma actual; encontrado en: ','Sem resultados no idioma atual; encontrado em: ','Keine Treffer in der aktuellen Sprache; gefunden in: ')+oth); else announce(L3('Niciun rezultat','No results','Aucun résultat','Nessun risultato','Ningún resultado','Nenhum resultado','Keine Ergebnisse')); }
+      if(total>0){ renderFindRes(); setFCur(0); } else { var oth=otherLangHits(fq); renderFindRes(otherLangList(fq)); if(findCount) findCount.textContent='0'+(oth?' · '+oth:''); if(oth) announce(L3('Niciun rezultat în limba curentă; apare în: ','No results in the current language; found in: ','Aucun résultat dans la langue actuelle ; trouvé en : ','Nessun risultato nella lingua corrente; trovato in: ','Sin resultados en el idioma actual; encontrado en: ','Sem resultados no idioma atual; encontrado em: ','Keine Treffer in der aktuellen Sprache; gefunden in: ')+oth); else announce(L3('Niciun rezultat','No results','Aucun résultat','Nessun risultato','Ningún resultado','Nenhum resultado','Keine Ergebnisse')); }
     }
     function setFCur(i){
       if(!fHits.length) return;
@@ -4085,7 +4131,9 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       if(i<0) i=fHits.length-1; if(i>=fHits.length) i=0; fCur=i;
       fHits[i].classList.add('cur');
       if(findCount) findCount.textContent=(i+1)+'/'+fHits.length;
-      window.scrollTo({top:Math.max(0, absTop(fHits[i])-HDR-Math.max(48,(window.innerHeight-HDR)*0.3)), behavior:SMOOTH});
+      markFindRes(i);
+      var fbh=(findBar&&body.classList.contains('find-open'))?findBar.offsetHeight:0;
+      window.scrollTo({top:Math.max(0, absTop(fHits[i])-HDR-fbh-Math.max(48,(window.innerHeight-HDR-fbh)*0.3)), behavior:SMOOTH});
     }
     function openFind(){ if(!findBar) return; findBar.removeAttribute('inert'); body.classList.add('find-open'); if(findBtn) findBtn.setAttribute('aria-expanded','true'); if(findInput){ findInput.focus(); findInput.select(); } }
     function closeFind(){ if(!findBar) return; body.classList.remove('find-open'); if(findBtn) findBtn.setAttribute('aria-expanded','false'); if(findInput) findInput.value=''; clearFind(); findBar.setAttribute('inert',''); }

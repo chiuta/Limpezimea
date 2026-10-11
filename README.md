@@ -15,7 +15,7 @@ Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fiși
 - Comutare între cele 7 limbi (butoane RO / EN / FR / IT / ES / PT / DE); opțiune pentru afișarea mai multor limbi în paralel (butonul „Număr de limbi").
 - Cuprins pe părți și capitole, navigare cu săgeți, paletă de comenzi.
 - Teme: întunecată, luminoasă, sepia, „tău"; mărimea textului pe 5 trepte (A− / A+).
-- Căutare în text, concordanță, glosar de „intraductibile", minimap, mod focus.
+- Căutare în text (listă de rezultate cu context, salt la apariție; dacă termenul nu apare în limba activă, butoane de comutare către limbile unde apare), concordanță, glosar de „intraductibile", minimap, mod focus.
 - Semne de carte și note personale (cu export al marginaliilor).
 - Citat decupabil, textură de „grăunte" peste text, peisaj sonor generativ (Web Audio), derulare automată, „Ascultă" (sinteză vocală a browserului).
 - Poartă anti-spoiler înaintea aparatului critic („gate"), cu deblocare memorată.
@@ -52,6 +52,7 @@ CC0 1.0 Universal (domeniu public) — vezi fișierul LICENSE
 ## Istoric / Changelog
 
 Ultima actualizare: 11 octombrie 2026 (aplicația nu are număr de versiune).
+- Căutare: listă de rezultate cu context (primele 100, clic = salt la apariție) și, la 0 rezultate în limba activă, butoane care comută direct în limba unde termenul apare; derularea ține cont de înălțimea panoului. Hash-urile CSP recalculate.
 - Căutarea în text: când nu există rezultate în limba activă, bara arată acum în ce alte limbi apare termenul (de ex. „0 · RO: 70, DE: 30” pentru „tău” în franceză), în loc de un simplu „0”.
 - Accesibilitate: coperta, bara de progres și bara de unelte sunt acum în repere ARIA; axe-core = 0 violări (inclusiv `region`) la 1280 și 360 px.
 - Adăugată politică CSP (`<meta>`: scripturi doar pe bază de hash, `connect-src 'none'`).
