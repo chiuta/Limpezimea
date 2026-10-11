@@ -51,7 +51,13 @@ CC0 1.0 Universal (domeniu public) — vezi fișierul LICENSE
 
 ## Istoric / Changelog
 
-Ultima actualizare: 11 octombrie 2026 (aplicația nu are număr de versiune).
+Ultima actualizare: 11 octombrie 2026 (runda 7; aplicația nu are număr de versiune).
+
+Runda 7:
+- **Corectat (reprodus înainte, verificat după):** alegeai o limbă (ex. EN), apăsai butonul „Limbi afișate” ca să adaugi o a doua limbă, iar interfața (mesajele de stare precum „Semn adăugat”, `lang` pe `<html>`, căutarea în limba activă) trecea pe română, pentru că RO este mereu prima în ordinea coloanelor. Limba aleasă de cititor rămâne acum cea principală și în modul comparativ (ordinea coloanelor nu s-a schimbat) și este păstrată la reîncărcare. Hash-urile CSP recalculate; axe-core = 0 violări la 1280 și 360 px.
+- Textul literar și traducerile nu au fost modificate; mărimea fișierului (~2,6 MB) este dată de textul în șapte limbi, nu de resurse încorporate, deci nu se poate reduce fără a pierde conținut.
+
+Runda 6:
 - Căutare: listă de rezultate cu context (primele 100, clic = salt la apariție) și, la 0 rezultate în limba activă, butoane care comută direct în limba unde termenul apare; derularea ține cont de înălțimea panoului. Hash-urile CSP recalculate.
 - Căutarea în text: când nu există rezultate în limba activă, bara arată acum în ce alte limbi apare termenul (de ex. „0 · RO: 70, DE: 30” pentru „tău” în franceză), în loc de un simplu „0”.
 - Accesibilitate: coperta, bara de progres și bara de unelte sunt acum în repere ARIA; axe-core = 0 violări (inclusiv `region`) la 1280 și 360 px.

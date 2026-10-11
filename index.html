@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-gFWcj/jgzbO2sq03KjfOMysCfxtwWy2bnlOiz2P7+hs=' 'sha256-IAJKoBmazJFrgtu8retqsydSBwElXB8WAAznPpYHUTs='; style-src 'unsafe-inline'; img-src data: blob:; media-src data: blob:; font-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'; worker-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-gFWcj/jgzbO2sq03KjfOMysCfxtwWy2bnlOiz2P7+hs=' 'sha256-50NmStgE2+i4ABseTFko7sIL7khC9xQ7KMZb7MbjeYY='; style-src 'unsafe-inline'; img-src data: blob:; media-src data: blob:; font-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'; worker-src 'none'">
 <title>Limpezimea — roman · Alexandru-Ionuț Chiuță</title>
 <meta name="description" content="Roman SF în șapte limbi (RO·EN·FR·IT·ES·PT·DE) despre o recordistă, un tău care mănâncă sunetul și amintirea, și grăuntele care e sufletul.">
 <meta name="author" content="Alexandru-Ionuț Chiuță">
@@ -3937,7 +3937,7 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       var one=store.get('limp.lang'); return [ (one==='en'||one==='fr'||one==='it'||one==='es'||one==='pt'||one==='de')?one:'ro' ];
     }
     var langs=readLangs();
-    var baseLang=langs[0]||'ro';
+    var baseLang=(function(){ var one=store.get('limp.lang'); return langs.indexOf(one)>=0 ? one : (langs[0]||'ro'); })();
     function equalizeRows(){
       if(!root.classList.contains('par-on')) return;
       $all('.pane.col [data-k]').forEach(function(el){ el.style.minHeight=''; });
@@ -3996,7 +3996,8 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
       for(k=0;k<ARIA_SEL.length;k++){ var r=ARIA_SEL[k]; $all(r.s).forEach(function(el){ if(r.a) el.setAttribute('aria-label',r.a[i]); if(r.t) el.setAttribute('title',r.t[i]); }); } }
     function applyLangs(){
       langs=orderLangs(langs); if(!langs.length) langs=['ro'];
-      var primary=langs[0];
+      if(langs.indexOf(baseLang)<0) baseLang=langs[0];
+      var primary=baseLang;   /* the language the reader chose stays primary (UI messages, find, root lang) even when other languages are added alongside */
       applyLang(primary);                          /* root lang class follows primary (single-view CSS + saving) */
       if(langs.length<=1){
         root.classList.remove('par-on','cols-2','cols-3','cols-4','cols-5','cols-6','cols-7');
@@ -4037,9 +4038,9 @@ html.lang-de .t-ro{display:none} html.lang-de .t-de{display:inline}
     function announceLangs(){ announce(langs.length>=2 ? ('Comparativ \u00b7 '+labelLangs()) : (langs[0]==='en'?'English':langs[0]==='fr'?'Fran\u00e7ais':langs[0]==='it'?'Italiano':langs[0]==='es'?'Espa\u00f1ol':langs[0]==='pt'?'Portugu\u00eas':langs[0]==='de'?'Deutsch':'Rom\u00e2n\u0103')); }
     function setLang(l){ if(l!=='en'&&l!=='fr'&&l!=='it'&&l!=='es'&&l!=='pt'&&l!=='de') l='ro'; baseLang=l; var a=anchorBlock(); clearPeeks(); langs=[l]; applyLangs(); setHdr(); if(a) restoreAnchor(a); announceLangs(); }
     function toggleLang(l){ if(ALL.indexOf(l)<0) return; var a=anchorBlock(); var i=langs.indexOf(l); if(i>=0){ if(langs.length>1) langs.splice(i,1); } else langs.push(l); clearPeeks(); applyLangs(); setHdr(); if(a) restoreAnchor(a); announceLangs(); }
-    function toggleAll(){ var a=anchorBlock(); langs = (langs.length>=2) ? [langs[0]] : ALL.slice(); clearPeeks(); applyLangs(); setHdr(); if(a) restoreAnchor(a); announce(langs.length>=2?L3('Toate limbile, comparativ','All languages, comparative','Toutes les langues, comparatif','Tutte le lingue, comparativo','Todas las lenguas, comparativo','Todas as línguas, comparativo','Alle Sprachen, vergleichend'):L3('O singur\u0103 limb\u0103','A single language','Une seule langue','Una sola lingua','Una sola lengua','Uma só língua','Eine einzige Sprache')); }
+    function toggleAll(){ var a=anchorBlock(); langs = (langs.length>=2) ? [langs.indexOf(baseLang)>=0?baseLang:langs[0]] : ALL.slice(); clearPeeks(); applyLangs(); setHdr(); if(a) restoreAnchor(a); announce(langs.length>=2?L3('Toate limbile, comparativ','All languages, comparative','Toutes les langues, comparatif','Tutte le lingue, comparativo','Todas las lenguas, comparativo','Todas as línguas, comparativo','Alle Sprachen, vergleichend'):L3('O singur\u0103 limb\u0103','A single language','Une seule langue','Una sola lingua','Una sola lengua','Uma só língua','Eine einzige Sprache')); }
     function cycleCount(){
-      var a=anchorBlock(); baseLang=langs[0]||baseLang; var i;
+      var a=anchorBlock(); if(langs.indexOf(baseLang)<0) baseLang=langs[0]||baseLang; var i;
       if(langs.length>=ALL.length){ langs=[baseLang]; }
       else { for(i=0;i<ALL.length;i++){ if(langs.indexOf(ALL[i])<0){ langs.push(ALL[i]); break; } } }
       clearPeeks(); applyLangs(); setHdr(); if(a) restoreAnchor(a);
