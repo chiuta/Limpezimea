@@ -1,5 +1,7 @@
 # Limpezimea
 
+**Versiune:** 1.0.0 · **Ultima actualizare:** 12 octombrie 2026
+
 Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fișier HTML, în șapte limbi (RO · EN · FR · IT · ES · PT · DE).
 
 **Live:** https://chiuta.github.io/Limpezimea/
@@ -51,7 +53,7 @@ CC0 1.0 Universal (domeniu public) — vezi fișierul LICENSE
 
 ## Istoric / Changelog
 
-Ultima actualizare: 11 octombrie 2026 (runda 7; aplicația nu are număr de versiune).
+- 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație (prima versiune numerotată; în colofonul din subsol, cu etichetă în cele 7 limbi).
 
 Runda 7:
 - **Corectat (reprodus înainte, verificat după):** alegeai o limbă (ex. EN), apăsai butonul „Limbi afișate” ca să adaugi o a doua limbă, iar interfața (mesajele de stare precum „Semn adăugat”, `lang` pe `<html>`, căutarea în limba activă) trecea pe română, pentru că RO este mereu prima în ordinea coloanelor. Limba aleasă de cititor rămâne acum cea principală și în modul comparativ (ordinea coloanelor nu s-a schimbat) și este păstrată la reîncărcare. Hash-urile CSP recalculate; axe-core = 0 violări la 1280 și 360 px.
