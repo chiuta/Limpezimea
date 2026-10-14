@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "slug": "limpezimea",
+  "name": "Limpezimea — roman · Alexandru-Ionuț Chiuță",
+  "version": "1.1.0",
+  "updated": "2026-10-14",
+  "description": "Roman SF în șapte limbi (RO·EN·FR·IT·ES·PT·DE) despre o recordistă, un tău care mănâncă sunetul și amintirea, și grăuntele care e sufletul.",
+  "egress": [],
+  "permissions": [
+    "speechSynthesis",
+    "clipboard",
+    "serviceWorker",
+    "localStorage"
+  ],
+  "storageKeys": [
+    "limp.fs",
+    "limp.lang",
+    "limp.theme",
+    "limp.unlocked"
+  ],
+  "sizeBytes": 2718798,
+  "sha256": "910184acc9b43b6b1c11d2595fa5f4070aaffe2d406251fbaf432d8c386552ea",
+  "csp": {
+    "present": true,
+    "directives": {
+      "default-src": "'none'",
+      "script-src": "sha256×4",
+      "style-src": "'unsafe-inline'",
+      "img-src": "'self' data: blob:",
+      "media-src": "data: blob:",
+      "font-src": "data:",
+      "connect-src": "'none'",
+      "base-uri": "'none'",
+      "form-action": "'none'",
+      "frame-src": "'none'",
+      "object-src": "'none'",
+      "worker-src": "'self'",
+      "manifest-src": "'self'"
+    },
+    "scriptInline": "hash",
+    "connect": "'none'"
+  },
+  "features": {
+    "export": true,
+    "import": true,
+    "i18n": [
+      "ro",
+      "en",
+      "fr",
+      "it",
+      "es",
+      "pt",
+      "de"
+    ],
+    "pwa": {
+      "manifest": true,
+      "serviceWorker": true
+    },
+    "modules": [
+      "core",
+      "label",
+      "bundle"
+    ]
+  },
+  "kit": {
+    "version": "1.0.0",
+    "modules": [
+      "core",
+      "label",
+      "bundle"
+    ]
+  },
+  "selfSerializing": false
+}
