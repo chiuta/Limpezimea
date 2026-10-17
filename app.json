@@ -18,8 +18,8 @@
     "limp.theme",
     "limp.unlocked"
   ],
-  "sizeBytes": 2718533,
-  "sha256": "b7c2663619b3783314e1c54ac384c3b38bb56642498019ceb403c0fb667cc0d4",
+  "sizeBytes": 2720134,
+  "sha256": "1d3bd349fc9ad72321733ed9cd679154bddd8245260dadfb3a23164c3456847a",
   "csp": {
     "present": true,
     "directives": {
