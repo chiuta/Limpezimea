@@ -76,6 +76,6 @@ Runda 6:
 
 Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 
-## English summary
+## Rezumat
 
-Limpezimea ("Limpidity") is a science-fiction novel by Alexandru-Ionuț Chiuță, packaged as a single offline HTML reading edition in seven languages (RO, EN, FR, IT, ES, PT, DE) with a critical apparatus partly written with AI assistance (Claude). Features: parallel languages, themes, search, bookmarks and notes, soundscape, focus mode. No network requests; preferences stored in localStorage (`limp.*`). MIT licence.
+Limpezimea este un roman științifico-fantastic de Alexandru-Ionuț Chiuță, ambalat ca ediție de lectură offline într-un singur fișier HTML, în șapte limbi (RO, EN, FR, IT, ES, PT, DE), cu un aparat critic scris parțial cu asistență AI (Claude). Funcții: limbi paralele, teme, căutare, semne de carte și notițe, peisaj sonor, mod de concentrare. Fără cereri de rețea; preferințele se păstrează în localStorage (`limp.*`). Licență MIT.
