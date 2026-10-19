@@ -10,7 +10,7 @@ Romanzo di fantascienza di Alexandru-Ionuț Chiuță, edizione di lettura in un 
 
 **Applicazione online:** https://chiuta.github.io/Limpezimea/
 
-![Schermata](screenshot.png)
+![Schermata](screenshot.it.png)
 
 ## Che cos'è
 

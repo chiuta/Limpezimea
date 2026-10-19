@@ -10,7 +10,7 @@ Alexandru-Ionuț Chiuță sci-fi regénye, olvasókiadás egyetlen HTML-fájlban
 
 **Online alkalmazás:** https://chiuta.github.io/Limpezimea/
 
-![Képernyőkép](screenshot.png)
+![Képernyőkép](screenshot.hu.png)
 
 ## Mi ez
 

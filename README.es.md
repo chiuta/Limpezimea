@@ -10,7 +10,7 @@ Novela de ciencia ficción de Alexandru-Ionuț Chiuță, edición de lectura en 
 
 **Aplicación en línea:** https://chiuta.github.io/Limpezimea/
 
-![Captura de pantalla](screenshot.png)
+![Captura de pantalla](screenshot.es.png)
 
 ## Qué es
 

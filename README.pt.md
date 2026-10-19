@@ -10,7 +10,7 @@ Romance de ficção científica de Alexandru-Ionuț Chiuță, edição de leitur
 
 **Aplicação online:** https://chiuta.github.io/Limpezimea/
 
-![Captura de ecrã](screenshot.png)
+![Captura de ecrã](screenshot.pt.png)
 
 ## O que é
 

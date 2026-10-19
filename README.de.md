@@ -10,7 +10,7 @@ Science-Fiction-Roman von Alexandru-Ionuț Chiuță, Leseausgabe in einer einzig
 
 **Online-App:** https://chiuta.github.io/Limpezimea/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.de.png)
 
 ## Was es ist
 

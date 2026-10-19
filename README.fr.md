@@ -10,7 +10,7 @@ Roman de science-fiction d'Alexandru-Ionuț Chiuță, édition de lecture en un 
 
 **Application en ligne :** https://chiuta.github.io/Limpezimea/
 
-![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.fr.png)
 
 ## Ce que c'est
 

@@ -10,7 +10,7 @@ A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a sin
 
 **Live app:** https://chiuta.github.io/Limpezimea/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.en.png)
 
 ## What it is
 

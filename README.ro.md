@@ -10,7 +10,7 @@ Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fiși
 
 **Live:** https://chiuta.github.io/Limpezimea/
 
-![Captura de ecran](screenshot.png)
+![Captura de ecran](screenshot.ro.png)
 
 ## Ce este
 
