@@ -1,77 +1,75 @@
 # Limpezimea
 
-**Versiune:** 1.1.0 · **Ultima actualizare:** 14 octombrie 2026
+**English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fișier HTML, în șapte limbi (RO · EN · FR · IT · ES · PT · DE).
+**Version:** 1.1.0 · **Last updated:** 2026-10-14
 
-**Live:** https://chiuta.github.io/Limpezimea/
+A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a single HTML file, in seven languages (RO · EN · FR · IT · ES · PT · DE).
 
-![Captura de ecran](screenshot.png)
+**Live app:** https://chiuta.github.io/Limpezimea/
 
-## Ce este
+![Screenshot](screenshot.png)
 
-*Limpezimea* este un roman SF (descrierea din pagină: un tău din Retezat care mănâncă sunetul, ordinea și amintirea). Fișierul `index.html` conține textul complet în română și traduceri în engleză, franceză, italiană, spaniolă, portugheză și germană, plus un aparat critic (cronică, „Tăul Mut", studiu). Conform notei din colofon, aparatul critic a fost scris cu asistență AI (Claude). Aplicația indică 43.359 de cuvinte, aproximativ 241 de minute de lectură.
+## What it is
 
-## Funcții
+*Limpezimea* is a science-fiction novel (the description on the page: a tarn in the Retezat Mountains that eats sound, order and memory). The `index.html` file contains the full text in Romanian and translations into English, French, Italian, Spanish, Portuguese and German, plus a critical apparatus (chronicle, "Tăul Mut", study). According to the note in the colophon, the critical apparatus was written with AI assistance (Claude). The app reports 43,359 words, roughly 241 minutes of reading.
 
-- Comutare între cele 7 limbi (butoane RO / EN / FR / IT / ES / PT / DE); opțiune pentru afișarea mai multor limbi în paralel (butonul „Număr de limbi").
-- Cuprins pe părți și capitole, navigare cu săgeți, paletă de comenzi.
-- Teme: întunecată, luminoasă, sepia, „tău"; mărimea textului pe 5 trepte (A− / A+).
-- Căutare în text (listă de rezultate cu context, salt la apariție; dacă termenul nu apare în limba activă, butoane de comutare către limbile unde apare), concordanță, glosar de „intraductibile", minimap, mod focus.
-- Semne de carte și note personale (cu export al marginaliilor).
-- Citat decupabil, textură de „grăunte" peste text, peisaj sonor generativ (Web Audio), derulare automată, „Ascultă" (sinteză vocală a browserului).
-- Poartă anti-spoiler înaintea aparatului critic („gate"), cu deblocare memorată.
-- Atașare la accesibilitate: link „Sari la text", regiune ARIA live, respectarea preferinței pentru mișcare redusă.
+## Features
 
-## Manual de utilizare
+- Switching between the 7 languages (RO / EN / FR / IT / ES / PT / DE buttons); an option to display several languages in parallel (the "Number of languages" button).
+- Table of contents by parts and chapters, arrow-key navigation, command palette.
+- Themes: dark, light, sepia, "tarn"; text size in 5 steps (A− / A+).
+- Full-text search (results list with context, jump to the occurrence; if the term does not appear in the active language, buttons to switch to the languages where it does), concordance, glossary of "untranslatables", minimap, focus mode.
+- Bookmarks and personal notes (with export of the marginalia).
+- Cuttable quotation, "grain" texture over the text, generative soundscape (Web Audio), auto-scroll, "Listen" (the browser's speech synthesis).
+- Anti-spoiler gate in front of the critical apparatus ("gate"), with the unlock remembered.
+- Accessibility support: "Skip to text" link, ARIA live region, respect for the reduced-motion preference.
 
-1. Deschideți pagina; alegeți limba din butoanele RO … DE (tastele `1`–`7` aleg limba; `Shift` sau `Ctrl`/`Cmd` + clic, sau apăsare lungă, comută afișarea paralelă).
-2. Deschideți „Cuprins" pentru a sări la un capitol. `←` / `→` sau `k` / `j` trec la capitolul anterior/următor; `Home`, `End`, `PageUp`, `PageDown` derulează.
-3. `/` deschide căutarea; `Ctrl+K` / `Cmd+K` deschide paleta de comenzi; `Esc` închide panourile.
-4. `B` adaugă/scoate un semn de carte la poziția curentă; `N` adaugă o notă; `F` pornește modul focus; `P` schimbă numărul de limbi afișate.
-5. Butonul de temă ciclează temele; A− / A+ schimbă mărimea textului (clic pe „2/5" o resetează).
-6. Butoanele din bara de jos: Comenzi, Intraductibile (glosar), Concordanță, Mod focus, Minimap, Câmp sonor, Grăunte, Redare (derulare automată), Ascultă.
-7. Poziția de citire, semnele și notele se păstrează automat în browser.
+## User guide
 
-## Confidențialitate și rețea
+1. Open the page; choose the language with the RO … DE buttons (keys `1`–`7` choose the language; `Shift` or `Ctrl`/`Cmd` + click, or a long press, toggles parallel display).
+2. Open "Contents" to jump to a chapter. `←` / `→` or `k` / `j` go to the previous/next chapter; `Home`, `End`, `PageUp`, `PageDown` scroll.
+3. `/` opens search; `Ctrl+K` / `Cmd+K` opens the command palette; `Esc` closes the panels.
+4. `B` adds/removes a bookmark at the current position; `N` adds a note; `F` starts focus mode; `P` changes the number of languages displayed.
+5. The theme button cycles through the themes; A− / A+ change the text size (clicking "2/5" resets it).
+6. The buttons in the bottom bar: Commands, Untranslatables (glossary), Concordance, Focus mode, Minimap, Sound field, Grain, Play (auto-scroll), Listen.
+7. The reading position, bookmarks and notes are kept automatically in the browser.
 
-- Aplicația nu face apeluri de rețea (fără `fetch`, CDN-uri sau resurse externe); colofonul afirmă „fără urmărire, fără conturi".
-- **Stocare locală (`localStorage`, chei cu prefixul `limp.`):** limba, tema, mărimea textului, poziția de citire, semne de carte, note, preferințe (focus, minimap, grăunte, volum sunet, viteză derulare), starea de deblocare a aparatului critic.
-- „Ascultă" folosește sinteza vocală a browserului/sistemului; comportamentul depinde de acestea.
+## Privacy and network
 
-## Rulare locală / offline
+- The app makes no network calls (no `fetch`, CDNs or external resources); the colophon states "no tracking, no accounts".
+- **Local storage (`localStorage`, keys with the prefix `limp.`):** language, theme, text size, reading position, bookmarks, notes, preferences (focus, minimap, grain, sound volume, scroll speed), the unlock state of the critical apparatus.
+- "Listen" uses the browser's/system's speech synthesis; its behaviour depends on these.
 
-Descărcați `index.html` (circa 2,6 MB) și deschideți-l în browser; nu necesită internet.
+## Running locally / offline
 
-## Licență
+Download `index.html` (about 2.6 MB) and open it in a browser; it does not require internet.
 
-MIT — vezi fișierul LICENSE
+## License
+
+MIT — see the LICENSE file
 
 ## Audit
 
-2026-10-10: verificat în browser (0 erori JS, 0 cereri de rețea; stocare doar `limp.*` în localStorage). Corectat contrastul intrărilor blocate din cuprins. Textul literar și traducerile (inclusiv cele asistate de AI) nu au fost revizuite editorial în acest audit. (Politica CSP a fost adăugată la 2026-10-11, vezi Istoric.)
+2026-10-10: checked in the browser (0 JS errors, 0 network requests; storage only `limp.*` in localStorage). Fixed the contrast of the locked entries in the table of contents. The literary text and the translations (including the AI-assisted ones) were not editorially reviewed in this audit. (The CSP policy was added on 2026-10-11, see History.)
 
-## Istoric / Changelog
+## History / Changelog
 
-- 1.1.0 — 2026-10-14: Copie de rezervă și etichetare date (fff-kit).
+- 1.1.0 — 2026-10-14: Backup and data labelling (fff-kit).
 
-- 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație (prima versiune numerotată; în colofonul din subsol, cu etichetă în cele 7 limbi).
+- 1.0.0 — 2026-10-12: the version and the date of the last update are shown in the app (first numbered version; in the footer colophon, labelled in the 7 languages).
 
-Runda 7:
-- **Corectat (reprodus înainte, verificat după):** alegeai o limbă (ex. EN), apăsai butonul „Limbi afișate” ca să adaugi o a doua limbă, iar interfața (mesajele de stare precum „Semn adăugat”, `lang` pe `<html>`, căutarea în limba activă) trecea pe română, pentru că RO este mereu prima în ordinea coloanelor. Limba aleasă de cititor rămâne acum cea principală și în modul comparativ (ordinea coloanelor nu s-a schimbat) și este păstrată la reîncărcare. Hash-urile CSP recalculate; axe-core = 0 violări la 1280 și 360 px.
-- Textul literar și traducerile nu au fost modificate; mărimea fișierului (~2,6 MB) este dată de textul în șapte limbi, nu de resurse încorporate, deci nu se poate reduce fără a pierde conținut.
+Round 7:
+- **Fixed (reproduced before, verified after):** you chose a language (e.g. EN), pressed the "Languages displayed" button to add a second language, and the interface (status messages such as "Bookmark added", `lang` on `<html>`, search in the active language) switched to Romanian, because RO is always first in the column order. The language chosen by the reader now remains the main one in comparative mode as well (the column order did not change) and is kept on reload. CSP hashes recalculated; axe-core = 0 violations at 1280 and 360 px.
+- The literary text and the translations were not modified; the file size (~2.6 MB) comes from the text in seven languages, not from embedded resources, so it cannot be reduced without losing content.
 
-Runda 6:
-- Căutare: listă de rezultate cu context (primele 100, clic = salt la apariție) și, la 0 rezultate în limba activă, butoane care comută direct în limba unde termenul apare; derularea ține cont de înălțimea panoului. Hash-urile CSP recalculate.
-- Căutarea în text: când nu există rezultate în limba activă, bara arată acum în ce alte limbi apare termenul (de ex. „0 · RO: 70, DE: 30” pentru „tău” în franceză), în loc de un simplu „0”.
-- Accesibilitate: coperta, bara de progres și bara de unelte sunt acum în repere ARIA; axe-core = 0 violări (inclusiv `region`) la 1280 și 360 px.
-- Adăugată politică CSP (`<meta>`: scripturi doar pe bază de hash, `connect-src 'none'`).
-- Textul literar și traducerile nu au fost modificate.
+Round 6:
+- Search: results list with context (first 100, click = jump to the occurrence) and, at 0 results in the active language, buttons that switch directly to the language where the term appears; scrolling takes the panel height into account. CSP hashes recalculated.
+- Text search: when there are no results in the active language, the bar now shows in which other languages the term appears (e.g. "0 · RO: 70, DE: 30" for "tău" in French), instead of a plain "0".
+- Accessibility: the cover, the progress bar and the toolbar are now in ARIA landmarks; axe-core = 0 violations (including `region`) at 1280 and 360 px.
+- Added a CSP policy (`<meta>`: scripts by hash only, `connect-src 'none'`).
+- The literary text and the translations were not modified.
 
-## Autor
+## Author
 
 Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
-
-## English summary
-
-Limpezimea ("Limpidity") is a science-fiction novel by Alexandru-Ionuț Chiuță, packaged as a single offline HTML reading edition in seven languages (RO, EN, FR, IT, ES, PT, DE) with a critical apparatus partly written with AI assistance (Claude). Features: parallel languages, themes, search, bookmarks and notes, soundscape, focus mode. No network requests; preferences stored in localStorage (`limp.*`). MIT licence.
