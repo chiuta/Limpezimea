@@ -2,7 +2,9 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.1.0 · **Last updated:** 2026-10-14
+**Version:** 1.2.0 · **Last updated:** 2026-10-19
+
+Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a single HTML file, in seven languages (RO · EN · FR · IT · ES · PT · DE).
 
@@ -16,7 +18,7 @@ A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a sin
 
 ## Features
 
-- Switching between the 7 languages (RO / EN / FR / IT / ES / PT / DE buttons); an option to display several languages in parallel (the "Number of languages" button).
+- Switching between the 8 languages (RO / EN / FR / IT / ES / PT / DE / HU buttons; the novel itself is in the first seven, in Hungarian only the interface is translated and the text is shown in English); an option to display several languages in parallel (the "Number of languages" button).
 - Table of contents by parts and chapters, arrow-key navigation, command palette.
 - Themes: dark, light, sepia, "tarn"; text size in 5 steps (A− / A+).
 - Full-text search (results list with context, jump to the occurrence; if the term does not appear in the active language, buttons to switch to the languages where it does), concordance, glossary of "untranslatables", minimap, focus mode.
@@ -27,7 +29,7 @@ A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a sin
 
 ## User guide
 
-1. Open the page; choose the language with the RO … DE buttons (keys `1`–`7` choose the language; `Shift` or `Ctrl`/`Cmd` + click, or a long press, toggles parallel display).
+1. Open the page; choose the language with the RO … HU buttons (keys `1`–`8` choose the language; `Shift` or `Ctrl`/`Cmd` + click, or a long press, toggles parallel display).
 2. Open "Contents" to jump to a chapter. `←` / `→` or `k` / `j` go to the previous/next chapter; `Home`, `End`, `PageUp`, `PageDown` scroll.
 3. `/` opens search; `Ctrl+K` / `Cmd+K` opens the command palette; `Esc` closes the panels.
 4. `B` adds/removes a bookmark at the current position; `N` adds a note; `F` starts focus mode; `P` changes the number of languages displayed.

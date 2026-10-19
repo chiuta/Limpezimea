@@ -2,7 +2,9 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.1.0 · **Ultima actualizare:** 2026-10-14
+**Versiune:** 1.2.0 · **Ultima actualizare:** 2026-10-19
+
+Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fișier HTML, în șapte limbi (RO · EN · FR · IT · ES · PT · DE).
 
@@ -16,7 +18,7 @@ Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fiși
 
 ## Funcții
 
-- Comutare între cele 7 limbi (butoane RO / EN / FR / IT / ES / PT / DE); opțiune pentru afișarea mai multor limbi în paralel (butonul „Număr de limbi").
+- Comutare între cele 8 limbi (butoane RO / EN / FR / IT / ES / PT / DE / HU; romanul este tradus în primele șapte, în maghiară este tradusă doar interfața, iar textul se afișează în engleză); opțiune pentru afișarea mai multor limbi în paralel (butonul „Număr de limbi").
 - Cuprins pe părți și capitole, navigare cu săgeți, paletă de comenzi.
 - Teme: întunecată, luminoasă, sepia, „tău"; mărimea textului pe 5 trepte (A− / A+).
 - Căutare în text (listă de rezultate cu context, salt la apariție; dacă termenul nu apare în limba activă, butoane de comutare către limbile unde apare), concordanță, glosar de „intraductibile", minimap, mod focus.
@@ -27,7 +29,7 @@ Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fiși
 
 ## Manual de utilizare
 
-1. Deschideți pagina; alegeți limba din butoanele RO … DE (tastele `1`–`7` aleg limba; `Shift` sau `Ctrl`/`Cmd` + clic, sau apăsare lungă, comută afișarea paralelă).
+1. Deschideți pagina; alegeți limba din butoanele RO … HU (tastele `1`–`8` aleg limba; `Shift` sau `Ctrl`/`Cmd` + clic, sau apăsare lungă, comută afișarea paralelă).
 2. Deschideți „Cuprins" pentru a sări la un capitol. `←` / `→` sau `k` / `j` trec la capitolul anterior/următor; `Home`, `End`, `PageUp`, `PageDown` derulează.
 3. `/` deschide căutarea; `Ctrl+K` / `Cmd+K` deschide paleta de comenzi; `Esc` închide panourile.
 4. `B` adaugă/scoate un semn de carte la poziția curentă; `N` adaugă o notă; `F` pornește modul focus; `P` schimbă numărul de limbi afișate.

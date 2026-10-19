@@ -2,7 +2,9 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.1.0 · **Dernière mise à jour :** 2026-10-14
+**Version :** 1.2.0 · **Dernière mise à jour :** 2026-10-19
+
+Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 Roman de science-fiction d'Alexandru-Ionuț Chiuță, édition de lecture en un seul fichier HTML, en sept langues (RO · EN · FR · IT · ES · PT · DE).
 
@@ -16,7 +18,7 @@ Roman de science-fiction d'Alexandru-Ionuț Chiuță, édition de lecture en un 
 
 ## Fonctionnalités
 
-- Bascule entre les 7 langues (boutons RO / EN / FR / IT / ES / PT / DE) ; option d'affichage de plusieurs langues en parallèle (bouton « Nombre de langues »).
+- Bascule entre les 8 langues (boutons RO / EN / FR / IT / ES / PT / DE / HU ; le roman est traduit dans les sept premières, en hongrois seule l'interface est traduite et le texte s'affiche en anglais) ; option d'affichage de plusieurs langues en parallèle (bouton « Nombre de langues »).
 - Table des matières par parties et chapitres, navigation aux flèches, palette de commandes.
 - Thèmes : sombre, clair, sépia, « tarn » ; taille du texte en 5 paliers (A− / A+).
 - Recherche dans le texte (liste de résultats avec contexte, saut à l'occurrence ; si le terme n'apparaît pas dans la langue active, boutons de bascule vers les langues où il apparaît), concordance, glossaire des « intraduisibles », minicarte, mode focus.
@@ -27,7 +29,7 @@ Roman de science-fiction d'Alexandru-Ionuț Chiuță, édition de lecture en un 
 
 ## Mode d'emploi
 
-1. Ouvrez la page ; choisissez la langue avec les boutons RO … DE (les touches `1`–`7` choisissent la langue ; `Shift` ou `Ctrl`/`Cmd` + clic, ou appui long, bascule l'affichage parallèle).
+1. Ouvrez la page ; choisissez la langue avec les boutons RO … HU (les touches `1`–`8` choisissent la langue ; `Shift` ou `Ctrl`/`Cmd` + clic, ou appui long, bascule l'affichage parallèle).
 2. Ouvrez « Sommaire » pour sauter à un chapitre. `←` / `→` ou `k` / `j` passent au chapitre précédent/suivant ; `Home`, `End`, `PageUp`, `PageDown` font défiler.
 3. `/` ouvre la recherche ; `Ctrl+K` / `Cmd+K` ouvre la palette de commandes ; `Esc` ferme les panneaux.
 4. `B` ajoute/retire un signet à la position courante ; `N` ajoute une note ; `F` lance le mode focus ; `P` change le nombre de langues affichées.

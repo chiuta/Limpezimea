@@ -2,7 +2,9 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.1.0 · **Última actualización:** 2026-10-14
+**Versión:** 1.2.0 · **Última actualización:** 2026-10-19
+
+Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 Novela de ciencia ficción de Alexandru-Ionuț Chiuță, edición de lectura en un único archivo HTML, en siete idiomas (RO · EN · FR · IT · ES · PT · DE).
 
@@ -16,7 +18,7 @@ Novela de ciencia ficción de Alexandru-Ionuț Chiuță, edición de lectura en 
 
 ## Funciones
 
-- Cambio entre los 7 idiomas (botones RO / EN / FR / IT / ES / PT / DE); opción para mostrar varios idiomas en paralelo (botón «Número de idiomas»).
+- Cambio entre los 8 idiomas (botones RO / EN / FR / IT / ES / PT / DE / HU; la novela está traducida a los siete primeros, en húngaro solo se traduce la interfaz y el texto se muestra en inglés); opción para mostrar varios idiomas en paralelo (botón «Número de idiomas»).
 - Índice por partes y capítulos, navegación con flechas, paleta de comandos.
 - Temas: oscuro, claro, sepia, «lago»; tamaño del texto en 5 niveles (A− / A+).
 - Búsqueda en el texto (lista de resultados con contexto, salto a la aparición; si el término no aparece en el idioma activo, botones para cambiar a los idiomas donde sí aparece), concordancia, glosario de «intraducibles», minimapa, modo enfoque.
@@ -27,7 +29,7 @@ Novela de ciencia ficción de Alexandru-Ionuț Chiuță, edición de lectura en 
 
 ## Manual de uso
 
-1. Abra la página; elija el idioma con los botones RO … DE (las teclas `1`–`7` eligen el idioma; `Shift` o `Ctrl`/`Cmd` + clic, o una pulsación larga, alterna la visualización en paralelo).
+1. Abra la página; elija el idioma con los botones RO … HU (las teclas `1`–`8` eligen el idioma; `Shift` o `Ctrl`/`Cmd` + clic, o una pulsación larga, alterna la visualización en paralelo).
 2. Abra «Índice» para saltar a un capítulo. `←` / `→` o `k` / `j` pasan al capítulo anterior/siguiente; `Home`, `End`, `PageUp`, `PageDown` desplazan el texto.
 3. `/` abre la búsqueda; `Ctrl+K` / `Cmd+K` abre la paleta de comandos; `Esc` cierra los paneles.
 4. `B` añade/quita un marcador en la posición actual; `N` añade una nota; `F` activa el modo enfoque; `P` cambia el número de idiomas mostrados.

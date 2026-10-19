@@ -2,7 +2,9 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.1.0 · **Zuletzt aktualisiert:** 2026-10-14
+**Version:** 1.2.0 · **Zuletzt aktualisiert:** 2026-10-19
+
+Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 Science-Fiction-Roman von Alexandru-Ionuț Chiuță, Leseausgabe in einer einzigen HTML-Datei, in sieben Sprachen (RO · EN · FR · IT · ES · PT · DE).
 
@@ -16,7 +18,7 @@ Science-Fiction-Roman von Alexandru-Ionuț Chiuță, Leseausgabe in einer einzig
 
 ## Funktionen
 
-- Umschalten zwischen den 7 Sprachen (Schaltflächen RO / EN / FR / IT / ES / PT / DE); Option zur parallelen Anzeige mehrerer Sprachen (Schaltfläche „Anzahl der Sprachen“).
+- Umschalten zwischen den 8 Sprachen (Schaltflächen RO / EN / FR / IT / ES / PT / DE / HU; der Roman liegt in den ersten sieben vor, auf Ungarisch ist nur die Oberfläche übersetzt und der Text erscheint auf Englisch); Option zur parallelen Anzeige mehrerer Sprachen (Schaltfläche „Anzahl der Sprachen“).
 - Inhaltsverzeichnis nach Teilen und Kapiteln, Navigation mit Pfeiltasten, Befehlspalette.
 - Designs: dunkel, hell, Sepia, „See“; Textgröße in 5 Stufen (A− / A+).
 - Volltextsuche (Trefferliste mit Kontext, Sprung zum Vorkommen; erscheint der Begriff in der aktiven Sprache nicht, gibt es Schaltflächen zum Wechsel in die Sprachen, in denen er vorkommt), Konkordanz, Glossar der „Unübersetzbaren“, Minimap, Fokusmodus.
@@ -27,7 +29,7 @@ Science-Fiction-Roman von Alexandru-Ionuț Chiuță, Leseausgabe in einer einzig
 
 ## Bedienungsanleitung
 
-1. Öffne die Seite; wähle die Sprache mit den Schaltflächen RO … DE (die Tasten `1`–`7` wählen die Sprache; `Shift` oder `Ctrl`/`Cmd` + Klick oder langes Drücken schaltet die Parallelanzeige um).
+1. Öffne die Seite; wähle die Sprache mit den Schaltflächen RO … HU (die Tasten `1`–`8` wählen die Sprache; `Shift` oder `Ctrl`/`Cmd` + Klick oder langes Drücken schaltet die Parallelanzeige um).
 2. Öffne „Inhalt“, um zu einem Kapitel zu springen. `←` / `→` oder `k` / `j` wechseln zum vorherigen/nächsten Kapitel; `Home`, `End`, `PageUp`, `PageDown` scrollen.
 3. `/` öffnet die Suche; `Ctrl+K` / `Cmd+K` öffnet die Befehlspalette; `Esc` schließt die Felder.
 4. `B` setzt/entfernt ein Lesezeichen an der aktuellen Position; `N` fügt eine Notiz hinzu; `F` startet den Fokusmodus; `P` ändert die Anzahl der angezeigten Sprachen.

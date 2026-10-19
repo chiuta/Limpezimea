@@ -2,7 +2,9 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.1.0 · **Ultimo aggiornamento:** 2026-10-14
+**Versione:** 1.2.0 · **Ultimo aggiornamento:** 2026-10-19
+
+Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 Romanzo di fantascienza di Alexandru-Ionuț Chiuță, edizione di lettura in un unico file HTML, in sette lingue (RO · EN · FR · IT · ES · PT · DE).
 
@@ -16,7 +18,7 @@ Romanzo di fantascienza di Alexandru-Ionuț Chiuță, edizione di lettura in un 
 
 ## Funzioni
 
-- Passaggio tra le 7 lingue (pulsanti RO / EN / FR / IT / ES / PT / DE); opzione per mostrare più lingue in parallelo (pulsante «Numero di lingue»).
+- Passaggio tra le 8 lingue (pulsanti RO / EN / FR / IT / ES / PT / DE / HU; il romanzo è tradotto nelle prime sette, in ungherese è tradotta solo l'interfaccia e il testo è mostrato in inglese); opzione per mostrare più lingue in parallelo (pulsante «Numero di lingue»).
 - Indice per parti e capitoli, navigazione con le frecce, tavolozza dei comandi.
 - Temi: scuro, chiaro, seppia, «lago»; dimensione del testo su 5 livelli (A− / A+).
 - Ricerca nel testo (elenco dei risultati con contesto, salto all'occorrenza; se il termine non compare nella lingua attiva, pulsanti per passare alle lingue in cui compare), concordanza, glossario degli «intraducibili», minimappa, modalità focus.
@@ -27,7 +29,7 @@ Romanzo di fantascienza di Alexandru-Ionuț Chiuță, edizione di lettura in un 
 
 ## Guida all'uso
 
-1. Aprite la pagina; scegliete la lingua con i pulsanti RO … DE (i tasti `1`–`7` scelgono la lingua; `Shift` o `Ctrl`/`Cmd` + clic, oppure una pressione prolungata, attiva/disattiva la visualizzazione in parallelo).
+1. Aprite la pagina; scegliete la lingua con i pulsanti RO … HU (i tasti `1`–`8` scelgono la lingua; `Shift` o `Ctrl`/`Cmd` + clic, oppure una pressione prolungata, attiva/disattiva la visualizzazione in parallelo).
 2. Aprite «Indice» per saltare a un capitolo. `←` / `→` oppure `k` / `j` passano al capitolo precedente/successivo; `Home`, `End`, `PageUp`, `PageDown` scorrono.
 3. `/` apre la ricerca; `Ctrl+K` / `Cmd+K` apre la tavolozza dei comandi; `Esc` chiude i pannelli.
 4. `B` aggiunge/rimuove un segnalibro nella posizione corrente; `N` aggiunge una nota; `F` avvia la modalità focus; `P` cambia il numero di lingue visualizzate.

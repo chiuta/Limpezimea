@@ -2,7 +2,9 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.1.0 · **Utolsó frissítés:** 2026-10-14
+**Verzió:** 1.2.0 · **Utolsó frissítés:** 2026-10-19
+
+A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 Alexandru-Ionuț Chiuță sci-fi regénye, olvasókiadás egyetlen HTML-fájlban, hét nyelven (RO · EN · FR · IT · ES · PT · DE).
 
@@ -16,7 +18,7 @@ A *Limpezimea* egy sci-fi regény (az oldalon szereplő leírás szerint: egy re
 
 ## Funkciók
 
-- Váltás a 7 nyelv között (RO / EN / FR / IT / ES / PT / DE gombok); lehetőség több nyelv párhuzamos megjelenítésére („Nyelvek száma” gomb).
+- Váltás a 8 nyelv között (RO / EN / FR / IT / ES / PT / DE / HU gombok; a regény az első hét nyelven olvasható, magyarul csak a felület van lefordítva, a szöveg angolul jelenik meg); lehetőség több nyelv párhuzamos megjelenítésére („Nyelvek száma” gomb).
 - Tartalomjegyzék részek és fejezetek szerint, nyilakkal való navigáció, parancspaletta.
 - Témák: sötét, világos, szépia, „tó”; szövegméret 5 fokozatban (A− / A+).
 - Keresés a szövegben (találati lista környezettel, ugrás az előfordulásra; ha a kifejezés nem szerepel az aktív nyelvben, gombok a váltáshoz azokra a nyelvekre, ahol megtalálható), konkordancia, a „lefordíthatatlanok” szószedete, minitérkép, fókusz mód.
@@ -27,7 +29,7 @@ A *Limpezimea* egy sci-fi regény (az oldalon szereplő leírás szerint: egy re
 
 ## Használati útmutató
 
-1. Nyisd meg az oldalt; válaszd ki a nyelvet az RO … DE gombokkal (az `1`–`7` billentyűk választják a nyelvet; a `Shift` vagy `Ctrl`/`Cmd` + kattintás, illetve a hosszú nyomás kapcsolja a párhuzamos megjelenítést).
+1. Nyisd meg az oldalt; válaszd ki a nyelvet az RO … HU gombokkal (az `1`–`8` billentyűk választják a nyelvet; a `Shift` vagy `Ctrl`/`Cmd` + kattintás, illetve a hosszú nyomás kapcsolja a párhuzamos megjelenítést).
 2. Nyisd meg a „Tartalomjegyzék”-et, hogy egy fejezetre ugorj. A `←` / `→` vagy a `k` / `j` az előző/következő fejezetre lép; a `Home`, `End`, `PageUp`, `PageDown` görget.
 3. A `/` megnyitja a keresést; a `Ctrl+K` / `Cmd+K` megnyitja a parancspalettát; az `Esc` bezárja a paneleket.
 4. A `B` felvesz/töröl egy könyvjelzőt az aktuális pozíción; az `N` jegyzetet ad hozzá; az `F` elindítja a fókusz módot; a `P` módosítja a megjelenített nyelvek számát.
