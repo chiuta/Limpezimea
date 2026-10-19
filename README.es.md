@@ -76,6 +76,6 @@ Ronda 6:
 
 Alexio — Alexandru-Ionuț Chiuță. Contacto: alexio@trom.tf
 
-## Resumen en inglés
+## Resumen
 
 Limpezimea («Limpidez») es una novela de ciencia ficción de Alexandru-Ionuț Chiuță, empaquetada como una edición de lectura sin conexión en un único archivo HTML, en siete idiomas (RO, EN, FR, IT, ES, PT, DE), con un aparato crítico escrito en parte con ayuda de IA (Claude). Funciones: idiomas en paralelo, temas, búsqueda, marcadores y notas, paisaje sonoro, modo enfoque. Sin solicitudes de red; preferencias guardadas en localStorage (`limp.*`). Licencia MIT.

@@ -76,6 +76,5 @@ Runde 6:
 
 Alexio — Alexandru-Ionuț Chiuță. Kontakt: alexio@trom.tf
 
-## Zusammenfassung auf Englisch
-
+## Zusammenfassung
 Limpezimea („Klarheit“) ist ein Science-Fiction-Roman von Alexandru-Ionuț Chiuță, als Offline-Leseausgabe in einer einzigen HTML-Datei in sieben Sprachen (RO, EN, FR, IT, ES, PT, DE) verpackt, mit einem kritischen Apparat, der teilweise mit KI-Unterstützung (Claude) verfasst wurde. Funktionen: parallele Sprachen, Designs, Suche, Lesezeichen und Notizen, Klanglandschaft, Fokusmodus. Keine Netzwerkanfragen; Einstellungen werden in localStorage (`limp.*`) gespeichert. MIT-Lizenz.

@@ -76,6 +76,5 @@ Tour 6 :
 
 Alexio — Alexandru-Ionuț Chiuță. Contact : alexio@trom.tf
 
-## Résumé en anglais
-
+## Résumé
 Limpezimea (« Limpidité ») est un roman de science-fiction d'Alexandru-Ionuț Chiuță, présenté comme une édition de lecture hors ligne en un seul fichier HTML, en sept langues (RO, EN, FR, IT, ES, PT, DE), avec un appareil critique en partie rédigé avec l'aide de l'IA (Claude). Fonctionnalités : langues en parallèle, thèmes, recherche, signets et notes, paysage sonore, mode focus. Aucune requête réseau ; préférences stockées dans localStorage (`limp.*`). Licence MIT.

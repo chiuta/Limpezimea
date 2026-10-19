@@ -76,6 +76,5 @@ Giro 6:
 
 Alexio — Alexandru-Ionuț Chiuță. Contatto: alexio@trom.tf
 
-## Riepilogo in inglese
-
+## Riepilogo
 Limpezimea («Limpidezza») è un romanzo di fantascienza di Alexandru-Ionuț Chiuță, confezionato come edizione di lettura offline in un unico file HTML, in sette lingue (RO, EN, FR, IT, ES, PT, DE), con un apparato critico in parte scritto con l'assistenza dell'IA (Claude). Funzioni: lingue in parallelo, temi, ricerca, segnalibri e note, paesaggio sonoro, modalità focus. Nessuna richiesta di rete; preferenze salvate in localStorage (`limp.*`). Licenza MIT.
