@@ -6,7 +6,7 @@
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
-Alexandru-Ionuț Chiuță sci-fi regénye, olvasókiadás egyetlen HTML-fájlban, hét nyelven (RO · EN · FR · IT · ES · PT · DE).
+Alexandru-Ionuț Chiuță sci-fi regénye, olvasókiadás egyetlen HTML-fájlban, nyolc nyelven (RO · EN · FR · IT · ES · PT · DE · HU).
 
 **Online alkalmazás:** https://chiuta.github.io/Limpezimea/
 
@@ -14,11 +14,11 @@ Alexandru-Ionuț Chiuță sci-fi regénye, olvasókiadás egyetlen HTML-fájlban
 
 ## Mi ez
 
-A *Limpezimea* egy sci-fi regény (az oldalon szereplő leírás szerint: egy retyezáti hegyi tó („tău”), amely felfalja a hangot, a rendet és az emlékezetet). Az `index.html` fájl tartalmazza a teljes román szöveget, valamint angol, francia, olasz, spanyol, portugál és német fordításokat, továbbá egy kritikai apparátust (krónika, „Tăul Mut”, tanulmány). A kolofon megjegyzése szerint a kritikai apparátus MI-támogatással (Claude) készült. Az alkalmazás 43 359 szót jelez, nagyjából 241 perc olvasnivalót.
+A *Limpezimea* egy sci-fi regény (az oldalon szereplő leírás szerint: egy retyezáti hegyi tó („tău”), amely felfalja a hangot, a rendet és az emlékezetet). Az `index.html` fájl tartalmazza a teljes román szöveget, valamint angol, francia, olasz, spanyol, portugál, német és magyar fordításokat, továbbá egy kritikai apparátust (krónika, „Tăul Mut”, tanulmány). A kolofon megjegyzése szerint a kritikai apparátus MI-támogatással (Claude) készült. Az alkalmazás 43 359 szót jelez, nagyjából 241 perc olvasnivalót.
 
 ## Funkciók
 
-- Váltás a 8 nyelv között (RO / EN / FR / IT / ES / PT / DE / HU gombok; a regény az első hét nyelven olvasható, magyarul csak a felület van lefordítva, a szöveg angolul jelenik meg); lehetőség több nyelv párhuzamos megjelenítésére („Nyelvek száma” gomb).
+- Váltás a 8 nyelv között (RO / EN / FR / IT / ES / PT / DE / HU gombok; a regény, a krónika, a „Tăul Mut” és a kritikai tanulmány mind a 8 nyelven olvasható); lehetőség több nyelv párhuzamos megjelenítésére („Nyelvek száma” gomb).
 - Tartalomjegyzék részek és fejezetek szerint, nyilakkal való navigáció, parancspaletta.
 - Témák: sötét, világos, szépia, „tó”; szövegméret 5 fokozatban (A− / A+).
 - Keresés a szövegben (találati lista környezettel, ugrás az előfordulásra; ha a kifejezés nem szerepel az aktív nyelvben, gombok a váltáshoz azokra a nyelvekre, ahol megtalálható), konkordancia, a „lefordíthatatlanok” szószedete, minitérkép, fókusz mód.
@@ -57,6 +57,9 @@ MIT — lásd a LICENSE fájlt
 
 ## Előzmények / Changelog
 
+- 1.2.2 — 2026-10-19: a magyar kiadás teljes: a regény (25 fejezet), a krónika (38 elem), a „Tăul Mut” novella (22) és a kritikai tanulmány (31) le van fordítva magyarra, így a teljes tartalom mind a 8 nyelven megvan (korábban magyarul az angol szöveg jelent meg). A magyar szöveg MI segítségével készült, magyar helyesírás-ellenőrző nélkül, és **anyanyelvi beszélő általi lektorálásra szorul**; a szereplők nevei az angol kiadást követik (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). A fájl mérete most kb. 3 MB.
+- 1.2.1 — 2026-10-19: az eszköztár szövegméret-gombjai (A− / A+) üresek voltak, és a hozzáférhető címkéik csak RO/EN nyelven léteztek; most látszik rajtuk az A− és A+, és 8 nyelven van címkéjük.
+
 - 1.1.0 — 2026-10-14: Biztonsági mentés és adatcímkézés (fff-kit).
 
 - 1.0.0 — 2026-10-12: a verzió és az utolsó frissítés dátuma megjelenik az alkalmazásban (első számozott verzió; a lábléc kolofonjában, címkével a 7 nyelven).
@@ -77,4 +80,4 @@ MIT — lásd a LICENSE fájlt
 Alexio — Alexandru-Ionuț Chiuță. Kapcsolat: alexio@trom.tf
 
 ## Összefoglaló
-A Limpezimea („Tisztaság”) Alexandru-Ionuț Chiuță sci-fi regénye, offline olvasókiadásként egyetlen HTML-fájlba csomagolva, hét nyelven (RO, EN, FR, IT, ES, PT, DE), részben MI-támogatással (Claude) írt kritikai apparátussal. Funkciók: párhuzamos nyelvek, témák, keresés, könyvjelzők és jegyzetek, hangtáj, fókusz mód. Nincsenek hálózati kérések; a beállítások a localStorage-ban tárolódnak (`limp.*`). MIT-licenc.
+A Limpezimea („Tisztaság”) Alexandru-Ionuț Chiuță sci-fi regénye, offline olvasókiadásként egyetlen HTML-fájlba csomagolva, nyolc nyelven (RO, EN, FR, IT, ES, PT, DE, HU), részben MI-támogatással (Claude) írt kritikai apparátussal. Funkciók: párhuzamos nyelvek, témák, keresés, könyvjelzők és jegyzetek, hangtáj, fókusz mód. Nincsenek hálózati kérések; a beállítások a localStorage-ban tárolódnak (`limp.*`). MIT-licenc.

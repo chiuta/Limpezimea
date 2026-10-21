@@ -6,7 +6,7 @@
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
-Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fișier HTML, în șapte limbi (RO · EN · FR · IT · ES · PT · DE).
+Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fișier HTML, în opt limbi (RO · EN · FR · IT · ES · PT · DE · HU).
 
 **Live:** https://chiuta.github.io/Limpezimea/
 
@@ -14,11 +14,11 @@ Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fiși
 
 ## Ce este
 
-*Limpezimea* este un roman SF (descrierea din pagină: un tău din Retezat care mănâncă sunetul, ordinea și amintirea). Fișierul `index.html` conține textul complet în română și traduceri în engleză, franceză, italiană, spaniolă, portugheză și germană, plus un aparat critic (cronică, „Tăul Mut", studiu). Conform notei din colofon, aparatul critic a fost scris cu asistență AI (Claude). Aplicația indică 43.359 de cuvinte, aproximativ 241 de minute de lectură.
+*Limpezimea* este un roman SF (descrierea din pagină: un tău din Retezat care mănâncă sunetul, ordinea și amintirea). Fișierul `index.html` conține textul complet în română și traduceri în engleză, franceză, italiană, spaniolă, portugheză, germană și maghiară, plus un aparat critic (cronică, „Tăul Mut", studiu). Conform notei din colofon, aparatul critic a fost scris cu asistență AI (Claude). Aplicația indică 43.359 de cuvinte, aproximativ 241 de minute de lectură.
 
 ## Funcții
 
-- Comutare între cele 8 limbi (butoane RO / EN / FR / IT / ES / PT / DE / HU; romanul este tradus în primele șapte, în maghiară este tradusă doar interfața, iar textul se afișează în engleză); opțiune pentru afișarea mai multor limbi în paralel (butonul „Număr de limbi").
+- Comutare între cele 8 limbi (butoane RO / EN / FR / IT / ES / PT / DE / HU; romanul, cronica, „Tăul Mut” și studiul critic există în toate cele 8 limbi); opțiune pentru afișarea mai multor limbi în paralel (butonul „Număr de limbi").
 - Cuprins pe părți și capitole, navigare cu săgeți, paletă de comenzi.
 - Teme: întunecată, luminoasă, sepia, „tău"; mărimea textului pe 5 trepte (A− / A+).
 - Căutare în text (listă de rezultate cu context, salt la apariție; dacă termenul nu apare în limba activă, butoane de comutare către limbile unde apare), concordanță, glosar de „intraductibile", minimap, mod focus.
@@ -57,6 +57,9 @@ MIT — vezi fișierul LICENSE
 
 ## Istoric / Changelog
 
+- 1.2.2 — 2026-10-19: ediția în maghiară este completă: romanul (25 de capitole), cronica (38 de elemente), povestirea „Tăul Mut” (22) și studiul critic (31) sunt traduse în maghiară, deci tot conținutul există în toate cele 8 limbi (înainte, în maghiară se afișa textul în engleză). Textul maghiar a fost scris cu asistență AI, fără corector ortografic maghiar, și **necesită corectură de către un vorbitor nativ**; numele personajelor urmează ediția engleză (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). Fișierul are acum circa 3 MB.
+- 1.2.1 — 2026-10-19: butoanele pentru mărimea textului (A− / A+) din bara de unelte erau goale și etichetele lor accesibile existau doar în RO/EN; acum afișează A− și A+ și au etichete în 8 limbi.
+
 - 1.1.0 — 2026-10-14: Copie de rezervă și etichetare date (fff-kit).
 
 - 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație (prima versiune numerotată; în colofonul din subsol, cu etichetă în cele 7 limbi).
@@ -78,4 +81,4 @@ Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 
 ## Rezumat
 
-Limpezimea este un roman științifico-fantastic de Alexandru-Ionuț Chiuță, ambalat ca ediție de lectură offline într-un singur fișier HTML, în șapte limbi (RO, EN, FR, IT, ES, PT, DE), cu un aparat critic scris parțial cu asistență AI (Claude). Funcții: limbi paralele, teme, căutare, semne de carte și notițe, peisaj sonor, mod de concentrare. Fără cereri de rețea; preferințele se păstrează în localStorage (`limp.*`). Licență MIT.
+Limpezimea este un roman științifico-fantastic de Alexandru-Ionuț Chiuță, ambalat ca ediție de lectură offline într-un singur fișier HTML, în opt limbi (RO, EN, FR, IT, ES, PT, DE, HU), cu un aparat critic scris parțial cu asistență AI (Claude). Funcții: limbi paralele, teme, căutare, semne de carte și notițe, peisaj sonor, mod de concentrare. Fără cereri de rețea; preferințele se păstrează în localStorage (`limp.*`). Licență MIT.

@@ -6,7 +6,7 @@
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
-Science-Fiction-Roman von Alexandru-Ionuț Chiuță, Leseausgabe in einer einzigen HTML-Datei, in sieben Sprachen (RO · EN · FR · IT · ES · PT · DE).
+Science-Fiction-Roman von Alexandru-Ionuț Chiuță, Leseausgabe in einer einzigen HTML-Datei, in acht Sprachen (RO · EN · FR · IT · ES · PT · DE · HU).
 
 **Online-App:** https://chiuta.github.io/Limpezimea/
 
@@ -14,11 +14,11 @@ Science-Fiction-Roman von Alexandru-Ionuț Chiuță, Leseausgabe in einer einzig
 
 ## Was es ist
 
-*Limpezimea* ist ein Science-Fiction-Roman (die Beschreibung auf der Seite: ein Bergsee („tău“) im Retezat-Gebirge, der Klang, Ordnung und Erinnerung frisst). Die Datei `index.html` enthält den vollständigen Text auf Rumänisch und Übersetzungen ins Englische, Französische, Italienische, Spanische, Portugiesische und Deutsche sowie einen kritischen Apparat (Chronik, „Tăul Mut“, Studie). Laut dem Hinweis im Kolophon wurde der kritische Apparat mit KI-Unterstützung (Claude) verfasst. Die App weist 43.359 Wörter aus, etwa 241 Minuten Lesezeit.
+*Limpezimea* ist ein Science-Fiction-Roman (die Beschreibung auf der Seite: ein Bergsee („tău“) im Retezat-Gebirge, der Klang, Ordnung und Erinnerung frisst). Die Datei `index.html` enthält den vollständigen Text auf Rumänisch und Übersetzungen ins Englische, Französische, Italienische, Spanische, Portugiesische, Deutsche und Ungarische sowie einen kritischen Apparat (Chronik, „Tăul Mut“, Studie). Laut dem Hinweis im Kolophon wurde der kritische Apparat mit KI-Unterstützung (Claude) verfasst. Die App weist 43.359 Wörter aus, etwa 241 Minuten Lesezeit.
 
 ## Funktionen
 
-- Umschalten zwischen den 8 Sprachen (Schaltflächen RO / EN / FR / IT / ES / PT / DE / HU; der Roman liegt in den ersten sieben vor, auf Ungarisch ist nur die Oberfläche übersetzt und der Text erscheint auf Englisch); Option zur parallelen Anzeige mehrerer Sprachen (Schaltfläche „Anzahl der Sprachen“).
+- Umschalten zwischen den 8 Sprachen (Schaltflächen RO / EN / FR / IT / ES / PT / DE / HU; der Roman, die Chronik, „Tăul Mut“ und die kritische Studie liegen in allen 8 Sprachen vor); Option zur parallelen Anzeige mehrerer Sprachen (Schaltfläche „Anzahl der Sprachen“).
 - Inhaltsverzeichnis nach Teilen und Kapiteln, Navigation mit Pfeiltasten, Befehlspalette.
 - Designs: dunkel, hell, Sepia, „See“; Textgröße in 5 Stufen (A− / A+).
 - Volltextsuche (Trefferliste mit Kontext, Sprung zum Vorkommen; erscheint der Begriff in der aktiven Sprache nicht, gibt es Schaltflächen zum Wechsel in die Sprachen, in denen er vorkommt), Konkordanz, Glossar der „Unübersetzbaren“, Minimap, Fokusmodus.
@@ -57,6 +57,9 @@ MIT — siehe Datei LICENSE
 
 ## Verlauf / Changelog
 
+- 1.2.2 — 2026-10-19: Die ungarische Ausgabe ist vollständig: Der Roman (25 Kapitel), die Chronik (38 Einträge), die Erzählung „Tăul Mut“ (22) und die kritische Studie (31) sind ins Ungarische übersetzt, sodass der gesamte Inhalt in allen 8 Sprachen vorliegt (zuvor zeigte Ungarisch den englischen Text). Der ungarische Text wurde mit KI-Unterstützung und ohne ungarische Rechtschreibprüfung verfasst und **muss von einem Muttersprachler Korrektur gelesen werden**; die Figurennamen folgen der englischen Ausgabe (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). Die Datei ist jetzt etwa 3 MB groß.
+- 1.2.1 — 2026-10-19: Die Schaltflächen für die Textgröße (A− / A+) in der Werkzeugleiste waren leer, und ihre zugänglichen Beschriftungen gab es nur auf RO/EN; sie zeigen jetzt A− und A+ und haben Beschriftungen in 8 Sprachen.
+
 - 1.1.0 — 2026-10-14: Datensicherung und Datenkennzeichnung (fff-kit).
 
 - 1.0.0 — 2026-10-12: Version und Datum der letzten Aktualisierung werden in der App angezeigt (erste nummerierte Version; im Kolophon in der Fußzeile, beschriftet in den 7 Sprachen).
@@ -77,4 +80,4 @@ Runde 6:
 Alexio — Alexandru-Ionuț Chiuță. Kontakt: alexio@trom.tf
 
 ## Zusammenfassung
-Limpezimea („Klarheit“) ist ein Science-Fiction-Roman von Alexandru-Ionuț Chiuță, als Offline-Leseausgabe in einer einzigen HTML-Datei in sieben Sprachen (RO, EN, FR, IT, ES, PT, DE) verpackt, mit einem kritischen Apparat, der teilweise mit KI-Unterstützung (Claude) verfasst wurde. Funktionen: parallele Sprachen, Designs, Suche, Lesezeichen und Notizen, Klanglandschaft, Fokusmodus. Keine Netzwerkanfragen; Einstellungen werden in localStorage (`limp.*`) gespeichert. MIT-Lizenz.
+Limpezimea („Klarheit“) ist ein Science-Fiction-Roman von Alexandru-Ionuț Chiuță, als Offline-Leseausgabe in einer einzigen HTML-Datei in acht Sprachen (RO, EN, FR, IT, ES, PT, DE, HU) verpackt, mit einem kritischen Apparat, der teilweise mit KI-Unterstützung (Claude) verfasst wurde. Funktionen: parallele Sprachen, Designs, Suche, Lesezeichen und Notizen, Klanglandschaft, Fokusmodus. Keine Netzwerkanfragen; Einstellungen werden in localStorage (`limp.*`) gespeichert. MIT-Lizenz.

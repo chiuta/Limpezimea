@@ -6,7 +6,7 @@
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
-A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a single HTML file, in seven languages (RO · EN · FR · IT · ES · PT · DE).
+A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a single HTML file, in eight languages (RO · EN · FR · IT · ES · PT · DE · HU).
 
 **Live app:** https://chiuta.github.io/Limpezimea/
 
@@ -14,11 +14,11 @@ A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a sin
 
 ## What it is
 
-*Limpezimea* is a science-fiction novel (the description on the page: a tarn in the Retezat Mountains that eats sound, order and memory). The `index.html` file contains the full text in Romanian and translations into English, French, Italian, Spanish, Portuguese and German, plus a critical apparatus (chronicle, "Tăul Mut", study). According to the note in the colophon, the critical apparatus was written with AI assistance (Claude). The app reports 43,359 words, roughly 241 minutes of reading.
+*Limpezimea* is a science-fiction novel (the description on the page: a tarn in the Retezat Mountains that eats sound, order and memory). The `index.html` file contains the full text in Romanian and translations into English, French, Italian, Spanish, Portuguese, German and Hungarian, plus a critical apparatus (chronicle, "Tăul Mut", study). According to the note in the colophon, the critical apparatus was written with AI assistance (Claude). The app reports 43,359 words, roughly 241 minutes of reading.
 
 ## Features
 
-- Switching between the 8 languages (RO / EN / FR / IT / ES / PT / DE / HU buttons; the novel itself is in the first seven, in Hungarian only the interface is translated and the text is shown in English); an option to display several languages in parallel (the "Number of languages" button).
+- Switching between the 8 languages (RO / EN / FR / IT / ES / PT / DE / HU buttons; the novel, the chronicle, "Tăul Mut" and the critical study exist in all 8 languages); an option to display several languages in parallel (the "Number of languages" button).
 - Table of contents by parts and chapters, arrow-key navigation, command palette.
 - Themes: dark, light, sepia, "tarn"; text size in 5 steps (A− / A+).
 - Full-text search (results list with context, jump to the occurrence; if the term does not appear in the active language, buttons to switch to the languages where it does), concordance, glossary of "untranslatables", minimap, focus mode.
@@ -57,6 +57,9 @@ MIT — see the LICENSE file
 
 ## History / Changelog
 
+- 1.2.2 — 2026-10-19: the Hungarian edition is complete: the novel (25 chapters), the chronicle (38 items), the story "Tăul Mut" (22) and the critical study (31) are translated into Hungarian, so the whole content exists in all 8 languages (before, Hungarian showed the English text). The Hungarian text was written with AI assistance, without a Hungarian spellchecker, and **needs proofreading by a native speaker**; the character names follow the English edition (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). The file is now about 3 MB.
+- 1.2.1 — 2026-10-19: the text-size buttons (A− / A+) in the toolbar were empty and their accessible labels existed only in RO/EN; they now show A− and A+ and have labels in 8 languages.
+
 - 1.1.0 — 2026-10-14: Backup and data labelling (fff-kit).
 
 - 1.0.0 — 2026-10-12: the version and the date of the last update are shown in the app (first numbered version; in the footer colophon, labelled in the 7 languages).
@@ -75,3 +78,7 @@ Round 6:
 ## Author
 
 Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
+
+## Summary
+
+Limpezimea is a science-fiction novel by Alexandru-Ionuț Chiuță, packaged as an offline reading edition in a single HTML file, in eight languages (RO, EN, FR, IT, ES, PT, DE, HU), with a critical apparatus partly written with AI assistance (Claude). Features: parallel languages, themes, search, bookmarks and notes, soundscape, focus mode. No network requests; preferences are kept in localStorage (`limp.*`). MIT licence.

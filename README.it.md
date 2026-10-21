@@ -6,7 +6,7 @@
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
-Romanzo di fantascienza di Alexandru-Ionuț Chiuță, edizione di lettura in un unico file HTML, in sette lingue (RO · EN · FR · IT · ES · PT · DE).
+Romanzo di fantascienza di Alexandru-Ionuț Chiuță, edizione di lettura in un unico file HTML, in otto lingue (RO · EN · FR · IT · ES · PT · DE · HU).
 
 **Applicazione online:** https://chiuta.github.io/Limpezimea/
 
@@ -14,11 +14,11 @@ Romanzo di fantascienza di Alexandru-Ionuț Chiuță, edizione di lettura in un 
 
 ## Che cos'è
 
-*Limpezimea* è un romanzo di fantascienza (la descrizione nella pagina: un lago glaciale («tău») dei monti Retezat che divora il suono, l'ordine e il ricordo). Il file `index.html` contiene il testo completo in rumeno e le traduzioni in inglese, francese, italiano, spagnolo, portoghese e tedesco, oltre a un apparato critico (cronaca, «Tăul Mut», studio). Secondo la nota del colophon, l'apparato critico è stato scritto con l'assistenza dell'IA (Claude). L'applicazione indica 43.359 parole, circa 241 minuti di lettura.
+*Limpezimea* è un romanzo di fantascienza (la descrizione nella pagina: un lago glaciale («tău») dei monti Retezat che divora il suono, l'ordine e il ricordo). Il file `index.html` contiene il testo completo in rumeno e le traduzioni in inglese, francese, italiano, spagnolo, portoghese, tedesco e ungherese, oltre a un apparato critico (cronaca, «Tăul Mut», studio). Secondo la nota del colophon, l'apparato critico è stato scritto con l'assistenza dell'IA (Claude). L'applicazione indica 43.359 parole, circa 241 minuti di lettura.
 
 ## Funzioni
 
-- Passaggio tra le 8 lingue (pulsanti RO / EN / FR / IT / ES / PT / DE / HU; il romanzo è tradotto nelle prime sette, in ungherese è tradotta solo l'interfaccia e il testo è mostrato in inglese); opzione per mostrare più lingue in parallelo (pulsante «Numero di lingue»).
+- Passaggio tra le 8 lingue (pulsanti RO / EN / FR / IT / ES / PT / DE / HU; il romanzo, la cronaca, «Tăul Mut» e lo studio critico esistono in tutte e 8 le lingue); opzione per mostrare più lingue in parallelo (pulsante «Numero di lingue»).
 - Indice per parti e capitoli, navigazione con le frecce, tavolozza dei comandi.
 - Temi: scuro, chiaro, seppia, «lago»; dimensione del testo su 5 livelli (A− / A+).
 - Ricerca nel testo (elenco dei risultati con contesto, salto all'occorrenza; se il termine non compare nella lingua attiva, pulsanti per passare alle lingue in cui compare), concordanza, glossario degli «intraducibili», minimappa, modalità focus.
@@ -57,6 +57,9 @@ MIT — vedi il file LICENSE
 
 ## Cronologia / Changelog
 
+- 1.2.2 — 2026-10-19: l'edizione ungherese è completa: il romanzo (25 capitoli), la cronaca (38 voci), il racconto «Tăul Mut» (22) e lo studio critico (31) sono tradotti in ungherese, quindi tutto il contenuto esiste in tutte e 8 le lingue (prima, in ungherese veniva mostrato il testo inglese). Il testo ungherese è stato scritto con l'assistenza dell'IA, senza un correttore ortografico ungherese, e **richiede una revisione da parte di un madrelingua**; i nomi dei personaggi seguono l'edizione inglese (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). Il file ora è di circa 3 MB.
+- 1.2.1 — 2026-10-19: i pulsanti della dimensione del testo (A− / A+) nella barra degli strumenti erano vuoti e le loro etichette accessibili esistevano solo in RO/EN; ora mostrano A− e A+ e hanno etichette in 8 lingue.
+
 - 1.1.0 — 2026-10-14: Copia di riserva ed etichettatura dei dati (fff-kit).
 
 - 1.0.0 — 2026-10-12: la versione e la data dell'ultimo aggiornamento sono mostrate nell'applicazione (prima versione numerata; nel colophon a piè di pagina, con etichetta nelle 7 lingue).
@@ -77,4 +80,4 @@ Giro 6:
 Alexio — Alexandru-Ionuț Chiuță. Contatto: alexio@trom.tf
 
 ## Riepilogo
-Limpezimea («Limpidezza») è un romanzo di fantascienza di Alexandru-Ionuț Chiuță, confezionato come edizione di lettura offline in un unico file HTML, in sette lingue (RO, EN, FR, IT, ES, PT, DE), con un apparato critico in parte scritto con l'assistenza dell'IA (Claude). Funzioni: lingue in parallelo, temi, ricerca, segnalibri e note, paesaggio sonoro, modalità focus. Nessuna richiesta di rete; preferenze salvate in localStorage (`limp.*`). Licenza MIT.
+Limpezimea («Limpidezza») è un romanzo di fantascienza di Alexandru-Ionuț Chiuță, confezionato come edizione di lettura offline in un unico file HTML, in otto lingue (RO, EN, FR, IT, ES, PT, DE, HU), con un apparato critico in parte scritto con l'assistenza dell'IA (Claude). Funzioni: lingue in parallelo, temi, ricerca, segnalibri e note, paesaggio sonoro, modalità focus. Nessuna richiesta di rete; preferenze salvate in localStorage (`limp.*`). Licenza MIT.
