@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.2.6 · **Última actualización:** 2026-10-22
+**Versión:** 1.2.7 · **Última actualización:** 2026-10-22
 
 Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,10 @@ MIT — véase el archivo LICENSE
 2026-10-10: verificado en el navegador (0 errores de JS, 0 solicitudes de red; almacenamiento solo `limp.*` en localStorage). Corregido el contraste de las entradas bloqueadas del índice. El texto literario y las traducciones (incluidas las asistidas por IA) no se revisaron editorialmente en esta auditoría. (La política CSP se añadió el 2026-10-11, véase Historial.)
 
 ## Historial / Changelog
+
+### 1.2.7 — 2026-10-22
+
+fff-kit 1.1.4: áreas táctiles y texto mínimo. Áreas táctiles/texto corregidos en la aplicación.
 
 ### 1.2.6 — 2026-10-22
 
