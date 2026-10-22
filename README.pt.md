@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 1.2.4 · **Última atualização:** 2026-10-22
+**Versão:** 1.2.5 · **Última atualização:** 2026-10-22
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -81,6 +81,9 @@ Alexio — Alexandru-Ionuț Chiuță. Contacto: alexio@trom.tf
 
 ## Resumo
 Limpezimea («Limpidez») é um romance de ficção científica de Alexandru-Ionuț Chiuță, apresentado como edição de leitura offline num único ficheiro HTML, em oito idiomas (RO, EN, FR, IT, ES, PT, DE, HU), com um aparato crítico escrito em parte com a assistência de IA (Claude). Funcionalidades: idiomas em paralelo, temas, pesquisa, marcadores e notas, paisagem sonora, modo foco. Sem pedidos de rede; preferências guardadas em localStorage (`limp.*`). Licença MIT.
+
+### 1.2.5 — 2026-10-22
+- Telemóvel: todas as legendas e botões da interface abaixo de 12 px (cerca de 45 regras: barra de ferramentas, índice, durações dos capítulos, botões de idioma, notas, notificação) passam a um mínimo de 12 px; a ligação «começar a ler» tem uma área de toque maior. Os controlos de tamanho do texto (A−/A+) já existiam.
 
 ### 1.2.4 — 2026-10-22
 - As etiquetas que ficavam em inglês ou bilingues (progresso, repor, tema, índice, capa, acesso ao aparato crítico, ferramentas) estão agora traduzidas nas 8 línguas e atualizam-se ao mudar de língua.

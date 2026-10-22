@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.2.4 · **Zuletzt aktualisiert:** 2026-10-22
+**Version:** 1.2.5 · **Zuletzt aktualisiert:** 2026-10-22
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -81,6 +81,9 @@ Alexio — Alexandru-Ionuț Chiuță. Kontakt: alexio@trom.tf
 
 ## Zusammenfassung
 Limpezimea („Klarheit“) ist ein Science-Fiction-Roman von Alexandru-Ionuț Chiuță, als Offline-Leseausgabe in einer einzigen HTML-Datei in acht Sprachen (RO, EN, FR, IT, ES, PT, DE, HU) verpackt, mit einem kritischen Apparat, der teilweise mit KI-Unterstützung (Claude) verfasst wurde. Funktionen: parallele Sprachen, Designs, Suche, Lesezeichen und Notizen, Klanglandschaft, Fokusmodus. Keine Netzwerkanfragen; Einstellungen werden in localStorage (`limp.*`) gespeichert. MIT-Lizenz.
+
+### 1.2.5 — 2026-10-22
+- Mobil: Alle Beschriftungen und Schaltflächen der Oberfläche unter 12 px (etwa 45 Regeln: Werkzeugleiste, Inhaltsverzeichnis, Kapitelzeiten, Sprachschaltflächen, Fußnoten, Hinweis) haben jetzt mindestens 12 px; der Link „Lesen beginnen“ hat eine größere Tippfläche. Die Schriftgrößen-Steuerung (A−/A+) gab es bereits.
 
 ### 1.2.4 — 2026-10-22
 - Die noch englischen oder zweisprachigen Beschriftungen (Fortschritt, Zurücksetzen, Thema, Inhalt, Umschlag, Zugang zum kritischen Apparat, Werkzeuge) sind jetzt in allen 8 Sprachen übersetzt und folgen dem Sprachwechsel.

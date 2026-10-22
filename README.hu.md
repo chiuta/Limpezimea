@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.4 · **Utolsó frissítés:** 2026-10-22
+**Verzió:** 1.2.5 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -81,6 +81,9 @@ Alexio — Alexandru-Ionuț Chiuță. Kapcsolat: alexio@trom.tf
 
 ## Összefoglaló
 A Limpezimea („Tisztaság”) Alexandru-Ionuț Chiuță sci-fi regénye, offline olvasókiadásként egyetlen HTML-fájlba csomagolva, nyolc nyelven (RO, EN, FR, IT, ES, PT, DE, HU), részben MI-támogatással (Claude) írt kritikai apparátussal. Funkciók: párhuzamos nyelvek, témák, keresés, könyvjelzők és jegyzetek, hangtáj, fókusz mód. Nincsenek hálózati kérések; a beállítások a localStorage-ban tárolódnak (`limp.*`). MIT-licenc.
+
+### 1.2.5 — 2026-10-22
+- Mobil: a felület minden 12 px alatti felirata és gombja (kb. 45 szabály: eszköztár, tartalomjegyzék, fejezetidők, nyelvgombok, jegyzetek, értesítés) legalább 12 px lett; a „olvasás kezdése” hivatkozás nagyobb érintési felületű. A betűméret-vezérlők (A−/A+) már megvoltak.
 
 ### 1.2.4 — 2026-10-22
 - A még angol vagy kétnyelvű címkék (előrehaladás, visszaállítás, téma, tartalom, borító, a kritikai apparátus kapuja, eszközök) mostantól mind a 8 nyelven elérhetők, és nyelvváltáskor frissülnek.
