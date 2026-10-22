@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.2.8 · **Dernière mise à jour :** 2026-10-23
+**Version :** 1.2.9 · **Dernière mise à jour :** 2026-10-23
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,11 @@ MIT — voir le fichier LICENSE
 2026-10-10 : vérifié dans le navigateur (0 erreur JS, 0 requête réseau ; stockage uniquement `limp.*` dans localStorage). Contraste des entrées verrouillées de la table des matières corrigé. Le texte littéraire et les traductions (y compris celles assistées par l'IA) n'ont pas fait l'objet d'une révision éditoriale lors de cet audit. (La politique CSP a été ajoutée le 2026-10-11, voir Historique.)
 
 ## Historique / Changelog
+
+### 1.2.9 — 2026-10-23
+
+- Stockage : les clés portent désormais le préfixe de l'application (`limpezimea.*`) ; les données existantes sont migrées automatiquement au démarrage depuis les anciennes clés (`limp.*`), et les anciennes sauvegardes `.fff.json` s'importent toujours (fff-kit 1.2.0).
+- Dialogues : les boîtes natives `alert`/`confirm`/`prompt` ont été remplacées par des dialogues `FFF.dialog` accessibles et traduits (clavier, piège de focus, Échap), au comportement identique (fff-kit 1.2.0).
 
 ### 1.2.7 — 2026-10-22
 
