@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.5 · **Utolsó frissítés:** 2026-10-22
+**Verzió:** 1.2.6 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,10 @@ MIT — lásd a LICENSE fájlt
 2026-10-10: böngészőben ellenőrizve (0 JS-hiba, 0 hálózati kérés; tárolás csak `limp.*` a localStorage-ban). Javítva a tartalomjegyzék zárolt bejegyzéseinek kontrasztja. Az irodalmi szöveget és a fordításokat (az MI-támogatásúakat is) ez az audit nem vetette alá szerkesztői átnézésnek. (A CSP-szabályzat 2026-10-11-én került hozzáadásra, lásd Előzmények.)
 
 ## Előzmények / Changelog
+
+### 1.2.6 — 2026-10-22
+
+fff-kit 1.1.2: PBKDF2 600 000 iterációval, clickjacking elleni védelem.
 
 - 1.2.2 — 2026-10-19: a magyar kiadás teljes: a regény (25 fejezet), a krónika (38 elem), a „Tăul Mut” novella (22) és a kritikai tanulmány (31) le van fordítva magyarra, így a teljes tartalom mind a 8 nyelven megvan (korábban magyarul az angol szöveg jelent meg). A magyar szöveg MI segítségével készült, magyar helyesírás-ellenőrző nélkül, és **anyanyelvi beszélő általi lektorálásra szorul**; a szereplők nevei az angol kiadást követik (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). A fájl mérete most kb. 3 MB.
 - 1.2.1 — 2026-10-19: az eszköztár szövegméret-gombjai (A− / A+) üresek voltak, és a hozzáférhető címkéik csak RO/EN nyelven léteztek; most látszik rajtuk az A− és A+, és 8 nyelven van címkéjük.

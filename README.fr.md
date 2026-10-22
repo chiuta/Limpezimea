@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.2.5 · **Dernière mise à jour :** 2026-10-22
+**Version :** 1.2.6 · **Dernière mise à jour :** 2026-10-22
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,10 @@ MIT — voir le fichier LICENSE
 2026-10-10 : vérifié dans le navigateur (0 erreur JS, 0 requête réseau ; stockage uniquement `limp.*` dans localStorage). Contraste des entrées verrouillées de la table des matières corrigé. Le texte littéraire et les traductions (y compris celles assistées par l'IA) n'ont pas fait l'objet d'une révision éditoriale lors de cet audit. (La politique CSP a été ajoutée le 2026-10-11, voir Historique.)
 
 ## Historique / Changelog
+
+### 1.2.6 — 2026-10-22
+
+fff-kit 1.1.2 : PBKDF2 600 000 itérations, protection anti-clickjacking.
 
 - 1.2.2 — 2026-10-19 : l'édition hongroise est complète : le roman (25 chapitres), la chronique (38 éléments), la nouvelle « Tăul Mut » (22) et l'étude critique (31) sont traduits en hongrois, de sorte que tout le contenu existe dans les 8 langues (auparavant, le hongrois affichait le texte anglais). Le texte hongrois a été rédigé avec l'aide de l'IA, sans correcteur orthographique hongrois, et **doit être relu par un locuteur natif** ; les noms des personnages suivent l'édition anglaise (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). Le fichier fait désormais environ 3 Mo.
 - 1.2.1 — 2026-10-19 : les boutons de taille du texte (A− / A+) de la barre d'outils étaient vides et leurs étiquettes accessibles n'existaient qu'en RO/EN ; ils affichent maintenant A− et A+ et ont des étiquettes en 8 langues.

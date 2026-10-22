@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.5 · **Last updated:** 2026-10-22
+**Version:** 1.2.6 · **Last updated:** 2026-10-22
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,10 @@ MIT — see the LICENSE file
 2026-10-10: checked in the browser (0 JS errors, 0 network requests; storage only `limp.*` in localStorage). Fixed the contrast of the locked entries in the table of contents. The literary text and the translations (including the AI-assisted ones) were not editorially reviewed in this audit. (The CSP policy was added on 2026-10-11, see History.)
 
 ## History / Changelog
+
+### 1.2.6 — 2026-10-22
+
+fff-kit 1.1.2: PBKDF2 with 600,000 iterations, anti-clickjacking protection.
 
 - 1.2.2 — 2026-10-19: the Hungarian edition is complete: the novel (25 chapters), the chronicle (38 items), the story "Tăul Mut" (22) and the critical study (31) are translated into Hungarian, so the whole content exists in all 8 languages (before, Hungarian showed the English text). The Hungarian text was written with AI assistance, without a Hungarian spellchecker, and **needs proofreading by a native speaker**; the character names follow the English edition (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). The file is now about 3 MB.
 - 1.2.1 — 2026-10-19: the text-size buttons (A− / A+) in the toolbar were empty and their accessible labels existed only in RO/EN; they now show A− and A+ and have labels in 8 languages.

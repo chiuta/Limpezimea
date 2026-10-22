@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.2.5 · **Ultimo aggiornamento:** 2026-10-22
+**Versione:** 1.2.6 · **Ultimo aggiornamento:** 2026-10-22
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,10 @@ MIT — vedi il file LICENSE
 2026-10-10: verificato nel browser (0 errori JS, 0 richieste di rete; archiviazione solo `limp.*` in localStorage). Corretto il contrasto delle voci bloccate dell'indice. Il testo letterario e le traduzioni (comprese quelle assistite dall'IA) non sono stati sottoposti a revisione editoriale in questo audit. (La policy CSP è stata aggiunta il 2026-10-11, vedi Cronologia.)
 
 ## Cronologia / Changelog
+
+### 1.2.6 — 2026-10-22
+
+fff-kit 1.1.2: PBKDF2 a 600.000 iterazioni, protezione anti-clickjacking.
 
 - 1.2.2 — 2026-10-19: l'edizione ungherese è completa: il romanzo (25 capitoli), la cronaca (38 voci), il racconto «Tăul Mut» (22) e lo studio critico (31) sono tradotti in ungherese, quindi tutto il contenuto esiste in tutte e 8 le lingue (prima, in ungherese veniva mostrato il testo inglese). Il testo ungherese è stato scritto con l'assistenza dell'IA, senza un correttore ortografico ungherese, e **richiede una revisione da parte di un madrelingua**; i nomi dei personaggi seguono l'edizione inglese (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). Il file ora è di circa 3 MB.
 - 1.2.1 — 2026-10-19: i pulsanti della dimensione del testo (A− / A+) nella barra degli strumenti erano vuoti e le loro etichette accessibili esistevano solo in RO/EN; ora mostrano A− e A+ e hanno etichette in 8 lingue.

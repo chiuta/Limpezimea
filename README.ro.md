@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.5 · **Ultima actualizare:** 2026-10-22
+**Versiune:** 1.2.6 · **Ultima actualizare:** 2026-10-22
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,10 @@ MIT — vezi fișierul LICENSE
 2026-10-10: verificat în browser (0 erori JS, 0 cereri de rețea; stocare doar `limp.*` în localStorage). Corectat contrastul intrărilor blocate din cuprins. Textul literar și traducerile (inclusiv cele asistate de AI) nu au fost revizuite editorial în acest audit. (Politica CSP a fost adăugată la 2026-10-11, vezi Istoric.)
 
 ## Istoric / Changelog
+
+### 1.2.6 — 2026-10-22
+
+fff-kit 1.1.2: PBKDF2 600 000 iterații, protecție anti-clickjacking.
 
 - 1.2.2 — 2026-10-19: ediția în maghiară este completă: romanul (25 de capitole), cronica (38 de elemente), povestirea „Tăul Mut” (22) și studiul critic (31) sunt traduse în maghiară, deci tot conținutul există în toate cele 8 limbi (înainte, în maghiară se afișa textul în engleză). Textul maghiar a fost scris cu asistență AI, fără corector ortografic maghiar, și **necesită corectură de către un vorbitor nativ**; numele personajelor urmează ediția engleză (Ellie, Andrew, Serena, Theodore, Matthew, Mary, Roland, Anna). Fișierul are acum circa 3 MB.
 - 1.2.1 — 2026-10-19: butoanele pentru mărimea textului (A− / A+) din bara de unelte erau goale și etichetele lor accesibile existau doar în RO/EN; acum afișează A− și A+ și au etichete în 8 limbi.
