@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.9 · **Utolsó frissítés:** 2026-10-23
+**Verzió:** 1.2.10 · **Utolsó frissítés:** 2026-10-23
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,10 @@ MIT — lásd a LICENSE fájlt
 2026-10-10: böngészőben ellenőrizve (0 JS-hiba, 0 hálózati kérés; tárolás csak `limp.*` a localStorage-ban). Javítva a tartalomjegyzék zárolt bejegyzéseinek kontrasztja. Az irodalmi szöveget és a fordításokat (az MI-támogatásúakat is) ez az audit nem vetette alá szerkesztői átnézésnek. (A CSP-szabályzat 2026-10-11-én került hozzáadásra, lásd Előzmények.)
 
 ## Előzmények / Changelog
+
+### 1.2.10 — 2026-10-23
+
+- Manifest: a leírás hét nyelvet sorolt fel (HU nélkül); most mind a nyolcat. Új metaadat-teszt.
 
 ### 1.2.9 — 2026-10-23
 

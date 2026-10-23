@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 1.2.9 · **Última atualização:** 2026-10-23
+**Versão:** 1.2.10 · **Última atualização:** 2026-10-23
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,6 +56,10 @@ MIT — ver o ficheiro LICENSE
 2026-10-10: verificado no navegador (0 erros de JS, 0 pedidos de rede; armazenamento apenas `limp.*` em localStorage). Corrigido o contraste das entradas bloqueadas do índice. O texto literário e as traduções (incluindo as assistidas por IA) não foram objeto de revisão editorial nesta auditoria. (A política CSP foi adicionada em 2026-10-11, ver Histórico.)
 
 ## Histórico / Changelog
+
+### 1.2.10 — 2026-10-23
+
+- Manifesto: a descrição enumerava sete idiomas (sem HU); agora enumera os oito. Novo teste de metadados.
 
 ### 1.2.9 — 2026-10-23
 
