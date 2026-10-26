@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.11 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -19,6 +19,7 @@ Roman SF de Alexandru-Ionuț Chiuță, ediție de lectură într-un singur fiși
 ## Funcții
 
 - Comutare între cele 8 limbi (butoane RO / EN / FR / IT / ES / PT / DE / HU; romanul, cronica, „Tăul Mut” și studiul critic există în toate cele 8 limbi); opțiune pentru afișarea mai multor limbi în paralel (butonul „Număr de limbi").
+- **Ediție paralelă (2.0.0):** alegi două limbi (stânga / dreapta) și limba vocii; paragrafele se citesc alăturate, fiecare lângă perechea lui (pe ecran îngust, alternat: RO, EN, RO, EN…). Atingi un paragraf ca să-i fixezi perechea și să-l asculți în oricare din cele două limbi (opțional, continuu); perechea e evidențiată la trecerea cursorului. Tasta `E`, butonul din cuprins sau paleta de comenzi. Textul literar nu este modificat.
 - Cuprins pe părți și capitole, navigare cu săgeți, paletă de comenzi.
 - Teme: întunecată, luminoasă, sepia, „tău"; mărimea textului pe 5 trepte (A− / A+).
 - Căutare în text (listă de rezultate cu context, salt la apariție; dacă termenul nu apare în limba activă, butoane de comutare către limbile unde apare), concordanță, glosar de „intraductibile", minimap, mod focus.
@@ -56,6 +57,10 @@ MIT — vezi fișierul LICENSE
 2026-10-10: verificat în browser (0 erori JS, 0 cereri de rețea; stocare doar `limp.*` în localStorage). Corectat contrastul intrărilor blocate din cuprins. Textul literar și traducerile (inclusiv cele asistate de AI) nu au fost revizuite editorial în acest audit. (Politica CSP a fost adăugată la 2026-10-11, vezi Istoric.)
 
 ## Istoric / Changelog
+
+### 2.0.0 — 2026-10-26
+
+- Nou: **ediția paralelă** (două limbi paragraf cu paragraf, aranjare pe coloane sau alternată, perechea paragrafului evidențiată, ascultare în limba aleasă). Test nou: `tests/paralel.test.mjs`. Textul literar și traducerile nu au fost modificate.
 
 ### 1.2.10 — 2026-10-23
 

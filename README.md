@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.11 · **Last updated:** 2026-10-26
+**Version:** 2.0.0 · **Last updated:** 2026-10-26
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -19,6 +19,7 @@ A science-fiction novel by Alexandru-Ionuț Chiuță, a reading edition in a sin
 ## Features
 
 - Switching between the 8 languages (RO / EN / FR / IT / ES / PT / DE / HU buttons; the novel, the chronicle, "Tăul Mut" and the critical study exist in all 8 languages); an option to display several languages in parallel (the "Number of languages" button).
+- **Parallel edition (2.0.0):** pick two languages and the voice language; paragraphs sit side by side with their counterparts (interleaved on narrow screens), the pair is highlighted, and a tap pins it to listen in either language (`E` key, contents button or command palette). The literary text is untouched.
 - Table of contents by parts and chapters, arrow-key navigation, command palette.
 - Themes: dark, light, sepia, "tarn"; text size in 5 steps (A− / A+).
 - Full-text search (results list with context, jump to the occurrence; if the term does not appear in the active language, buttons to switch to the languages where it does), concordance, glossary of "untranslatables", minimap, focus mode.
