@@ -2,8 +2,8 @@
   "schema": 1,
   "slug": "limpezimea",
   "name": "Limpezimea — roman · Alexandru-Ionuț Chiuță",
-  "version": "2.0.0",
-  "updated": "2026-10-26",
+  "version": "2.1.0",
+  "updated": "2026-10-27",
   "description": "Roman SF în opt limbi (RO·EN·FR·IT·ES·PT·DE·HU) despre o recordistă, un tău care mănâncă sunetul și amintirea, și grăuntele care e sufletul.",
   "egress": [],
   "permissions": [
@@ -18,8 +18,8 @@
     "limpezimea.theme",
     "limpezimea.unlocked"
   ],
-  "sizeBytes": 3147495,
-  "sha256": "fdba28894f042658f3dc4b8e70e9abcceec9aec670d8a442868a856d19e8540d",
+  "sizeBytes": 3171033,
+  "sha256": "6f37b25ee489d9b41655ede789e51b0b15881c95d8626ff3eacbc5e516bd7724",
   "csp": {
     "present": true,
     "directives": {

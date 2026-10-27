@@ -2,7 +2,9 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.1.0 · **Ultima actualizare:** 2026-10-27
+
+**Stare:** stabil · **Offline:** complet (nicio cerere de rețea; EPUB-ul se generează local)
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,7 +58,17 @@ MIT — vezi fișierul LICENSE
 
 2026-10-10: verificat în browser (0 erori JS, 0 cereri de rețea; stocare doar `limp.*` în localStorage). Corectat contrastul intrărilor blocate din cuprins. Textul literar și traducerile (inclusiv cele asistate de AI) nu au fost revizuite editorial în acest audit. (Politica CSP a fost adăugată la 2026-10-11, vezi Istoric.)
 
+## Despre carte și export EPUB (2.1.0, 2026-10-27)
+
+- **„Despre carte”** (buton în cuprins și în paleta de comenzi, 8 limbi): prezentare scurtă scrisă din descrierea și din începutul textului din depozit (nu inventează intriga și nu dă spoilere), **fragment** (primele 3 paragrafe din capitolul 1, luate din textul din pagină, în limba curentă) și **timp de lectură** calculat pe limba curentă (la 180 cuvinte/minut, același ritm ca în aplicație; română ≈ 241 min). Prezentarea în afara ro/en este tradusă automat și nu face parte din romanul publicat.
+- **Export EPUB** (limba curentă; fără aparatul critic), generat în browser, fără dependențe și fără rețea (arhivă ZIP fără compresie scrisă de mână). Verificat structural (ZIP valid, `mimetype` primul și necomprimat, XML bine format, 25 capitole + 4 părți în cuprins) pentru ro/en/hu; **nu a fost verificat cu epubcheck și nici pe un cititor fizic**.
+- Textul literar și traducerile nu au fost modificate.
+
 ## Istoric / Changelog
+
+### 2.1.0 — 2026-10-27 (anterior: 2.0.0)
+
+- Nou: „Despre carte” (prezentare, fragment, timp de lectură) și export EPUB local. Textul literar nemodificat.
 
 ### 2.0.0 — 2026-10-26
 
