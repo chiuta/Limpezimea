@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.1.0 · **Last updated:** 2026-10-27
+**Version:** 2.2.0 · **Last updated:** 2026-10-27
 
 **Status:** stable · **Offline:** complete (no network requests; the EPUB is generated locally)
 
@@ -63,8 +63,19 @@ MIT — see the LICENSE file
 - **"About the book"** (button in the contents and in the command palette, 8 languages): a short overview written from the repository's description and the opening of the text (it invents no plot and gives no spoilers), an **excerpt** (the first 3 paragraphs of chapter 1, taken from the text on the page, in the current language) and the **reading time** computed for the current language (at 180 words/minute, the same pace as the app; Romanian ≈ 241 min). The overview in languages other than ro/en is machine-translated and is not part of the published novel.
 - **EPUB export** (current language; without the critical apparatus), generated in the browser with no dependencies and no network (a hand-written uncompressed ZIP). Checked structurally (valid ZIP, `mimetype` first and uncompressed, well-formed XML, 25 chapters + 4 parts in the contents) for ro/en/hu; **not checked with epubcheck or on a physical reader**.
 - The literary text and the translations were not modified.
+## EPUB 2.2.0: cover and critical apparatus (2026-10-27)
+
+- **Typographic cover** in the EPUB: an SVG generated in the browser (title, author, stylised sound-wave bars), declared as `cover-image` and as the first page. It is a **typographic cover, not an illustration**; no external fonts or images.
+- **EPUB with critical apparatus** (separate button, marked "spoilers"): after the novel it adds the spoiler warning page (the app's own gate text), the review, the story "The Mute Tarn" and the critical study, in the current language, from the text on the page. The default EPUB stays without the apparatus.
+- Checked structurally (stored ZIP, `mimetype` first, well-formed XML, manifest/spine consistent, apparatus text equal to the page text) for ro/en/hu with `tests/epub.test.mjs`; **not checked with epubcheck or on a physical reader**. New labels in 8 languages; fr/it/es/pt/de/hu are machine translations.
+- **Still not implemented:** a long synopsis / chapter-by-chapter description (no verified source in the repository beyond the text itself); an illustrated cover.
+
 
 ## History / Changelog
+
+### 2.2.0 — 2026-10-27 (previous: 2.1.0)
+
+- EPUB: typographic SVG cover; second button for an EPUB with the critical apparatus (spoilers). Literary text unchanged.
 
 ### 2.1.0 — 2026-10-27 (previous: 2.0.0)
 

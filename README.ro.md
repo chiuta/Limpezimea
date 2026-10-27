@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.1.0 · **Ultima actualizare:** 2026-10-27
+**Versiune:** 2.2.0 · **Ultima actualizare:** 2026-10-27
 
 **Stare:** stabil · **Offline:** complet (nicio cerere de rețea; EPUB-ul se generează local)
 
@@ -63,8 +63,19 @@ MIT — vezi fișierul LICENSE
 - **„Despre carte”** (buton în cuprins și în paleta de comenzi, 8 limbi): prezentare scurtă scrisă din descrierea și din începutul textului din depozit (nu inventează intriga și nu dă spoilere), **fragment** (primele 3 paragrafe din capitolul 1, luate din textul din pagină, în limba curentă) și **timp de lectură** calculat pe limba curentă (la 180 cuvinte/minut, același ritm ca în aplicație; română ≈ 241 min). Prezentarea în afara ro/en este tradusă automat și nu face parte din romanul publicat.
 - **Export EPUB** (limba curentă; fără aparatul critic), generat în browser, fără dependențe și fără rețea (arhivă ZIP fără compresie scrisă de mână). Verificat structural (ZIP valid, `mimetype` primul și necomprimat, XML bine format, 25 capitole + 4 părți în cuprins) pentru ro/en/hu; **nu a fost verificat cu epubcheck și nici pe un cititor fizic**.
 - Textul literar și traducerile nu au fost modificate.
+## EPUB 2.2.0: copertă și aparat critic (2026-10-27)
+
+- **Copertă tipografică** în EPUB: un SVG generat în browser (titlu, autor, bare stilizate de undă sonoră), declarat ca `cover-image` și ca prima pagină. Este o **copertă tipografică, nu o ilustrație**; fără fonturi sau imagini externe.
+- **EPUB cu aparat critic** (buton separat, marcat „spoilere”): după roman adaugă pagina cu avertismentul de spoilere (textul porții din aplicație), cronica, povestirea „Tăul Mut” și studiul critic, în limba curentă, din textul din pagină. EPUB-ul implicit rămâne fără aparat.
+- Verificat structural (ZIP fără compresie, `mimetype` primul, XML bine format, manifest/spine coerente, textul aparatului egal cu cel din pagină) pentru ro/en/hu cu `tests/epub.test.mjs`; **nu a fost verificat cu epubcheck sau pe un cititor fizic**. Etichete noi în 8 limbi; fr/it/es/pt/de/hu sunt traduceri automate.
+- **Rămân neimplementate:** sinopsis lung / descriere pe capitole (fără sursă verificată în depozit în afara textului însuși); copertă ilustrată.
+
 
 ## Istoric / Changelog
+
+### 2.2.0 — 2026-10-27 (anterior: 2.1.0)
+
+- EPUB: copertă tipografică SVG; al doilea buton pentru EPUB cu aparat critic (spoilere). Textul literar nemodificat.
 
 ### 2.1.0 — 2026-10-27 (anterior: 2.0.0)
 
