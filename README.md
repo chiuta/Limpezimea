@@ -2,7 +2,9 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.0.0 · **Last updated:** 2026-10-26
+**Version:** 2.1.0 · **Last updated:** 2026-10-27
+
+**Status:** stable · **Offline:** complete (no network requests; the EPUB is generated locally)
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -56,7 +58,17 @@ MIT — see the LICENSE file
 
 2026-10-10: checked in the browser (0 JS errors, 0 network requests; storage only `limp.*` in localStorage). Fixed the contrast of the locked entries in the table of contents. The literary text and the translations (including the AI-assisted ones) were not editorially reviewed in this audit. (The CSP policy was added on 2026-10-11, see History.)
 
+## About the book and EPUB export (2.1.0, 2026-10-27)
+
+- **"About the book"** (button in the contents and in the command palette, 8 languages): a short overview written from the repository's description and the opening of the text (it invents no plot and gives no spoilers), an **excerpt** (the first 3 paragraphs of chapter 1, taken from the text on the page, in the current language) and the **reading time** computed for the current language (at 180 words/minute, the same pace as the app; Romanian ≈ 241 min). The overview in languages other than ro/en is machine-translated and is not part of the published novel.
+- **EPUB export** (current language; without the critical apparatus), generated in the browser with no dependencies and no network (a hand-written uncompressed ZIP). Checked structurally (valid ZIP, `mimetype` first and uncompressed, well-formed XML, 25 chapters + 4 parts in the contents) for ro/en/hu; **not checked with epubcheck or on a physical reader**.
+- The literary text and the translations were not modified.
+
 ## History / Changelog
+
+### 2.1.0 — 2026-10-27 (previous: 2.0.0)
+
+- New: "About the book" (overview, excerpt, reading time) and local EPUB export. Literary text unchanged.
 
 ### 1.2.10 — 2026-10-23
 
