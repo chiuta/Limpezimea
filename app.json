@@ -18,8 +18,8 @@
     "limpezimea.theme",
     "limpezimea.unlocked"
   ],
-  "sizeBytes": 3177321,
-  "sha256": "88b48dec6fd212f7c82ab612b6cb2cf58cd03f5f9a49e7a4c5ba2ce4c479d645",
+  "sizeBytes": 3317755,
+  "sha256": "30e3687f3412fe48a75586af69a2ad23a8cfd920916841ae9b057d266c6850a4",
   "csp": {
     "present": true,
     "directives": {
@@ -62,7 +62,11 @@
       "store",
       "dialog",
       "label",
-      "bundle"
+      "bundle",
+      "qr",
+      "p2p",
+      "sync",
+      "history"
     ]
   },
   "kit": {
@@ -72,7 +76,11 @@
       "store",
       "dialog",
       "label",
-      "bundle"
+      "bundle",
+      "qr",
+      "p2p",
+      "sync",
+      "history"
     ]
   },
   "selfSerializing": false
